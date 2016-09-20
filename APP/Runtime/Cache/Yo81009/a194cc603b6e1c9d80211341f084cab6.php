@@ -1,0 +1,183 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			body,input,tr,td,select{font-size:12px; font-family:tahoma;}
+			#TB {width:980px; background:#3c3c3c; }
+			#TB .TT {height:30px; background:#616161;}
+			#TB .TT:hover {height:30px; background:#616161;}
+			#TB .TT td {color:#FFF;font-weight:bold; text-align:center;}
+			#TB tr {height:30px; background:#eaeaea;}
+			#TB tr:hover {height:30px; background:#fadada;}
+			#TB tr td {text-align:center; color:#000;}
+			.select {width:99%; height:28px;}
+		</style>
+		<script type="text/javascript">
+			
+			//Create TR
+			var nName = new Array("Tony","Mika","Neo","Oi","Kim","Park","Mr Lee","Tasky","Saco","Novel");
+			var nSex = new Array("男性","女性","保密");
+			var i = 1;
+			
+			function CreateTB(){
+				var oTB = document.getElementById("TB");
+				var oTR = oTB.insertRow(oTB.rows.length);
+				var oTD1 = oTR.insertCell(0);
+				oTD1.innerHTML = "<input type='checkbox' name='ck'>";
+				var oTD2 = oTR.insertCell(1);
+				oTD2.innerHTML = "<div>" + nName[parseInt(Math.random()*10)] + "</div><center><input type='text' style='display:none; width:99%; height:22px; text-align:center;'></center>";
+				var oTD3 = oTR.insertCell(2);
+				oTD3.innerHTML = "<div>" + parseInt(Math.random()*50+15) + "</div><center><select name='age' class='select' style='display:none;'></select></center>";
+				var oTD4 = oTR.insertCell(3);
+				oTD4.innerHTML = "<div>" + nSex[parseInt(Math.random()*3)] + "</div><center><select name='sex' class='select' style='display:none;'></select></center>";
+				var oTD5 = oTR.insertCell(4);
+				oTD5.innerHTML = "<input type='button' value='修改' onclick=\"edit(this,'show')\"><input type='button' value='删除' onclick='del(this)'>";
+			i++;
+			}
+			
+			//EDIT TR
+			function edit(o,otype){
+				var oTR=o.parentNode.parentNode;
+				var oDiv1=oTR.cells[1].getElementsByTagName("div");
+				var oDiv2=oTR.cells[2].getElementsByTagName("div");
+				var oDiv3=oTR.cells[3].getElementsByTagName("div");
+				var oInpt1=oTR.cells[1].getElementsByTagName("input");
+				var oselect2=oTR.cells[2].getElementsByTagName("select");
+				var oselect3=oTR.cells[3].getElementsByTagName("select");
+				if (otype =="show"){
+					o.value="确认";
+					o.setAttribute("onclick","edit(this,'hide')");
+					//名字修改前
+					oInpt1[0].value = oDiv1[0].childNodes[0].nodeValue;
+					oInpt1[0].style.display = "block";
+					oDiv1[0].style.display = "none";
+					//年龄修改前
+					oDiv2[0].style.display = "none";
+					var iSage = parseInt(oDiv2[0].childNodes[0].nodeValue);
+					oselect2[0].style.display = "block";
+					if (oselect2[0].length == 0){
+						for (var i=0; i<50; i++){
+							oselect2[0].options.add(new Option(i+15,i+15)); 
+						}
+						oselect2[0].options[iSage-15].selected = true;
+					}
+					//性别修改前
+					oDiv3[0].style.display = "none";
+					oselect3[0].style.display = "block";
+					if (oselect3[0].length == 0){
+					
+						for (var i=0; i<nSex.length; i++){
+							oselect3[0].add(new Option(nSex[i],i));
+						}
+						switch (oDiv3[0].childNodes[0].nodeValue){
+						case '男性':
+						var iSno = 0;
+						break;
+						case '女性':
+						var iSno = 1;
+						break;
+						case '保密':
+						var iSno = 2;
+						break;
+						}
+						oselect3[0].options[iSno].selected = true;
+						
+					}
+				}else if (otype =="hide"){
+					o.value="修改";
+					o.setAttribute("onclick","edit(this,'show')");
+					//名字修改后
+					oDiv1[0].childNodes[0].nodeValue = oInpt1[0].value;
+					oDiv1[0].style.display = "block";
+					oInpt1[0].style.display = "none";
+					//年龄修改后
+					oDiv2[0].childNodes[0].nodeValue = oselect2[0].value;
+					oDiv2[0].style.display = "block";
+					oselect2[0].style.display = "none";
+					//性别修改后
+					oDiv3[0].childNodes[0].nodeValue = nSex[oselect3[0].value];
+					oDiv3[0].style.display = "block";
+					oselect3[0].style.display = "none";
+				}
+				
+			}
+			//Delete TR
+			function del(o){
+				var oTB = document.getElementById("TB");
+				var oInpt = oTB.getElementsByTagName("input");
+				if (o == 'chk')
+				{
+					for (var i=1; i<oInpt.length ; i++)
+					{
+						if (oInpt[i].type == 'checkbox' && oInpt[i].checked)
+						{
+							var oRow = oInpt[i].parentNode.parentNode.sectionRowIndex;
+							oTB.deleteRow(oRow);
+							i--;
+						}
+					}
+				}else{
+					var oDel = o.parentNode.parentNode.sectionRowIndex;
+					oTB.deleteRow(oDel);
+				}
+			}
+			
+			//Check All
+			function chk(type,o){
+				var oInpt = document.getElementsByTagName("input");
+				for (var i=0; i<oInpt.length; i++){
+					if (oInpt[i].type == "checkbox"){
+						oInpt[i].checked = o.checked;
+					}
+				}
+			}
+			
+			//Check Fan
+			function chkFun(){
+				var oTB = document.getElementById("TB");
+				var oInpt = oTB.getElementsByTagName("input");
+				for (var i=1; i<oInpt.length; i++){
+					if (oInpt[i].type == "checkbox"){
+						if (oInpt[i].checked)
+						{
+							oInpt[i].checked = false;
+						}else{
+							oInpt[i].checked = true;
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table width="980" align="center" border="0" cellpadding="0" cellspacing="0">
+			<tr height="30">
+				<td>
+					<input type="button" onclick="CreateTB()" value="创建" />
+					<input type="button" onclick="chkFun()" value="反选" />
+					<input type="button" onclick="del('chk')" value="选择删除" />
+				</td>
+			</tr>
+		</table>
+		<table id="TB" align="center" border="0" cellpadding="0" cellspacing="1">
+			<tr class="TT">
+				<td width="20"><input type="checkbox" onclick="chk('all',this)" /></td>
+				<td width="20">id</td>
+				<td width="120">标题</td>
+				<td width="70">作者</td>
+				<td width="100">添加时间</td>
+				<td width="100">操作</td>
+			</tr>
+			<?php if(is_array($result["data"]["list"])): foreach($result["data"]["list"] as $key=>$vo): ?><tr>
+				<td width="20"><input type="checkbox"  /></td>
+				<td width="20"><?php echo ($vo['id']); ?></td>
+				<td width="120"><a href="<?php echo U('Yo81009/Article/content',array('id'=>$vo['id']));?>"><?php echo ($vo['title']); ?></a></td>
+				<td width="70"><?php echo ($vo['author']); ?></td>
+				<td width="70"><?php echo ($vo['add_time']); ?></td>
+				<td width="100"><a href="<?php echo U('Yo81009/Admin/get_article',array('id'=>$vo['id']));?>">编辑</a>|<input type="submit" value="删除"></td>
+			</tr><?php endforeach; endif; ?>
+		</table>
+	</body>
+</html>

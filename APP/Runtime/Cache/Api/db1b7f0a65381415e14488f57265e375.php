@@ -1,0 +1,30 @@
+<?php if (!defined('THINK_PATH')) exit();?><table width="500" border="0" cellpadding="2">
+	<tr>
+    <td width="100" align="right">site_id：</td>
+    <td><input type="text" name="site_id" id="site_id" value="" /> *站点ID</td>
+  </tr>
+  <tr>
+    <td align="right">type：</td>
+    <td><input type="text" name="type" id="type" value="" />*文件类型</td>
+  </tr>
+  <tr>
+    <td align="right">file：</td>
+    <td><input type="file" name="file" id="file" value="" />*要上传的文件</td>
+  </tr>
+    <tr>
+    <td align="right">user_id：</td>
+    <td><input type="text" name="user_id" id="user_id" value="" />用户id</td>
+  </tr>
+    <tr>
+    <td align="right">store_id：</td>
+    <td><input type="text" name="store_id" id="store_id" value="" />商家id</td>
+  </tr>
+    <tr>
+    <td align="right">description：</td>
+    <td><input type="text" name="description" id="description" value="" />文件简单描述</td>
+  </tr>
+    <tr>
+    <td align="right">sort：</td>
+    <td><input type="text" name="sort" id="sort" value="" />排序</td>
+  </tr>
+  </table>

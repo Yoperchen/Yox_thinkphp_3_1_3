@@ -1,0 +1,1415 @@
+[ 2016-06-14T00:05:08+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:05:08+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:05:08+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:05:08+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:05:08+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:05:09+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:05:09+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:05:09+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:07:58+08:00 ] 127.0.0.1 /index.php?s=/Admin/Test/article.html
+ERR: 模板不存在[./APP/Lib/Widget/ListArticle/Yocms_list_95.html]
+
+[ 2016-06-14T00:07:59+08:00 ] 127.0.0.1 /__PUBLIC__/Widget/ListComment/Yocms_image_list_94/ListComment.css
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:07:59+08:00 ] 127.0.0.1 /__PUBLIC__/js/require.js
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:07:59+08:00 ] 127.0.0.1 /__PUBLIC__/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94_whp_pink.css
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:07:59+08:00 ] 127.0.0.1 /__PUBLIC__/js/main.js
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:07:59+08:00 ] 127.0.0.1 /__PUBLIC__/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:16+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:16+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:08:17+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:17+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:17+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:17+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:17+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:17+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:17+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465834097200
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010742s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.081055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.102539s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:08:18+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:18+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:08:18+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465834097889
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.014648s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.024414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045898s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:13:44+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:13:44+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465834425022
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.025391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041015s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465834425235
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.047851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.068360s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:13:45+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:13:46+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:11+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:11+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:14:11+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:11+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:11+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:12+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:12+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:12+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:12+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465834451542
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011719s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.028320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.049805s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:14:12+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:12+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:12+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465834452162
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.020508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036132s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:14:35+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:35+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:14:36+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:36+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:36+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:36+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:36+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465834475890
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.049805s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.060547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.137696s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:14:36+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:37+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:37+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:14:37+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465834476809
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.018555s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.034180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.067382s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:14:37+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:12+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:15:12+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465834512534
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.045899s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.036133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.098633s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T00:15:13+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465834513560
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010742s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.024414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042968s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:18:19+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:18:19+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:20+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:20+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:20+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:20+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:20+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:20+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:21+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:31+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465910302003
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.038086s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.040039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.089844s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:18:33+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:18:35+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:35+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465910311208
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.018555s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.037110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.064453s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:18:36+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:36+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:36+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:37+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:37+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:37+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:38+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465910316242
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.019532s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.079102s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:18:50+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.024414s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.135743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.193360s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.080078s ]
+SQL: SELECT * FROM `yo_district` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.027344s ]
+NOTIC: [8] Undefined index: weather_area_id D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606142118&amp;appid=194365&amp;key=bpXmQj5IvY%2FdTtHTos9Vt6Lr7eM%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-14T21:18:50+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:18:50+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465910318089
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.018555s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.128906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.178711s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:20:25+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:22:00+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:22:01+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:22:01+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:22:01+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:22:01+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:22:02+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:22:02+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:22:02+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465910520801
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.106446s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.164063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.358398s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:22:02+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:22:02+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465910522418
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011718s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.036132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.056641s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:25:42+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.020508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035156s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.005859s ]
+SQL: SELECT * FROM `yo_district` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: weather_area_id D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606142125&amp;appid=194365&amp;key=%2FyjMbMoNrSj5sGlmgiCFLWKyrxA%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-14T21:29:55+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:29:55+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:29:55+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:29:55+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:29:55+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465910994709
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.028321s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.093750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.139648s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:29:55+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:29:56+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:29:56+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:29:56+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:29:56+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465910995670
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.016601s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.047852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.076172s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:30:18+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:18+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:30:20+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:20+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:20+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465911018971
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.069336s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.158203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.264648s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:30:20+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:20+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:21+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:21+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:21+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:21+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:30:21+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465911020360
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.043946s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.090821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.161132s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:31:15+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93_w1200_gray.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:32:22+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:32:22+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:32:22+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:32:23+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:32:23+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:32:23+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:32:23+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465911142728
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.137695s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.066406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.250977s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:32:23+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:32:24+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:32:24+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465911143803
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017578s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.038086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.065430s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:34:54+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:34:54+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:34:54+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:34:54+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:34:55+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:34:55+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:34:55+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:34:55+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465911294298
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.038086s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.085938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.148438s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:34:55+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:34:55+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465911295507
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013672s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.024414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:35:54+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:35:55+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:35:55+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:35:55+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:35:55+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:35:56+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:35:56+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:35:56+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465911354690
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.030274s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.072266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.131836s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:35:56+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:35:56+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465911356232
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013672s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.114258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.135742s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:37:31+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:37:31+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:37:31+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:37:31+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:37:31+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:37:32+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:37:32+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465911451086
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.079101s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.099609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.215821s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:37:32+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:37:32+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:37:32+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465911452170
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.026367s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.040039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.079101s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:41:03+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:41:04+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:41:04+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:41:04+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:41:04+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:41:04+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:41:05+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:41:05+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465911663870
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.053711s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.207031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.291016s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:41:05+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:41:05+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465911665128
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.020508s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.029297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.060547s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:43:21+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:43:21+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:43:21+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:43:21+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:43:21+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:43:22+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465911800489
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017578s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.038086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.102539s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:43:22+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:43:22+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:43:22+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:43:22+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465911802459
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.021484s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.085938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.138672s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:44:23+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465911863550
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009766s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033203s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:44:24+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465911863865
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007812s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.019532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033203s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:48:10+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:10+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:10+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:10+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:10+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:11+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:11+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:11+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:11+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465912090402
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.030273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.065430s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:48:11+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465912091170
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009765s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.020508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037110s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:48:42+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:43+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:43+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:43+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:43+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:43+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:43+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:44+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465912122852
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.067383s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.108398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.272461s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:48:44+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:48:44+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465912124037
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.012695s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.028320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.049805s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:49:14+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:49:14+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:49:14+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:49:15+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:49:15+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:49:15+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:49:15+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:49:15+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465912154323
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.026367s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.109375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.163086s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:49:15+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:49:15+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465912155448
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013672s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.030274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.056640s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:50:38+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:50:38+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:50:39+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:50:39+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:50:40+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:50:40+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:50:40+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:50:40+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:50:40+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465912239004
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.016601s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.060547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.089843s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:50:40+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465912240474
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.014648s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.037110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.063477s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:52:18+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:52:18+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:52:18+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:52:19+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:52:19+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:52:19+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:52:19+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:52:19+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T21:52:19+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465912338763
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.039062s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.158203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.222656s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:52:20+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465912339930
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.020508s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.036133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.069336s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T21:53:48+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.155274s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.045898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.238282s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.010742s ]
+SQL: SELECT * FROM `yo_district` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.003907s ]
+NOTIC: [8] Undefined index: weather_area_id D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606142153&amp;appid=194365&amp;key=uYDClRhUNX3E7fg2UdH3rl4M5KY%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-14T22:15:38+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:15:38+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:15:38+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:15:38+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:15:38+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:15:39+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:15:39+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465913738099
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.028321s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.212891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.270507s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:15:39+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:15:39+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:15:39+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465913739103
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.016602s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.023438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053711s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:15:39+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_95/Yocms_article_list_95.js?_=1465913739449
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.014648s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.026367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.049805s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:23:05+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:23:05+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:23:05+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:23:05+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:23:06+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:23:06+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465914184893
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.030274s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.055665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.098633s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:23:06+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:23:06+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:23:06+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:23:06+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465914186085
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.023437s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.036133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.072266s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:23:06+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_95/Yocms_article_list_95.js?_=1465914186460
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007812s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.027343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043946s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:24:03+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:24:03+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:24:04+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:24:04+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:24:05+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:24:05+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:24:05+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:24:05+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465914244057
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.045898s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.069336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.136719s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:24:05+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:24:06+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465914245694
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.063477s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.111328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.201172s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:24:06+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_95/Yocms_article_list_95.js?_=1465914246367
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.076172s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.050781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.211914s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:29:25+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.021484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035157s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.011718s ]
+SQL: SELECT * FROM `yo_district` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: weather_area_id D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606142229&amp;appid=194365&amp;key=2Km%2FUcchLayi3OP%2F%2Bs0jg6sNghY%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-14T22:30:17+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.063476s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.042968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.140625s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.014649s ]
+SQL: SELECT * FROM `yo_district` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: weather_area_id D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606142230&amp;appid=194365&amp;key=5u1bdqXi1bifdl2jgg1AuGSFjvo%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-14T22:31:08+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:09+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:09+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:09+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:09+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:09+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465914668506
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.040039s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.086914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.228515s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:31:10+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:10+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:10+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:10+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465914669750
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.026367s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.041992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.083007s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:31:10+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_95/Yocms_article_list_95.js?_=1465914670333
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017578s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.044922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.071289s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:31:39+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:39+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:40+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:40+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:40+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:40+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:40+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465914699722
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.031250s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.162109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.210938s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:31:41+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:41+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:31:41+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465914700903
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.018555s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.041992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.072265s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:31:41+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_95/Yocms_article_list_95.js?_=1465914701335
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017578s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.048829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.081054s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:32:12+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.034179s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.110352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.157226s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.008789s ]
+SQL: SELECT * FROM `yo_district` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: weather_area_id D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606142232&amp;appid=194365&amp;key=o2QKex3yQpMtL%2FHj%2BAIAOm%2BXhk8%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-14T22:40:23+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465915222846
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007812s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.019531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032227s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:40:23+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465915223051
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032227s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:40:23+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_95/Yocms_article_list_95.js?_=1465915223206
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.022461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038086s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:43:25+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465915405799
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007812s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033203s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:43:26+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465915405974
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009766s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.016602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:43:26+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_95/Yocms_website_list_95.js?_=1465915406133
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:44:34+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465915474004
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009766s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.018555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034180s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:44:34+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465915474177
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.017579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032227s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:44:34+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_95/Yocms_website_list_95.js?_=1465915474330
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.016602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030274s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:45:40+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465915540609
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.019532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041016s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:45:40+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465915540828
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009766s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.016601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:45:41+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_95/Yocms_website_list_95.js?_=1465915540993
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.021484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039062s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:47:08+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465915627944
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009766s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.018554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035157s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:47:08+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465915628132
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011718s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.018554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035156s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:47:08+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_95/Yocms_website_list_95.js?_=1465915628314
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009766s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.020508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037109s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:49:12+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465915752523
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.018555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032227s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:49:12+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465915752725
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032227s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:49:13+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_95/Yocms_website_list_95.js?_=1465915752889
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:51:36+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465915896770
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008790s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.016602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032227s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:51:37+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465915896939
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.018555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032227s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:51:37+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_95/Yocms_website_list_95.js?_=1465915897100
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.016602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:54:25+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465916065414
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007813s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.025390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038085s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:54:31+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465916065623
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017578s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.027344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053711s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:54:31+08:00 ] 127.0.0.1 /11
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:54:31+08:00 ] 127.0.0.1 /2
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:54:32+08:00 ] 127.0.0.1 /13
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:54:32+08:00 ] 127.0.0.1 /15
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:54:32+08:00 ] 127.0.0.1 /10
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:54:32+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_95/Yocms_website_list_95.js?_=1465916071658
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.100586s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.089843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.218750s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:54:32+08:00 ] 127.0.0.1 /4
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:54:32+08:00 ] 127.0.0.1 /6
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:54:32+08:00 ] 127.0.0.1 /14
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-14T22:54:32+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_93/Yocms_list_93.js?_=1465916072109
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.048828s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.051758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.117188s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:54:33+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_94/Yocms_article_list_94.js?_=1465916072812
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.022460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039062s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T22:54:33+08:00 ] 127.0.0.1 /Public/Widget/ListArticle/Yocms_list_95/Yocms_article_list_95.js?_=1465916073006
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009765s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.027343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043946s ]
+ERR: 无法加载模块:Public
+

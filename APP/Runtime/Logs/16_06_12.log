@@ -1,0 +1,148 @@
+[ 2016-06-12T20:26:59+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011719s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.021484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037110s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.054688s ]
+NOTIC: [8] Undefined index: data D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606122026&amp;appid=194365&amp;key=aVcxEGgtcHQNfx4jcrXKBj5lhu0%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-12T20:27:15+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.022461s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.044922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.078125s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.008790s ]
+NOTIC: [8] Undefined index: data D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606122027&amp;appid=194365&amp;key=z5An1l6HrAn1foaFfQVmm8koAyA%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-12T20:27:33+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.020508s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.065430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.129883s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.016602s ]
+NOTIC: [8] Undefined index: data D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606122027&amp;appid=194365&amp;key=z5An1l6HrAn1foaFfQVmm8koAyA%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-12T20:28:08+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465734487914
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.024414s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.062500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.099610s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T20:31:19+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465734679105
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.025390s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.107422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.167969s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T20:32:01+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465734720377
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.048828s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.083985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.147461s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T20:33:00+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465734780370
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.031250s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.066406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.114258s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T20:39:03+08:00 ] 127.0.0.1 /index.php?s=/Login/login.html
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+
+[ 2016-06-12T22:49:07+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.030273s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.082031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.136719s ]
+NOTIC: [8] Undefined index: areaid D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 646 行.
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.016601s ]
+NOTIC: [8] Undefined index: data D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [2] file_get_contents():  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] file_get_contents(http://open.weather.com.cn/data/?areaid=101280101&amp;type=forecast_v&amp;date=201606122248&amp;appid=194365&amp;key=Pemi2WhAjZ9QS%2F8WwAHPNgZarxc%3D):  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 499 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 503 行.
+
+[ 2016-06-12T23:18:22+08:00 ] 127.0.0.1 /__PUBLIC__/js/main.js
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-12T23:18:22+08:00 ] 127.0.0.1 /__PUBLIC__/js/require.js
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-12T23:18:23+08:00 ] 127.0.0.1 /__PUBLIC__/Widget/ListDistrict/ListDistrict/ListDistrict_w1200_gray.css
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-12T23:18:23+08:00 ] 127.0.0.1 /__PUBLIC__/Widget/ListDistrict/Yocms_list_city/Yocms_list_city_w1200_gray.css
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-12T23:18:23+08:00 ] 127.0.0.1 /__PUBLIC__/Widget/ListDistrict/admin_store_select_district/admin_store_select_district_w1200_gray.css
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-12T23:19:36+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465744776207
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017578s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.038086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.066407s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T23:21:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Test/website.html
+ERR: 模板不存在[./APP/Lib/Widget/ListWebsite/Yocms_list_94.html]
+
+[ 2016-06-12T23:21:08+08:00 ] 127.0.0.1 /__PUBLIC__/js/main.js
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-12T23:21:08+08:00 ] 127.0.0.1 /__PUBLIC__/Widget/ListWebsite/Yocms_list_93/Yocms_website_list_93_whp_pink.css
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-12T23:21:08+08:00 ] 127.0.0.1 /__PUBLIC__/js/require.js
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+
+[ 2016-06-12T23:31:44+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_94/Yocms_website_list_94_whp_pink.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T23:31:44+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465745504389
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010742s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.025391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042968s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T23:31:44+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465745504675
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007812s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039062s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T23:37:05+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_list_94/Yocms_website_list_94_whp_pink.css
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T23:37:05+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_93/Yocms_website_list_93.js?_=1465745825039
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013672s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.028320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.050781s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T23:37:05+08:00 ] 127.0.0.1 /Public/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js?_=1465745825373
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.026368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042969s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>不能调用此模版，商品详情使用

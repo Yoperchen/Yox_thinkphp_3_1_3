@@ -1,0 +1,48 @@
+[ 2016-07-25T00:47:23+08:00 ] 127.0.0.1 /Public/Widget/WidgetHeader/WidgetHeader_2/WidgetHeader_2.js?_=1469378842647
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.051757s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.037109s ]
+INFO: SetThemeColor Behavior ::run [ RunTime:0.030273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.125000s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-25T00:47:29+08:00 ] 127.0.0.1 /index.php?s=/Index/get_weather_info.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.035156s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.033203s ]
+INFO: SetThemeColor Behavior ::run [ RunTime:0.045899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.121094s ]
+SQL: SHOW COLUMNS FROM `yo_district` [ RunTime:0.075196s ]
+SQL: SELECT * FROM `yo_district` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.027344s ]
+NOTIC: [8] Undefined index: weather_area_id D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\Action\Yo81008\IndexAction.class.php 第 101 行.
+NOTIC: [8] Undefined index:  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 505 行.
+NOTIC: [8] Undefined index:  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 507 行.
+NOTIC: [8] Undefined index:  D:\xampp\htdocs\ThinkPHP_3_1_3_YO\linglingtangcom\APP\Lib\ORG\Weather.class.php 第 509 行.
+
+[ 2016-07-25T00:47:29+08:00 ] 127.0.0.1 /Public/Widget/WidgetHeader/WidgetHeader_2/WidgetHeader_2.js?_=1469378843037
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.026367s ]
+INFO: SetThemeColor Behavior ::run [ RunTime:0.019532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.061523s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-25T00:47:30+08:00 ] 127.0.0.1 /Public/Widget/WidgetHeader/WidgetHeader_2/WidgetHeader_2.js?_=1469378849718
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.036133s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.035156s ]
+INFO: SetThemeColor Behavior ::run [ RunTime:0.034179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.113281s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-25T00:47:30+08:00 ] 127.0.0.1 /Public/Widget/WidgetHeader/WidgetHeader_2/WidgetHeader_2.js?_=1469378850099
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008789s ]
+INFO: CheckLang Behavior ::run [ RunTime:0.015625s ]
+INFO: SetThemeColor Behavior ::run [ RunTime:0.014649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045899s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-25T00:47:36+08:00 ] 127.0.0.1 /__YOPER_test.php
+ERR: 模板不存在[./APP/Tpl/Yo81008/default_theme/Public/404.html]
+

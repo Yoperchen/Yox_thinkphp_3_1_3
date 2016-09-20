@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit(); echo W($Widget,array('template'=>$template,'condition'=>$condition,'action_url'=>$action_url,'format_type'=>$format_type));?>
