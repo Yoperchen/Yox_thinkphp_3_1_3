@@ -1,0 +1,57 @@
+<link href="../Public/mini_header_{$Think.cookie.theme_color|default='pink'}.css" rel="stylesheet" type="text/css" />
+<div id="top">
+    <div class="top-wrap">
+              <a href="{:U('Index/index@yo81008')}" title="首页" style="color:#D80321">零零糖</a> - 零食的零，糖果的糖 - 上网、购物、搜索、爱学习从这里开始
+    		<div class="userinfo">
+			<a id="community_name" data-community-id="{$Think.cookie.community_id|default='44'}" title="学校名称" style="color:#D80321">{$Think.cookie.community_name|default='北京大学'}</a>
+			<a href="javascript:;" onclick="get_community_list(this)" title="选择学校">切换</a>&nbsp;
+			<if condition="$Think.session.id != ''">
+			欢迎您<!--<a href="{:U('User/index@Yo81008')}" title="喵~">{$Think.session.name|default="这家伙很懒，什么也没留下"}</a>-->
+			<a href="{:U('User/logout@Yo81008')}">退出</a>
+ 			<else />
+			<form id="login_form" name="login_form" action="{:U('Index/login@Yo81008')}" method="post">
+                <span>账号</span>
+                <input type="text" id="user_id" name="id"/>
+                <span>密码</span>
+                <input type="password" id="user_password" name="password" />
+                <input style="border-radius: 15px;  BACKGROUND: #FF0000;border: 1px solid #FFFFFF;color: #fff;cursor: pointer;" type="submit" name="submit_login" value="登陆"/>
+            </form>
+			没有帐号?去<a style="color:green;" href="{:U('Index/register@Yo81008')}">注册</a>
+			
+			 </if>
+        </div>
+    </div>
+</div>
+<script>
+require(['jquery'], function($){
+	get_community_list =function (obj)
+	{
+	if($("#Yocms_list_community").length>0)
+	{
+		$("#Yocms_list_community").toggle();
+		return;
+	}
+	$.ajax(
+	    {
+	        type:'get',
+	        url : "/index.php?s=/Yocms_widget/get_widget&Widget=ListCommunity&template=Yocms_list_community&condition[group]=alphabet",
+	        dataType : 'text',
+	        //jsonp:"jsoncallback",
+	        success  : function(data) {
+	            //alert(data);
+				$("body").append(data);
+				$("#Yocms_list_community").css("display","none");
+				$("#Yocms_list_community").css("position","absolute");
+				$("#Yocms_list_community").css("top",$(document).scrollTop()+50);
+				$("#Yocms_list_community").css("left",($(window).width())/8);
+				$("#Yocms_list_community").toggle();
+						
+	        },
+	        error : function(data) {
+	            alert('fail');
+	        }
+	    }
+	);
+}
+});
+</script>

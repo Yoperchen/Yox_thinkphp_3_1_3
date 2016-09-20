@@ -1,0 +1,211 @@
+<div id="hd">
+   <!-- 搜索 -->
+    <div id="searchWrap">
+    <!-- logos 切换 -->
+    <!--<a class="logo" href="{:U('Yo81001/Index/index')}" onclick="" target="_blank">零零糖网购网址</a>-->
+    <!-- ...搜索... -->
+    <div class="csearch-box">
+        <ul class="cnav-list clearfix">
+            <li class="current"><a href="#">百度</a></li>
+            <li><span class="spline">|</span></li>
+			<li><a href="#">京东购物</a></li>
+            <li><span class="spline">|</span></li>
+            <li><a href="#">视频</a></li>
+            <li><span class="spline">|</span></li>
+			<li><a href="#">图片</a></li>
+            <li><span class="spline">|</span></li>
+            <li><a href="#">热闻</a></li>
+            <li><span class="spline">|</span></li>
+            <li><a href="#">词典</a></li>
+        </ul>
+        <!-- Begin 搜索相关 -->
+        <form method="get" action="http://www.baidu.com/s" class="c-fm-w"  target="_blank">
+            <!--Begin 搜索框 -->
+            <span class="s-inpt-w" style="width:503px;">
+                <input type="text" style="width:494px;" value="" class="s-inpt" autocomplete="off" name="wd" id="query" />
+                <!-- Begin 这两个SPAN 尽量写一行 -->
+            </span><span class="s-btn-w">
+                <!-- #End 这两个SPAN 尽量写一行 -->
+                <input type="submit" class="s-btn" value="搜索一下" />
+                <input type="hidden" value="utf-8" name="enc" id="enc">
+            </span>
+            <!--End 搜索框 -->
+            <div class="sg-wrap" style="width: 502px;display:none">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                        <td valign="top">
+                            <ul class="sg-result-list"></ul>
+                        </td>
+                        <td class="sob-wrap"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <!--#End 搜索相关-->
+        <!-- #End 搜索框 --> 
+    </div>
+</div> 
+</div>
+<style type="text/css">
+#hd {
+  font-size: 12px;
+  height: 175px;
+  position: relative;
+  z-index: 1;
+}
+#searchWrap {
+  bottom: 10px;
+  height: 90px;
+  position: absolute;
+  width: 85%;
+}
+.csearch-box {
+  position: absolute;
+  left: 240px;
+  top: 9px;
+  z-index: 1;
+}
+.cnav-list {
+  margin: 0 0 0 2px;
+}
+.cnav-list li {
+  float: left;
+  font-size: 14px;
+  width: 78px;
+  text-align: center;
+}
+#doc1 .cnav-list li {
+  width: auto;
+}
+.spline {
+  color: #D5D5D5;
+  margin: 0 5px;
+  line-height: 28px;
+}
+#doc1 .cnav-list li span.spline {
+  width: 12px;
+  line-height: 24px;
+}
+.c-fm-w {
+  position: relative;
+  display: inline-block;
+  margin: 3px 0 0 0;
+  z-index: 2;
+  width: 615px !important;
+}
+.s-inpt-w {
+  display: inline-block;
+  width: 504px;
+  height: 37px;
+  background-position: 0 -67px;
+  vertical-align: top;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.s-inpt {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 494px;
+  font: 16px arial;
+  height: 25px;
+  padding: 7px 5px 3px;
+  padding: 9px 5px 2px\9;
+  position: relative;
+  z-index: 5;
+  background: #FAA5A5;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.s-btn {
+  cursor: pointer;
+  height: 34px;
+  width: 88px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  background: none;
+  position: relative;
+  z-index: 1;
+  background: #F00;
+  color: white;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.s-btn-w {
+  cursor: pointer;
+  display: inline-block;
+  height: 37px;
+  width: 90px;
+}
+</style>
+<script>
+require(['jquery'], function($){
+	$(function($) {
+	    // 搜索部分的逻辑 - 数据部分见 sejson.js 文件
+	
+	    var $wrap = $('#searchWrap');
+	    var $tabs = $wrap.find('ul.cnav-list');
+	    var $form = $wrap.find('form');
+	
+	    // 搜索form数据
+	    var searchUrl = [
+	        "http://www.baidu.com/s",
+			"http://search.jd.com/Search",
+	        "http://video.baidu.com/v",
+	        "http://image.baidu.com/i",
+	        "http://news.baidu.com/ns",
+	        "http://dict.baidu.com/s"
+	    ];
+	    // ---------------------------------------------------------------
+	    // 切换垂搜 tab
+	    $tabs.find("li a").click(function(e) {
+	        // update look
+	        var li = $(this).parent();
+	        if (li.hasClass("current")) return;
+	        $tabs.find(".current").removeClass("current");
+	        li.addClass("current");
+	        // get index
+	        var index = $tabs.find("li a").index($(this));
+	        // get info
+	        var url = searchUrl[index];
+		if(url=="http://search.jd.com/Search")
+		{
+		$("#query").attr("name","keyword");
+		$("#query").attr("value","裙子");
+		$("#enc").attr("name","enc");
+		}
+		else if(url=="http://www.baidu.com/s"){
+		$("#query").attr("name","wd");
+		$("#query").attr("value","新番动漫");
+		$("#enc").attr("name","ie");
+		}else if(url=="http://video.baidu.com/v"){
+		$("#query").attr("name","word");
+		$("#query").attr("value","我和僵尸有个约会");
+		$("#enc").attr("name","ie");
+		}else if(url=="http://image.baidu.com/i"){
+		$("#query").attr("name","wd");
+		$("#query").attr("value","搞笑图片");
+		$("#enc").attr("name","ie");
+		}else if(url=="http://news.baidu.com/ns"){
+		$("#query").attr("name","word");
+		$("#query").attr("value","国内新闻");
+		$("#enc").attr("name","ie");
+		}else if(url=="http://dict.baidu.com/s"){
+		$("#query").attr("name","wd");
+		$("#query").attr("value","天天向上");
+		$("#enc").attr("name","ie");
+		}
+	        // update form
+	        $form.attr("action", url);
+	        e.preventDefault();
+	    });
+	    // init form
+	    $form.attr("action", searchUrl[0]);
+	});
+});
+</script>

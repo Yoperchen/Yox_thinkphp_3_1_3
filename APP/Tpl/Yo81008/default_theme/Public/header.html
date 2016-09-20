@@ -1,0 +1,127 @@
+<include file="Public/mini_header" />
+
+
+<div style="width: 1000px;margin: 0 auto;">
+	<div id="hd">
+	            <!-- logo -->
+	            <a class="logo" href="http://www.linglingtang.com/" title="零零糖网购首页" onclick="" target="_blank">
+				<img src="../Public/image/logo_{$Think.cookie.theme_color|default='pink'}.png" alt="零零糖购物LOGO" title="零零糖">
+				</a>
+	            <!-- 日历 -->
+	            <div id="calendarWrap">
+	    <p class="date" curdate="1399951259983">
+	        <span>逛逛街</span>
+	        <span>&nbsp;</span>
+	        <span class="time">买东西</span>
+	    </p>
+	            <p class="qa">
+	        <a href="http://union.click.jd.com/jdc?e=&p=AyIEZRhaFgAaB1YdXCUBEwRXE1sWBBs3EUQDS10iXhBeGh4cDFsFRgYKWUcYB0UHC1pNUgFSRxwKEA5RBAJQXk83HWcfEXF0BQl7KE11blQxUz9nXVJZJRdXJQMiBFEZWxYCEgdRK2t0cCJGOxJTFwsW&t=W1dCFBBFC15CWggEAEAdQFkJBQNKV0ZOSRJTFwsWGAxeB0g%3D" onclick="" target="_blank">天天特价精选<!--Yoper--></a>
+	    </p>
+	    </div>  
+		<div class="weatherWrap" style="left:308px;">
+			<div style="
+		    float: left;
+		    width: 27%;
+		    display: block;
+		    height: 100%;
+		    padding-left: 12px;
+		    padding-top: 14px;
+		">
+		  <span id="month_day" style="margin-top: 0px;padding-bottom: 10px;display: block;color: #999;">6月27日(五)</span>
+
+		  <span style="margin-top: 10px;padding-bottom: 10px;    display: block;color: #999;"><!--农历五月十二--></span>
+		  </div>
+		  <div style="float: left; width: 40%;display: block;height: 100%; padding-left: 12px;padding-top: 14px;">
+		  <span id="city_namecn" style="color: #999;"></span><a onclick="get_district_list(this)" style="color:#999" href="javascript:;">(切换)</a>
+		  <span id="weather_phenomenon" style="color: #999;"></span>
+		  <span id="temperature" style="color: #999;"></span>
+		  <span id="wind_power" style="color: #999; display: block;"></span>
+		    </div>
+		</div>
+				<!-- 广告 -->
+	            <div id="adao">
+				<!--京东推广-->
+				<a title="女生主题" onclick="set_theme_color($(this).attr('data-theme-color'))" href="javascript:;" data-theme-color="pink"><img height="100%" src="../Public/image/face/luo_1.gif"></a>
+				<a title="男生主题" onclick="set_theme_color($(this).attr('data-theme-color'))" href="javascript:;" data-theme-color="dark"><img height="100%" src="../Public/image/face/luo_2.png"></a>
+				<a title="白色主题" onclick="set_theme_color($(this).attr('data-theme-color'))" href="javascript:;" data-theme-color="white"><img height="100%" src="../Public/image/face/luo_3.png"></a>
+				<a title="主题待开发" onclick="set_theme_color($(this).attr('data-theme-color'))" href="javascript:;" data-theme-color="dark"><img height="100%" src="../Public/image/face/luo_4.png"></a>
+				<a title="主题待开发" onclick="set_theme_color($(this).attr('data-theme-color'))" href="javascript:;" data-theme-color="pink"><img height="100%" src="../Public/image/face/luo_5.png"></a>
+				<a title="主题待开发" onclick="set_theme_color($(this).attr('data-theme-color'))" href="javascript:;" data-theme-color="dark"><img height="100%" src="../Public/image/face/luo_6.png"></a>
+				<!--京东推广-->
+				</div>
+		<include file="Public/search_tag_index" />
+	</div>
+</div>
+			<script>
+
+			require(['jquery'], function($){
+
+			$.ajax({    
+			     type:'post',    
+			     url:"{:U('Yo81008/Index/get_weather_info')}",
+			     data:{},    
+			     cache:false,    
+			     dataType:'json',   
+			     success:function(data){      
+			               //alert(data.H);  
+						   if(data.H<16){
+						   $('#country_namecn').html(data.c.c9);//国家中文名
+						   $('#country_nameen').html(data.c.c9);//国家英文名
+						   $('#city_namecn').html(data.c.c3);//城市中文名
+						   $('#city_nameen').html(data.c.c3);//城市英文名
+						   $('#weather_phenomenon').html(data.f.f1[0].fa);//天气现象
+						   $('#wind_power').html(data.f.f1[0].fe+''+data.f.f1[0].fg);//风/方向
+						   $('#temperature').html(data.f.f1[0].fc+'~'+data.f.f1[0].fd+'℃');//温度
+						   $('#month_day').html(data.month_day+'('+data.week+')');//月日
+						   }else{
+						   $('#country_namecn').html(data.c.c9);//国家中文名
+						   $('#country_nameen').html(data.c.c9);//国家英文名
+						   $('#city_namecn').html(data.c.c3);//城市中文名
+						   $('#city_nameen').html(data.c.c3);//城市英文名
+						   $('#weather_phenomenon').html(data.f.f1[1].fa);//天气现象
+						   $('#wind_power').html(data.f.f1[1].fe+''+data.f.f1[1].fg);//风/方向
+						   $('#temperature').html(data.f.f1[1].fc+'~'+data.f.f1[1].fd+'℃');//温度
+						   $('#month_day').html(data.month_day+'('+data.week+')');//月日
+						   }
+			      },    
+			      error:function(){
+					//alert('bb');
+				}    
+			});
+			get_district_list =function (obj)
+			{
+			if($("#Yocms_list_city").length>0)
+			{
+				$("#Yocms_list_city").toggle();
+				return;
+			}
+			$.ajax(
+			    {
+			        type:'get',
+			        url : "/index.php?s=/Yocms_widget/get_widget&Widget=ListDistrict&template=Yocms_list_city&condition[group]=city_alphabet",
+			        dataType : 'text',
+			        //jsonp:"jsoncallback",
+			        success  : function(data) {
+			            //alert(data);
+						$("body").append(data);
+						$("#Yocms_list_city").css("display","none");
+						$("#Yocms_list_city").css("position","absolute");
+						$("#Yocms_list_city").css("top",$(document).scrollTop()+50);
+						$("#Yocms_list_city").css("left",($(window).width())/8);
+						$("#Yocms_list_city").toggle();
+						
+			        },
+			        error : function(data) {
+			            alert('fail');
+			        }
+			    }
+			);
+		}
+		});
+		require(['linglingtang'], function(linglingtang){
+			set_theme_color =function (theme_color)
+			{
+			linglingtang.set_theme_color(theme_color);
+			}
+		});
+			</script>

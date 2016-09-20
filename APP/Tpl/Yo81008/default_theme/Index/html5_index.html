@@ -1,0 +1,600 @@
+<html>
+<head>
+<style type="text/css">
+body {
+  font-family: "微软雅黑" helvetica arial;
+  font-size: 16px;
+  background: #eee;
+  -webkit-text-size-adjust: none;
+}
+a {
+  font-size: 16px;
+  text-decoration: none;
+}
+a, a:visited {
+  color: #222;
+}
+.mz_icon a {
+  font-size: 15px;
+  display: block;
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+  padding-left: 34px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+}
+.mz_icon li {
+  height: 40px;
+  line-height: 40px;
+  display: -webkit-box;
+  border-bottom: 1px solid #eee;
+}
+.nav a {
+  display: block;
+  position: relative;
+  height: 42px;
+  width: 20%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 15px;
+}
+.navios a {
+  height: 40px;
+  line-height: 40px;
+  color: #777;
+  font-size: 16px;
+}
+article, aside, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+header, body, section, div, ul, li, dl, dt, dd, h1, h2, h3, span, b, i, p, em, a, input, button {
+  margin: 0;
+  padding: 0;
+}
+.head {
+  height: 128px;
+  background: #2bad0e 0 0 no-repeat;
+  padding: 2px 15px 0;
+  position: relative;
+  -webkit-background-size: 100% 130px;
+}
+.headios {
+  background-color: #fff;
+  background-image: none;
+  height: auto;
+  padding: 15px 0 5px;
+}
+.headios.headios_b {
+  padding-bottom: 13px;
+}
+.nav {
+  width: 100%;
+  height: 42px;
+  padding: 4px 0;
+  background: #fff;
+  border-bottom: 1px solid #dadada;
+  display: -webkit-box;
+}
+.navios {
+  background-color: #eee;
+  border: 0;
+  padding: 0;
+  height: 40px;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+.cn {
+  background: #fff;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.mingzhan {
+  margin-top: 10px;
+  border-top: 1px solid #dadada;
+}
+.mingzhanios {
+  margin-top: 0;
+  border-top: 0;
+}
+.fenlei {
+  padding: 6px 0 10px;
+}
+.mz_kz, .mz_icon {
+  overflow: hidden;
+  width: 100%;
+}
+.mz_kz a {
+  width: 25%;
+  float: left;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  text-align: center;
+}
+.fl_main a {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  width: 20%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+}
+.cn_fl a {
+  display: block;
+  height: 40px;
+  border-top: 1px solid #eee;
+  line-height: 40px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+  float: left;
+  border-left: 1px solid #eee;
+  text-align: center;
+}
+.cn_mg_lr {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.cn_bk {
+  overflow: hidden;
+}
+.cn_hd {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #dadada;
+  background: #fff;
+  margin-top: 10px;
+  border-top: 1px solid #dadada;
+}
+.cn_h2 {
+  padding-left: 10px;
+  float: left;
+  font-size: 22px;
+  border-left: 4px solid #39b516;
+}
+.cn_nav {
+  float: right;
+  display: -webkit-box;
+  width: 60%;
+}
+.cn_nav li, .fyb_nav li {
+  width: 25%;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  color: #777;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.cn_nav .cn_nav_cur {
+  line-height: 42px;
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  background: #fff;
+  height: 41px;
+}
+.cn_nav .cn_nav_cur:before {
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  height: 3px;
+  background: #39b516;
+}
+.cn_tab {
+  padding: 0 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 25%;
+  float: left;
+}
+.cn_app a {
+  display: block;
+  text-align: center;
+  float: left;
+  margin-bottom: 18px;
+  font-size: 0;
+}
+.cn_app_5 a {
+  width: 20%;
+}
+.ft {
+  padding: 15px;
+  border-top: 1px solid #dadada;
+  background: #fff;
+  margin-top: 10px;
+}
+.search {
+  width: 100%;
+  height: 44px;
+  border-radius: 2px;
+  background: #fff;
+  position: relative;
+}
+.ft_search {
+  border: 1px solid #a6a6a6;
+}
+.ft_nav {
+  width: 207px;
+  display: -webkit-box;
+  margin: 20px auto;
+}
+.ft_nav a {
+  display: block;
+  width: 33.33334%;
+  text-align: center;
+  height: 14px;
+  line-height: 14px;
+  border-right: 1px solid #dadada;
+}
+.ft_cf {
+  width: 144px;
+  margin: 20px auto;
+  text-align: center;
+  height: 14px;
+}
+.ft_cp {
+  text-align: center;
+  color: #777;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.sh_ipt_wp {
+  -webkit-box-flex: 1;
+  overflow: hidden;
+  position: relative;
+  -webkit-appearance: none;
+}
+input {
+  border-radius: 0;
+  -webkit-tap-highlight-color: rgba(255,0,0,0);
+  border: 0;
+  outline: 0;
+}
+.sh_ipt {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin: 12px 0 12px 10px;
+  width: 70%;
+  font-size: 15px;
+}
+.sh_bt {
+  display: block;
+  width: 90px;
+  height: 100%;
+  background: #f3f3f3;
+  border-left: 1px solid #dadada;
+  border-radius: 0;
+  color: #222;
+  font-size: 16px;
+  position: relative;
+}
+.sh_main_wp {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-radius: 2px;
+  overflow: hidden;
+  display: -webkit-box;
+  background: #fff;
+}
+.ft_search .sh_main_wp {
+  position: static;
+}
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+</head>
+<body>
+
+<header class="head skin_default headios headios_b">
+
+
+</header>
+<nav class="nav navios">
+<a href="#"><b class="nav_xw"></b>新闻</a>
+<a href="#"><b class="nav_xs"></b>小说</a>
+<a href="#"><b class="nav_tj"></b>特价</a>
+<a href="#"><b class="nav_yx"></b>游戏</a>
+<a href="#"><b class="nav_cp"></b>彩票</a>
+</nav>
+<div class="cn mingzhan mingzhanios">
+<ul class="mz_icon">
+<li><a href="#"><b class="mz_baidu"></b>百 度</a>
+<a href="#"><b class="mz_sina"></b>新 浪</a>
+<a href="http://www.qq.com"><b class="mz_qq"></b>腾 讯</a>
+<a href="#"><b class="mz_sohu"></b>搜 狐</a>
+</li><li><a href="#"><b class="mz_163"></b>网 易</a>
+<a href="#"><b class="mz_ifeng"></b>凤 凰</a>
+<a href="#"><b class="mz_taobao"></b>淘 宝</a>
+<a href="#"><b style="background:url(http://m.hao123.com/static/img/icon/mingzhan/yuanjianmz.png) center center no-repeat;-webkit-background-size:18px;"></b>免费下</a>
+</li><li><a href="#"><b class="mz_58"></b>58同城</a>
+<a href="#"><b class="mz_qiyi"></b>爱奇艺</a>
+<a href="#"><b class="mz_ganji"></b>赶 集</a>
+<a href="#"><b style="background:url(http://m.hao123.com/static/img/icon/xiecheng_mingzhan.png) center center no-repeat;-webkit-background-size:18px;"></b>携 程</a>
+</li><li><a href="#"><b style="background:url(http://m.hao123.com/static/img/icon/tiammao_mingzhan.png) center center no-repeat;-webkit-background-size:18px;"></b>天 猫</a>
+<a href="#"><b style="background:url(http://m.hao123.com/static/img/icon/jingdong_mingzhan.png) center center no-repeat;-webkit-background-size:18px;"></b>京 东</a>
+<a href="#"><b style="background:url(http://m.hao123.com/static/img/icon/weipinhui_mingzhan36.png) center center no-repeat;-webkit-background-size:18px;"></b>唯品会</a>
+<a href="#"><b class="mz_add"></b>添 加</a>
+</li></ul>
+<div class="mz_kz">
+<a href="#">汽车之家</a>
+<a href="#">百度糯米</a>
+<a href="#">世纪佳缘</a>
+<a href="#">有缘</a>
+<a href="#">易车</a>
+<a href="#">热门游戏</a>
+<a href="#">7k7k游戏</a>
+<a href="#">去哪儿</a>
+<a href="#">艺龙</a>
+<a href="#">智联招聘</a>
+<a href="#">1号店</a>
+<a href="#">苏宁易购</a>
+<a href="#">聚美优品</a>
+<a href="#">51JOB</a>
+<a href="#">爱卡汽车</a>
+<a href="#">搜房</a>
+</div>
+</div>
+<div class="fenlei">
+<div class="fl_main fl_show">
+<a href="#">新闻</a>
+<a href="#">环球</a>
+<a href="#">央视</a>
+<a href="#">人民</a>
+<a href="#">新华</a>
+<b data-more="zixun-0"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="#">小说</a>
+<a href="#">宜搜</a>
+<a href="#">纵横</a>
+<a href="#">言情</a>
+<a href="#">阅读</a>
+<b data-more="zixun-1"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="#">体育</a>
+<a href="#">NBA</a>
+<a href="#">新浪</a>
+<a href="#">搜狐</a>
+<a href="#">直播吧</a>
+<b data-more="zixun-2"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="#">汽车</a>
+<a href="#">车之家</a>
+<a href="#">易车</a>
+<a href="#">爱卡</a>
+<a href="#">车市</a>
+<b data-more="zixun-3"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="#">军事</a>
+<a href="#">凤凰</a>
+<a href="#">铁血</a>
+<a href="#">米尔</a>
+<a href="#">新军事</a>
+<b data-more="zixun-4"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="#">财经</a>
+<a href="#">东方</a>
+<a href="#">新浪</a>
+<a href="#">股票</a>
+<a href="#">和讯</a>
+<b data-more="zixun-5"><span><i></i></span></b>
+</div>
+</div>
+
+
+<div class="cn_hd">
+<h2 class="cn_h2">休闲</h2>
+<ul class="cn_nav">
+<li style="color:#ff6300" data-tab="tejia" class="cn_nav_pt">特价</li><li class="">精品</li><li class="">必备</li><li class="cn_nav_cur">必玩</li></ul>
+</div>
+
+<div class="cn">
+<div class="cn_touch xiuxian" style="width: 400%; -webkit-transform: translate(-75%, 0px) translateZ(0px); -webkit-backface-visibility: hidden;">
+<div class="cn_tab tejia" style="width: 25%;">
+<div class="tejia-top">
+<a href="#" class="tejia-top-lf">
+<img src="/static/p.gif" data-src="http://hiphotos.baidu.com/baidu/pic/item/d62a6059252dd42a37921ad8063b5bb5c9eab82d.png" width="114" height="120">
+<h3 class="tejia-txt tejia-top-h3">潮流女装</h3>
+<p class="tejia-txt tejia-top-p">春夏新品包邮</p>
+</a>
+<div class="tejia-top-rg">
+<a href="#">
+<h3 class="tejia-txt tejia-top-h3">特价男装</h3>
+<p class="tejia-txt tejia-top-p">低价开抢</p>
+<img data-src="http://hiphotos.baidu.com/baidu/pic/item/6159252dd42a2834c96d52785eb5c9ea14cebffe.png" src="/static/p.gif" width="56" height="56">
+</a>
+<a href="#">
+<h3 class="tejia-txt tejia-top-h3">优品汇</h3>
+<p class="tejia-txt tejia-top-p">低至29元</p>
+<img data-src="http://hiphotos.baidu.com/baidu/pic/item/78310a55b319ebc4129411ea8726cffc1f1716d0.png" src="/static/p.gif" width="56" height="56">
+</a>
+<a href="#">
+<h3 class="tejia-txt tejia-top-h3">1.23元包邮</h3>
+<p class="tejia-txt tejia-top-p">立即下载</p>
+<img data-src="http://hiphotos.baidu.com/baidu/pic/item/a5c27d1ed21b0ef460e9f92dd8c451da81cb3ebb.png" src="/static/p.gif" width="56" height="56">
+</a>
+<a href="#">
+<h3 class="tejia-txt tejia-top-h3">时尚饰品</h3>
+<p class="tejia-txt tejia-top-p">浪漫来袭</p>
+<img data-src="http://hiphotos.baidu.com/baidu/pic/item/7c1ed21b0ef41bd5d679888754da81cb39db3d9e.png" src="/static/p.gif" width="56" height="56">
+</a>
+</div>
+</div>
+<div class="tejia-bottom">
+<a href="#">
+<img data-src="http://hiphotos.baidu.com/baidu/pic/item/ca1349540923dd541768ce1bd409b3de9c8248ad.png" src="/static/p.gif" width="56" height="56">
+<div>
+<h3 class="tejia-txt tejia-top-h3">今日特价</h3>
+<p class="tejia-txt tejia-top-p">立即抢购</p>
+</div>
+</a>
+<a href="#">
+<img data-src="http://hiphotos.baidu.com/baidu/pic/item/574e9258d109b3ded624861bc9bf6c81800a4c2d.png" src="/static/p.gif" width="56" height="56">
+<div>
+<h3 class="tejia-txt tejia-top-h3">数码配件</h3>
+<p class="tejia-txt tejia-top-p">全场包邮</p>
+</div>
+</a>
+</div>
+<div class="cn_fl cn_fl_4"><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.taobao.com%2Ffushi%2Fhigh%2Findex.htm&amp;key=1a9a2017051f8499b7b0bb356935cac2">女人街</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2&amp;qt=tz&amp;url=http%3A%2F%2Fs.m.taobao.com%2Fh5%3Fq%3D%E5%87%89%E9%9E%8B&amp;key=5535e9515fe365291d7eee7051851411">凉鞋</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.hao123.com%2Ftejia%2Fcategory%2F%3Fsubject_id%3D201%26idfrom%3Dbdw1&amp;key=7b96ebdbafa4fddb17449debdb249017">9.9元包邮</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2&amp;qt=tz&amp;url=http%3A%2F%2Fs.m.taobao.com%2Fh5%3Fq%3D%E5%B8%BD%E5%AD%90&amp;key=b510c5c03c645f060d7ae3d94670e99b">帽子</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2&amp;qt=tz&amp;url=http%3A%2F%2Fs.m.taobao.com%2Fh5%3Fq%3D%E8%BF%90%E5%8A%A8%E9%9E%8B&amp;key=640eca61626cb31300c8ea3af2eb1647">运动鞋</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2&amp;qt=tz&amp;url=http%3A%2F%2Fs.m.taobao.com%2Fh5%3Fq%3D%E8%BF%9E%E8%A1%A3%E8%A3%99&amp;key=aa66ab02df70264f238f9a423e113d65">连衣裙</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.hao123.com%2Ftejia%2Fsubject%2F%3Fsubject_id%3D1000984%26idfrom%3Dbdw2&amp;key=b707406e5c751b8e4c07d8761ee78bec">夏装热卖</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2&amp;qt=tz&amp;url=http%3A%2F%2Fs.m.taobao.com%2Fh5%3Fq%3D%E5%A4%8F%2B%E6%96%B0%E5%93%81&amp;key=a6e33d66bdca60fd1018a8d3a2277375">夏新品</a></div><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;loc=tejia_text_zt&amp;pos=gwwzlsm_n2&amp;qt=tz&amp;url=http%3A%2F%2Finfo.3g.qq.com%2Fg%2Fs%3Faid%3Dlady_ss%26id%3Dfashion_20150424010263&amp;key=6a1bdeaa47fe4fe0d7d6df43f27641ff" class="cn_ag cn_ag_tt"><b>搭配</b>今夏最好看内衣 从里美到外</a>
+<a class="cn_more" href="/m/gouwu/?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=gwwzl_n2">查看更多特价优惠<em class="cn_more_ic"></em></a></div>
+<div class="cn_tab jingpin" style="width: 25%;">
+<div data-tabkey="app_tab_1" class="cn_app cn_app_5">
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/quanminqieshuiguo1210.png" src="/static/p.gif" width="54" height="54"></div><span>全民切水果</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/yingsanzhang20150105.png" src="/static/p.gif" width="54" height="54"></div><span>赢三张</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/paopaolong20150417.png" src="/static/p.gif" width="54" height="54"></div><span>泡泡龙</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/tiantianxiaoxiaoniao.png" src="/static/p.gif" width="54" height="54"></div><span>天天消小鸟</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/remenyouxi/chuye72.jpg" src="/static/p.gif" width="54" height="54"></div><span>初页</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/kuangchuilianlianrj20150417.png" src="/static/p.gif" width="54" height="54"></div><span>疯锤连连看</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/shashouzuji.png" src="/static/p.gif" width="54" height="54"></div><span>杀手阻击</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/woaidoudizhu1210.png" src="/static/p.gif" width="54" height="54"></div><span>我爱斗地主</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/jiejibuyu1210.png" src="/static/p.gif" width="54" height="54"></div><span>街机捕鱼13</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/quanminjuejin1210.png" src="/static/p.gif" width="54" height="54"></div><span>全民掘金</span></a>
+</div><div class="cn_db cn_db_xx">
+<a href="#">
+<h3>五一春游踏青去</h3>
+<p>吃喝玩乐全都有</p>
+</a>
+<a href="#">
+<h3>热门游戏合集</h3>
+<p>和女神一起玩游戏</p>
+</a>
+</div><div class="cn_fl cn_fl_4"><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7194443&amp;key=5ade8161b04508298dc426b4474e7d82">瞧你有多色</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D6806757&amp;key=ace8628ba7754735196ada471e5ee9ac">美女拼图</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7180621&amp;key=95be5c355dd77651673bb434469ceb78">宅男女神</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D6557451&amp;key=b106acf13dad9b1528b8f83f30461488">修女也疯狂</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D529538&amp;key=209bd98721ef4233e47f2d8f170a9728">寻找菊花</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7616295&amp;key=3a7c91dbb158d2f6d4f9e8b97c5780a2">开心消消乐</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D6821921&amp;key=12560f0c1e86f0d7c636fd66500560e9">夜店骰子王</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7081125&amp;key=aad80a1f3f463e353fd20316952a1ebb">没节操马路</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D6616128&amp;key=6479e9d77597361047445ac40a24ae67">色系方块</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D3163108&amp;key=698a0d98e25bd8744b6cf218844b47ce">放下那妹子</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7346518&amp;key=c028938f6db8b4144894bc5ddb230df0">中国象棋</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl2_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.hao123.com%2Fn%2Fv%2Fyingyong&amp;key=e36cc1b083b23ae2dca03de5676b81ef">更多</a></div><a class="cn_more" href="/n/v/yingyong/?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyygd2_n2">查看更多精品应用<em class="cn_more_ic"></em></a></div>
+<div class="cn_tab bibi" style="width: 25%;">
+<div data-tabkey="app_tab_0" class="cn_app cn_app_5">
+<a href="#"><div><img data-src="http://s0.m.hao123img.com/static/img/yy/appdown/tejia72.jpg" src="/static/p.gif" width="54" height="54"></div><span>特价</span></a>
+<a href="#"><div><img data-src="http://s0.m.hao123img.com/static/img/yy/appdown/memezhibo72.jpg" src="/static/p.gif" width="54" height="54"></div><span>么么直播</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/mianfeidianhua1210.png" src="/static/p.gif" width="54" height="54"></div><span>免费电话</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/jimotongchengliao.png" src="/static/p.gif" width="54" height="54"></div><span>寂寞同城聊</span></a>
+<a href="#"><div><img data-src="http://s0.m.hao123img.com/static/img/yy/appdown/hao123icon72.png" src="/static/p.gif" width="54" height="54"></div><span>上网导航</span></a>
+<a href="#"><div><img data-src="http://bcscdn.baidu.com/mc-online//exchange/image/1407906934/140790693456461f95cad1c8a7869d3d7df26509c93d70cf5032.jpg" src="/static/p.gif" width="54" height="54"></div><span>赶集生活</span></a>
+<a href="#"><div><img data-src="http://bcscdn.baidu.com/mc-online//exchange/image/1414995425/1414995425591home512.png" src="/static/p.gif" width="54" height="54"></div><span>小米桌面</span></a>
+<a href="#"><div><img data-src="http://bcscdn.baidu.com/mc-online//exchange/image/1422588163/1422588163989512图标.png" src="/static/p.gif" width="54" height="54"></div><span>搜狗阅读</span></a>
+<a href=""><div><img data-src="http://bcscdn.baidu.com/mc-online//exchange/image/1423712889/1423712889555512.png" src="/static/p.gif" width="54" height="54"></div><span>点心桌面</span></a>
+<a href="/"><div><img data-src="http://bcscdn.baidu.com/mc-online//exchange/image/1420344078/1420344078706图标512-512.png" src="/static/p.gif" width="54" height="54"></div><span>红孩子孕妈</span></a>
+</div><div class="cn_fl cn_fl_4"><a href="">约会吧</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2&amp;qt=tz&amp;url=http%3A%2F%2Fdl.hao123.com%2Fwaphao123%2Ftn_apk%2Fqianghuafeidoudizhu.apk&amp;key=1a6edccc9f4c67dda42665b8bb8bdfb5">话费斗地主</a><a href="/a/softwares/view?appkey=5802616ab4339506fd33d45bfde3884b&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">苏宁易购</a><a href="/a/softwares/view?appkey=8171ac2c5544a5cb54ac0f38bf477af4&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">买卖宝</a><a href="/a/softwares/view?appkey=eccd9f7dc92858b741132fda313130cf&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">今日头条</a><a href="/a/softwares/view?appkey=03dadd644cb5856e1bb2c75dda01a4f0&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">苏宁红孩子</a><a href="/a/softwares/view?appkey=089d24462fdf4565642728e609db8a7c&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">爱用车</a><a href="/a/softwares/view?appkey=712a67567ec10c52c2b966224cf94d1e&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">去哪儿旅行</a><a href="/a/softwares/view?appkey=a17479231dc298309a3fda7d7d00111a&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">掌阅iReader</a><a href="/a/softwares/view?appkey=3c057cb2b41f22c0e740974d7a428918&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">趣网情趣商城</a><a href="/a/softwares/view?appkey=483d8df877b31405c1e8fe4247f02d86&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">美团团购</a><a href="/a/softwares/view?appkey=2db3545a41db81329326dbb11caff449&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">我秀美女直播</a><a href="/a/softwares/view?appkey=edf959e1c2188ad869e9cf0294c53c8c&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">买卖宝-包邮限量抢</a><a href="/a/softwares/view?appkey=27bc42aaeb1540e87949a69ebeb4eb4c&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">GGBook看书</a><a href="/a/softwares/view?appkey=a8621fdfb85b64f3214f86af1e1504a2&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">女神叫你起床</a><a href="/a/softwares/view?appkey=c9f2f917078bd2db12f23c3b413d9cba&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl3_n2">微车违章查询</a></div><a class="cn_more" href="/m/ruanjian/?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyygd3_n2">查看更多必备软件<em class="cn_more_ic"></em></a></div>
+<div class="cn_tab bibi" style="width: 25%;">
+<div data-tabkey="app_tab_3" class="cn_app cn_app_5">
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/mengchongxiaoxiaole72.PNG" src="http://m.hao123.com/static/img/yy/appdown/mengchongxiaoxiaole72.PNG" width="54" height="54"></div><span>萌宠消消乐</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/suduyujiqin772.png" src="http://m.hao123.com/static/img/yy/appdown/suduyujiqin772.png" width="54" height="54"></div><span>速度激情7</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/benpaobatejing72.png" src="http://m.hao123.com/static/img/yy/appdown/benpaobatejing72.png" width="54" height="54"></div><span>奔跑吧特警</span></a>
+<a href="#"><div><img data-src="http://s0.m.hao123img.com/static/img/yy/appdown/xiyangyangkuaipao.jpg" src="http://s0.m.hao123img.com/static/img/yy/appdown/xiyangyangkuaipao.jpg" width="54" height="54"></div><span>喜羊羊快跑</span></a>
+<a href="#"><div><img data-src="http://s0.m.hao123img.com/static/img/yy/appdown/yongbuyanqi.jpg" src="http://s0.m.hao123img.com/static/img/yy/appdown/yongbuyanqi.jpg" width="54" height="54"></div><span>永不言弃</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/guannimei.png" src="http://m.hao123.com/static/img/yy/appdown/guannimei.png" width="54" height="54"></div><span>灌你妹</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/xingganweiji.png" src="http://m.hao123.com/static/img/yy/appdown/xingganweiji.png" width="54" height="54"></div><span>性感危机</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/wumeiniangmishi.png" src="http://m.hao123.com/static/img/yy/appdown/wumeiniangmishi.png" width="54" height="54"></div><span>娬媚蜜史</span></a>
+<a href="#"><div><img data-src="http://m.hao123.com/static/img/yy/appdown/guangsuzhanji.png" src="http://m.hao123.com/static/img/yy/appdown/guangsuzhanji.png" width="54" height="54"></div><span>光速战机</span></a>
+<a href="#"><div><img data-src="http://s0.m.hao123img.com/static/img/yy/appdown/xiaoshimei.jpg" src="http://s0.m.hao123img.com/static/img/yy/appdown/xiaoshimei.jpg" width="54" height="54"></div><span>小师妹</span></a>
+</div><div class="cn_fl cn_fl_4"><a href="=">妹纸与节操</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D4726121&amp;key=46569cdd9439a5e36e72c6a72127ad04">打屁股</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7101004&amp;key=4461a76dc830bc684a6386dd4e59be34">拼妞</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D6718026&amp;key=5c9adf34839573d4f5675a775f33f2bb">压死外星人</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7066291&amp;key=155dc3d1cc36a16872f996b2fce46cbe">菊花保卫战</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D810362399&amp;key=63d43f295516684124d25399918dfcee">我的女友</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D6116575&amp;key=cf2ee77b7b78d4c7e77a17f543144879">疯狂的节操</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7475225&amp;key=3fb76c0bb73904410bc776157f39c54d">范二熊偷菜</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D5690979&amp;key=b127be9026b034c23ffbf0d29eb8548c">找内裤</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7611398&amp;key=c367c9348a125cb76d56203ae10a6909">坑爹囧囧囧</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7027479&amp;key=bf52ce4a764ab7b1e03b7471a0d8a981">美妞</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D6770001&amp;key=fd4b756bc5fe01f20ee47a7e317f58ce">围住胖企鹅</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D3829646&amp;key=05b611f3511d34c9c93fda62bfd07064">色咪咪</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7351950&amp;key=a9e0a63fd66a87ffcfea315cdcafc517">美女别亲错</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baidu.com%2Fapp%3Faction%3Dcontent%26ala%3D%26docid%3D7401630&amp;key=064dc1efc2ee535218fc8ad38e202fd6">棍子与女仆</a><a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyywzl4_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.hao123.com%2Fn%2Fv%2Fremenyouxi%3Fz%3D2%26set%3D4&amp;key=5855946bb8aa54b6578760af0d9d29bc">更多</a></div><a class="cn_more" href="/m/youxi/?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=zxyygd4_n2">查看更多必玩游戏<em class="cn_more_ic"></em></a></div>
+</div>
+<div class="cn_bk cn_mg_lr">
+<a href="">菜谱大全</a>
+<a href="">快递查询</a>
+<a href="">瑞丽女人</a>
+<a href="">花样姐姐</a>
+<a href="">12306</a>
+<a href="">考驾照</a>
+<a href="">百姓网</a>
+<a href="#">百合网</a>
+</div><div class="fenlei">
+<div class="fl_main fl_show">
+<a href="#">购物</a>
+<a href="#">淘宝</a>
+<a href="#">京东</a>
+<a href="#">天猫</a>
+<a href="#">特卖</a>
+<b data-more="shenghuo-0"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="#">彩票</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fgsgs8.com%2Fin%2Fhao123&amp;key=b6101eb45ede27cef53b5ec7275bdd7b">福彩</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fc8.cn%2Findex.php%3Fid%3D9%26lid%3D90&amp;key=eb34ba8efff94ddde5311695b951c9de">双色球</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fwap.okooo.com%2F&amp;key=a5609ceb48f42d4bbd4c50652de34844">体彩</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2F3g.500.com%2Finfo%2Fprize%2Fopen%2Findex%3Frnd%3D&amp;key=e236f17dd0ac71fef238b7bd659ee4c9">开奖</a>
+<b data-more="shenghuo-1"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="/m/shenghuo?z=2&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2">生活</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.58.com%2F%3Futm_source%3Dhao123kz&amp;key=2e4d92fd4c469091993b96140a9b617e">58同城</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2F3g.ganji.com%2F%3Fca_name%3Dtg_hao123_ganji_shouye2%26ca_s%3Dtg_hao123%26ca_n%3Dsy002%26ca_i%3Dad&amp;key=c3a5797e5f1dc0a6f630815da6494cfe">赶集</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.zhaopin.com%2F%3Futm_source%3Dhao123%26utm_medium%3Dcpt%26utm_term%3Dzhaopin%26utm_content%3Dtextlink%26utm_campaign%3Dmarch&amp;key=d1b4efc3df8b8f742d295bbe020b9313">智联</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.anjuke.com%2F%3Futm_source%3Dnavi-hao123-kz%26pi%3Dnavi-hao123-kz&amp;key=d23e0533dd6e89fe916b654a05a53a83">安居客</a>
+<b data-more="shenghuo-2"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="/m/lvyou?z=2&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2">旅游</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.ctrip.com%2F&amp;key=9a2f52a8d404d81603836a02daece3ae">携程</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Ftouch.qunar.com%2F%3Fbd_source%3Dhao123kz&amp;key=b156175a29777f28d70fcd93cd993cfb">去哪儿</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.elong.com%2F%3Fref%3Dmhao123k&amp;key=790fe85d7d82368021811c2667878c00">艺龙</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.LY.com%2F%3Frefid%3D30683983&amp;key=9e28f25efc616ad6a9903ae08b25fe9e">同程</a>
+<b data-more="shenghuo-3"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="/m/hunlian?z=2&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2">交友</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.jiayuan.com%2F&amp;key=14249a6c3c7cf19e125987218f01594a">佳缘</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.v.6.cn%2F%3Fsrc%3Dummeda5009&amp;key=7fe7b8b61898ca5b8b6e2befb837e2a6">美女秀</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2F7006.yoyuan.com.cn%2F%3Ffrom%3D7006&amp;key=a7bef1e64f4f7d8c2b4a24296a489730">有缘</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2F3g.yuehui.163.com%2Fmobile%2F&amp;key=3b1b5414b75cd84dbe7e238d3e98f908">同城</a>
+<b data-more="shenghuo-4"><span><i></i></span></b>
+</div>
+<div class="fl_main fl_show">
+<a href="/m/xiaohua?z=2&amp;from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2">搞笑</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.qiushibaike.com%2F&amp;key=617bcd6374c78adcdf03b33cf7521f44">糗百</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.pengfu.com%2F&amp;key=83e1b75365074c734861f53577833194">捧腹</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fh5.w6g7.com%2F%3Fcat%3Djxtj&amp;key=8b6b77d18e19424427641a9d072d5f17">荤段子</a>
+<a href="/j.php?from=3w123&amp;level=1&amp;page=index_h5&amp;ver=2_android&amp;pos=ylkz_n2&amp;qt=tz&amp;url=http%3A%2F%2Fm.baozoumanhua.com%2F&amp;key=8207df39a2d4a827bd362f4ad72dd839">爆笑</a>
+<b data-more="shenghuo-5"><span><i></i></span></b>
+</div>
+</div>
+</div>
+
+
+<footer class="ft">
+<form class="search ft_search" name="search" action="http://m.baidu.com/s" method="get">
+<div class="sh_main_wp">
+<div class="sh_ipt_wp">
+<input type="text" value="" autocomplete="off" autocorrect="off" maxlength="64" name="word" class="sh_ipt">
+</div>
+<button type="submit" class="sh_bt"><b></b>百度一下</button>
+</div>
+<input type="hidden" value="www_colorful" name="ref" id="ref">
+<input type="hidden" value="111041" name="st" id="st">
+<input type="hidden" value="iphone" name="tn">
+<input type="hidden" name="from" value="381a_cp_bottom">
+</form>
+<div class="ft_nav">
+<a href="{:U('Yo81008/Index/html5_index')}">极速版</a>
+<a href="{:U('Yo81008/Index/html5_index')}">电脑版</a>
+<a href="http://m.hao123.com/hao123_app/two_dimension_code?tn=1001208d">客户端</a>
+</div>
+<div class="ft_cf">
+<a href="/n/v/changjianwenti">常见问题</a>&nbsp;&nbsp;&nbsp;<a href="/n/fankui?w_html5_ver=new">改进建议</a>
+</div>
+<p class="ft_cp">Copyright by 零零糖 Yocms</p>
+</footer>
+</body>
+</html>
