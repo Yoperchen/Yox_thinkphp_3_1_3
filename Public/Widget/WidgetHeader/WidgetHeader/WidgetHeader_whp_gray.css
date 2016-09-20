@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+.WidgetHeader {padding:0;margin:0;border-radius: 0;background-color: #fff;border-bottom: 1px solid #357ebd;border-top: 1px solid #ccc;width: 100%;max-height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;border-left: 0;border-right: 0;overflow: hidden;    color: #333;}
+.WidgetHeader span{font-family: cursive;height: 35px;line-height: 35px;font-weight: bold;}
+.WidgetHeader span.title{color: #357ebd;margin-left: 12px;font-size: 15px;min-width:43px;width: 75px;float: left;}
+.WidgetHeader span.close{color: red;font-size: 30px;width: 37px;float: right;cursor: pointer;border-radius: 20px;text-align: center;}
+.WidgetHeader span.close:hover {background-color: #9c9c9c;}
+.WidgetHeader>div.description{width:100%;clear:both;    font-size: 12px;margin-left: 4px;margin-bottom: 3px;}

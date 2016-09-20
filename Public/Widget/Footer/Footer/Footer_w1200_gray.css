@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+.grid_c1, .grid_c2a, .grid_c2b, .grid_c2c, .grid_c2d, .grid_c3 {
+    margin: auto;
+    width: 980px;
+}
+.mod_copyright, .mod_copyright a {
+    color: #777777;
+    text-decoration: none;
+	font-size: 13px;
+}
+.mod_copyright {
+    line-height: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+.mod_copyright, .mod_copyright a {
+    color: #777777;
+    text-decoration: none;
+}
+.links_lj {
+    line-height: 12px;
+    overflow: hidden;
+    padding: 0 0 24px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.links_lj a {
+    margin-right: 10px;
+	font-size: 12px;
+	text-decoration: none;
+}

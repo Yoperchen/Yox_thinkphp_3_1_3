@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+#Yocms_website_list_94{/*border: 1px solid #ccc;*/border-radius: 20px;display:block;margin:0 auto; width:100%; position:relative;clear:both;min-height: 45px;overflow:auto}
+#Yocms_website_list_94 *{margin:0;padding:0;}
+#Yocms_website_list_94 .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+#Yocms_website_list_94 span {height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+#Yocms_website_list_94 .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+#Yocms_website_list_94 .close:hover{background-color: #9c9c9c;}
+#Yocms_website_list_94>div{padding: 10px 0 0 10px;overflow: hidden;}
+#Yocms_website_list_94>div span,#Yocms_website_list_94>div span a{float: left;margin: 1px 10px 1px;height: 30px;line-height: 30px;text-align: center;width: 135px;_width: 135px;vertical-align: middle;-moz-border-radius: 15px;-webkit-border-radius: 15px;border-radius: 15px;cursor: pointer;text-decoration: none;color: #333;}
+#Yocms_website_list_94>div span a:hover{background: #FAA5A5;text-decoration: underline;color: #D80321;}
+#Yocms_website_list_94 .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}

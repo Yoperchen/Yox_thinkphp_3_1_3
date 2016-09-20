@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+/*评论的样式*/
+.Yocms_list_city {background-color: #fff;border: 1px solid #ccc;border-radius: 20px;display:block;margin:0 auto; width:1200px; position:relative;clear:both;overflow:auto;overflow: hidden;}
+.Yocms_list_city .header{border-radius: 0;background-color: #fff;border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.Yocms_list_city span {height: 30px;font-size: 15px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+.Yocms_list_city .close{color:red;font-size:30px;width:37px;height:37px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+.Yocms_list_city .close:hover{background-color: #9c9c9c;}
+.Yocms_list_city select{width: 99%; margin-left: auto;margin-right: auto;display: block;}
+.Yocms_list_city .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}
+
+
+/* tab 开始 */
+.Yocms_list_city #tab .tabList ul{padding:0px;margin:0px;    border-bottom: 1px solid #ccc;background: #f0f0f0;border-radius: 0;}
+.Yocms_list_city ul,li{list-style:none;}
+.Yocms_list_city #tab{position:relative;width: 100%;clear: both;}
+.Yocms_list_city .tabList{height:35px;}
+.Yocms_list_city #tab .tabList ul li{border-radius: 0;box-sizing: border-box;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;display: inline-block;
+    padding: 8px 20px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid transparent;
+    color: #4D4D4D;
+    text-align: center;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: -1px;    line-height: 1.42857143;font-size: 13px; }
+.Yocms_list_city #tab .tabCon{left:-1px;border:1px solid #ccc;border-top:none;width:100%;}
+.Yocms_list_city #tab .tabCon >div{padding:10px;display:none;width:100%;}
+.Yocms_list_city #tab .tabList li.cur{border-bottom:none;background:#fff;    border-bottom: 1px solid #FFF;}
+.Yocms_list_city #tab .tabCon div.cur{display:block;}
+.Yocms_list_city #tab .tabCon dl{ line-height: 30px;    clear: both;    padding: 3px 0;margin: 0;}
+.Yocms_list_city #tab .tabCon dl dt{     position: absolute;   width: 50px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;color: #333;background-color: #fff;font-size: 35px;font-weight: 500;    text-align: right;}
+.Yocms_list_city #tab .tabCon dl dd{    line-height: 25px;-webkit-margin-start: 40px;}
+.Yocms_list_city #tab .tabCon dl dd a{display: inline-block;font-weight: 500;
+    padding: 0 10px;
+    outline: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-right: 2px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;    background-color: transparent;font-size: 13px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.Yocms_list_city #tab .tabCon dl dd a:focus,.ListDistrict #tab .tabCon dl dd a:hover{background-color: #f1f8ff;
+    border-radius: 2px;
+    color: #46A4FF;}
+/* tab 结束 */

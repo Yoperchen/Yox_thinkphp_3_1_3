@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+#Yocms_website_list_95{/*border: 1px solid #ccc;*/border-radius: 20px;display:block;margin:0 auto; width:100%; position:relative;clear:both;overflow:auto;font: 14px/1.14 Simsun,Arial;}
+#Yocms_website_list_95 *{margin:0;padding:0;}
+#Yocms_website_list_95 .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+#Yocms_website_list_95 span {height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+#Yocms_website_list_95 .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+#Yocms_website_list_95 .close:hover{background-color: #9c9c9c;}
+#Yocms_website_list_95>dl{padding: 0;margin: 0;overflow: hidden;}
+#Yocms_website_list_95>dl dt{padding: 0;float: left;margin: 10px 0 10px 0px;width: 95px;clear: left;}
+#Yocms_website_list_95>dl dd{padding: 0;float: left;margin: 10px 0 10px 0px;width: 98px;overflow: hidden;height: 15px;line-height: 15px;padding-left: 3px;}
+#Yocms_website_list_95>dl dd.more{width: 48px;}
+#Yocms_website_list_95>dl dd.more a{color: #999999;font-size: 12px;}
+#Yocms_website_list_95>dl dd a,#Yocms_website_list_95>dl dt a{font: 14px/1.14 Simsun,Arial;text-decoration: none;color: #333;    outline: none;}
+#Yocms_website_list_95>dl dd a:hover,#Yocms_website_list_95>dl dt a:hover{text-decoration: underline;color: #D80321;}
+#Yocms_website_list_95>dl dda.yd-,a.icon{height: 28px;display: block;line-height: 28px;}
+#Yocms_website_list_95>dl dd .yd-green{color:#0E774A;}
+#Yocms_website_list_95>dl dd .yd-red {color: #C60A00;}
+#Yocms_website_list_95 .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}

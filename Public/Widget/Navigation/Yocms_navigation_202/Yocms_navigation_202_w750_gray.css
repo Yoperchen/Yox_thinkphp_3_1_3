@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+/*导航样式*/
+.Yocms_navigation_202 .cls {clear: both;}
+.Yocms_navigation_202 a:focus { outline: none; }
+.Yocms_navigation_202 .xgsm {padding: 0px;width: 800px;margin-top: 40px;margin-right: auto;margin-bottom: 20px;margin-left: auto;}
+.Yocms_navigation_202 .xgsm p {line-height: 1.8em;padding: 0px;margin: 0px;color: #666666;}
+.Yocms_navigation_202 {height: 40px;display: block;padding: 0px;width: 100%;margin-top: 0px;margin-right: auto;margin-bottom: 0px;margin-left: auto;}
+.Yocms_navigation_202 ul {list-style: none;padding: 0;margin: 0;}
+.Yocms_navigation_202 ul li {float: left;overflow: hidden;position: relative;line-height: 40px;text-align: center;}
+.Yocms_navigation_202 ul li a {position: relative;display: block;width: 90px;height: 40px;font-family: "微软雅黑", "宋体";font-size: 12px;text-decoration: none;cursor: pointer;}
+.Yocms_navigation_202 ul li a span {position: absolute;left: 0;width: 90px;}
+.Yocms_navigation_202 ul li a span.out {top: 0px;}
+.Yocms_navigation_202 ul li a span.over,
+.Yocms_navigation_202 ul li a span.bg { top: -40px;}
+#Yocms_navigation_202 {background-color: #E8E8E8;background-image: url(./menu_bg.gif);background-repeat: repeat-x;background-position: 0px 0px;width: 750px;overflow: hidden;}
+#Yocms_navigation_202 ul li a {color: #000;}
+#Yocms_navigation_202 ul li a span.over {color: #FFF;}
+#Yocms_navigation_202 ul li span.bg {height: 40px;background-image: url(./bg_over.gif);background-repeat: no-repeat;background-position: center center;}

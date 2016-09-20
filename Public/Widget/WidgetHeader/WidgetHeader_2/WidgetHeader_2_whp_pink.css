@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+.WidgetHeader_2 {font: 14px/1.14 Simsun,Arial;margin: 0;padding: 0;background-color: #FABED0;height: 39px;line-height: 39px;position: relative;-moz-border-radius: 15px;-webkit-border-radius: 15px;border-radius: 15px;overflow: hidden;}
+.WidgetHeader_2 h2 {font-size: 14px;font-weight: normal;    margin: 0px;padding: 0px;margin-left: 20px;}
+.WidgetHeader_2 h2 a {color: #C60808;text-decoration: none;outline: none;font-size: 14px;font-weight: normal;height: 39px;line-height: 39px;}
+.WidgetHeader_2 h2 a:hover, .hd h2 a:hover, .hd h2 a:hover {text-decoration: underline;color: #D80321;}
+.WidgetHeader_2 span.spline {color: #D5D5D5;margin: 0 5px;line-height: 28px;}
+.WidgetHeader_2 .dotline {background-color: #C60A00;height: 13px;left: 1px;overflow: hidden;position: absolute;top: 13px;width: 3px;}

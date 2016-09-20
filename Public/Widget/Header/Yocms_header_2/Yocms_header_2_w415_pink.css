@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.Yocms_header2{width: 415px;margin: 0 auto;clear: both;display: block;height: 111px;background-color: #FDE2EB;overflow: hidden;margin-left: auto;margin-right: auto;}
+.Yocms_header2 #hd {font-size: 12px;height: 70px;position: relative;z-index: 1;}
+.Yocms_header2 img {border: 0;outline: none;display: block;margin-left: auto;margin-right: auto;}
+.Yocms_header2 .logo {left: 0; width: 32%;max-width:185px;min-width:118px;height: 68px;background: url({$site_info['logo']|default='__PUBLIC__/Uploads/default_site_logo/linglingtang_daohang_logo.png'}) no-repeat 0 0;overflow: hidden;text-indent: -999px;float: left;}
+.Yocms_header2 #middle1 {left: 100px;width:27%;min-width:100px;max-width: 130px;color: #666666;float: left;height: 68px;overflow: hidden;}
+.Yocms_header2 #middle1 a {color: #666;}
+.Yocms_header2 .middle2{float: left;top: 0;height: 68px;overflow: hidden;width:40%;min-width: 99px;max-width:189px;right: 0px;position: absolute;}
+.Yocms_header2 .middle2 .left{float: left;width: 45%;display: block;height: 100%;padding-left: 6px;padding-top: 4px;}
+.Yocms_header2 #adao a {overflow: hidden;height: 100%;float: left;margin-left: 27px;}
+.Yocms_header2 #middle1 p {text-align: center; margin: 0px 5px;}
+.Yocms_header2 #middle1 p.date { margin-top: 12px;padding-bottom: 10px;}
+.Yocms_header2 #adao {float: left;width: 100%;right: 0;height: 35px;overflow: hidden;line-height: 45px; margin-top: 2px;}

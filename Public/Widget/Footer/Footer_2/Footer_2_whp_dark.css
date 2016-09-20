@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+#Footer_2 {font: 14px/1.14 Simsun,Arial;font-size: 12px;margin: 0px 0;padding: 0;text-align: center;line-height: 30px;width: 100%;margin-left: auto;margin-right: auto;min-width: 240px;}
+#Footer_2, #Footer_2 a {text-decoration: none;color: #999999;}
+#Footer_2 p{margin: 0;padding: 0;-moz-border-radius: 15px;-webkit-border-radius: 15px;border-radius: 15px;}
+#Footer_2 p.c_fcopyright {font-family: arial, 宋体, san-serif;}
