@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Widget/WidgetHeader/WidgetHeader/WidgetHeader_{$css|default='whp_gray'}.css">
+<div class="WidgetHeader">
+	<span class="title">{$Yocms_data.title|default='标题'}</span>
+	<span class="close" id="{$Yocms_data.widget|default=''}_close" title="关闭">x</span>
+	<if condition="$Yocms_data.description neq ''"><div class="description">{$Yocms_data.description|default='描述...'}</div></if>
+</div>
+<script>
+require(['jquery'], function($){
+	if(typeof(WidgetHeader_is_load)=="undefined"){
+		$("body").append('<script src="__PUBLIC__/Widget/WidgetHeader/WidgetHeader/WidgetHeader.js" type="text/javascript"><\/script>');
+	}
+});
+</script>

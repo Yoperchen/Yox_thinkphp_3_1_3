@@ -1,0 +1,68 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Widget/ListDistrict/ListDistrict/ListDistrict_{$css|default='w220_gray'}.css">
+<div id="ListDistrict" class="ListDistrict">
+	<div class="header">
+			<span style="color:#357ebd;font-size:15px;width:75px;float:left;font-family: cursive;    line-height: 55px;">地点</span>
+			<span class="close" id="ListDistrict_toggle" title="关闭">x</span>
+		</div>
+	<!--  <form action="{$action_url|default='/'}" method="post">-->
+	<!-- TAB代码 开始 -->
+	<div id="tab">
+	  <div class="tabList">
+		<ul>
+			<li id="province_tab">省份</li>
+			<li id="city_tab">城市</li>
+			<li id="district_tab">区</li>
+			<!--<li>售后保障</li>-->
+		</ul>
+	  </div>
+	  <div class="tabCon">
+		<div id="province_list">
+			<dl>
+			   <volist name="list.l1" id="districts">
+				<dt>{$key}</dt>
+				<dd>
+				<volist name="districts" key="k" id="district">
+					<a title="{$district.name}" data-district-id="{$district.id}">{$district.name}</a>
+					</volist>
+				</dd>
+				</volist>
+			</dl>
+		</div>
+		<div id="city_list">
+			<volist name="list.l2" id="l2">
+			<dl id="{$key}" style="display:none">
+				<dt>{$l2.up_info.name}</dt>
+				<dd>
+				<volist name="l2.district" id="district">
+				<a data-district-id="{$district.id}">{$district.name}</a>
+				</volist>
+				</dd>
+			</dl>
+			</volist>
+		</div>
+		<div id="district_list">
+		<volist name="list.l3" id="l3">
+			<dl id="{$key}" style="display:none">
+				<dt>{$l3.up_info.name}</dt>
+				<dd>
+				<volist name="l3.district" id="district">
+				<a data-district-id="{$district.id}">{$district.name}</a>
+				</volist>
+				</dd>
+			</dl>
+			</volist>
+		</div>
+		<div>服务承诺：<br/>零零糖平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！ </div>
+	  </div>
+	</div>
+	<!-- TAB代码 结束 -->
+	<!--  </form>-->
+	<div class="footer">列表板块</div>
+</div>
+<script>
+require(['jquery'], function($){
+	if(typeof(ListDistrict_is_load)=="undefined"){
+		$("body").append('<script src="__PUBLIC__/Widget/ListDistrict/ListDistrict/ListDistrict.js" type="text/javascript"><\/script>');
+	}
+});
+</script>

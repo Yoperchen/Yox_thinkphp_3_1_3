@@ -1,0 +1,46 @@
+<style type="text/css"> 
+.Yocms_image_list_92 *{margin:0;padding:0;}
+.Yocms_image_list_92{border: 1px solid #ccc;border-radius: 20px;display:block;margin:0 auto; width:98%; position:relative;clear:both;overflow:auto}
+.Yocms_image_list_92 .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.Yocms_image_list_92 span {height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+.Yocms_image_list_92 .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+.Yocms_image_list_92 .close:hover{background-color: #9c9c9c;}
+.Yocms_image_list_92 { font-size:12px;} 
+.Yocms_image_list_92 ul, .Yocms_image_list_92 li { list-style:none;} 
+.Yocms_image_list_92 a{ text-decoration:none; color:#3381BF;float: left;} 
+.Yocms_image_list_92 a:hover{ text-decoration:underline;} 
+.Yocms_image_list_92 { height:260px;} 
+.Yocms_image_list_92 .rank_list{ line-height:14px; margin:auto; padding-top:5px;padding:0px;} 
+.Yocms_image_list_92 .rank_list li{ height:14px; margin-bottom:8px; width:290px; padding-left:20px; white-space:nowrap; overflow:hidden; position:relative;width:98%} 
+.Yocms_image_list_92 .rank_list li.top3 em{ background:#FFE4B7; border:1px solid #FFBB8B; color:#FF6800;} 
+.Yocms_image_list_92 .rank_list em{ position:absolute; left:0; top:0; width:15px; height:12px; border:1px solid #B1E0F4; color:#6298CC; font-style:normal; font-size:10px; font-family:Arial; background:#E6F0FD; text-align:center; line-height:12px; overflow:hidden;} 
+.Yocms_image_list_92 .rank_list span{  width:40px; color:#B7B7B7; text-align:right; height:14px; background:#fff; float:right;}
+.Yocms_image_list_92 .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}
+</style> 
+<div class="Yocms_image_list_92" id="Yocms_image_list_user_92">
+	<div class="header">
+		<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">用户列表</span>
+		<span class="close" id="Yocms_image_list_user_92_toggle" title="关闭">x</span>
+	</div>
+		<ul class="rank_list"> 
+		<volist name="list" id="user" key="k" empty="暂时没有数据">
+		<li <if condition="$k elt 3"> class="top3" </if>><em>{$k}</em><a href="{:U('User/user_detail@common',array('user_id'=>$user['id']))}">{$user['name']|default=$user['nick_name']}</a><span>{$user['view']}</span></li>
+		</volist>
+		</ul> 
+	<input id="user_id" type="hidden" name="user_id" value="0">
+	<div class="footer">列表板块</div>
+</div> 
+<script>
+//显示隐藏，id一般为widget内使用,类widget外使用
+$("#Yocms_image_list_user_92_toggle,.Yocms_image_list_user_92_toggle,#Yocms_image_list_user_92_close,.Yocms_image_list_user_92_close,#Yocms_image_list_user_92_open,.Yocms_image_list_user_92_open").live("click",function(event){
+	$("#Yocms_image_list_user_92").css("top",$(document).scrollTop()+50);
+	$("#Yocms_image_list_user_92").css("left",($(window).width())/4);
+	$("#Yocms_image_list_user_92").css("position","absolute");
+	$("#Yocms_image_list_user_92").toggle();
+})
+</script>
+<script>
+$("#Yocms_image_list_user_92 ul li").live("click",function(){
+	$("#Yocms_image_list_user_92 #user_id").val($(this).attr("data-user-id"));
+})
+</script>

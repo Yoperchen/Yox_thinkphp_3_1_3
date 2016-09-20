@@ -1,0 +1,45 @@
+<style type="text/css">
+.ListCuisine *{margin:0;padding:0;}
+.ListCuisine{border: 1px solid #ccc;border-radius: 20px;display:block;margin:0 auto; width:98%; position:relative;clear:both;overflow:auto}
+.ListCuisine .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.ListCuisine span {height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+.ListCuisine .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+.ListCuisine .close:hover{background-color: #9c9c9c;}
+.ListCuisine li{list-style:none;}img{border:none;}em{font-style:normal;}
+.ListCuisine a{color:#555;text-decoration:none;outline:none;blr:this.onFocus=this.blur();}
+.ListCuisine a:hover{color:#000;text-decoration:underline;}
+.ListCuisine .clear{height:0;overflow:hidden;clear:both;}
+.ListCuisine h4{font-size:14px;height:27px;line-height:27px;padding-left:10px;border-bottom:#ddd 1px solid;}
+.ListCuisine{width:98%;}
+.ListCuisine ul{padding:5px 10px;}
+.ListCuisine ul li{height:24px;line-height:24px;overflow:hidden;}
+.ListCuisine .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}
+</style>
+<div class="ListCuisine" id="ListCuisine">
+<div class="header">
+	<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">课程</span>
+	<span class="close" id="ListCuisine_toggle" title="关闭">x</span>
+</div>
+<ul>
+	<volist name="list" id="cuisine">
+		<li data-cuisine-id="{$cuisine['id']}"><a title="{$cuisine['name']}" data-cuisine-id="{$cuisine['id']}" href="{:U('Cuisine/cuisine_detail@Common',array('cuisine_id'=>$cuisine['id']))}" target="_blank">{$cuisine['name']}</a></li>
+	</volist>
+</ul>
+<input id="cuisine_id" type="hidden" name="cuisine_id" value="0">
+<div class="footer">列表板块</div>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<script>
+//显示隐藏，id一般为widget内使用,类widget外使用
+$("#ListCuisine_toggle,.ListCuisine_toggle,#ListCuisine_close,.ListCuisine_close,#ListCuisine_open,.ListCuisine_open").live("click",function(event){
+	$("#ListCuisine").css("top",$(document).scrollTop()+50);
+	$("#ListCuisine").css("left",($(window).width())/4);
+	$("#ListCuisine").css("position","absolute");
+	$("#ListCuisine").toggle();
+})
+</script>
+<script>
+$("#ListCuisine ul li").live("click",function(){
+	$("#ListCuisine #cuisine_id").val($(this).attr("data-cuisine-id"));
+})
+</script>

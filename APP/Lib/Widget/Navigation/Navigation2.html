@@ -1,0 +1,17 @@
+<volist name="navigation" id="nav">
+                   <php>if($nav['count']==''):</php>
+                   		<!-- 顶级导航 -->
+                 		 <a target="_blank" href="{$nav.url}"> {$nav.name}</a>
+                   <php>endif;</php>
+                   
+                   <php>if($nav['count']=='---'):</php>
+                   <!-- 二级导航 -->
+                  		 -<a target="_blank" href="{$nav.url}">{$nav.name}</a>
+                   <php>endif;</php>
+                   
+                   <php>if($nav['count']=='------'):</php>
+                    <!-- 三级导航 -->
+                  --<a target="_blank" href="{$nav.url}">{$nav.name}</a>
+		<php>endif;</php>
+		<br/>
+</volist> 

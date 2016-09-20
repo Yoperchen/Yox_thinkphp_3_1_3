@@ -1,0 +1,45 @@
+<style type="text/css">
+.ListVisit_log *{margin:0;padding:0;}
+.ListVisit_log{border: 1px solid #ccc;border-radius: 20px;display:block;margin:0 auto; width:98%; position:relative;clear:both;overflow:auto}
+.ListVisit_log .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.ListVisit_log span {height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+.ListVisit_log .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+.ListVisit_log .close:hover{background-color: #9c9c9c;}
+.ListVisit_log li{list-style:none;}img{border:none;}em{font-style:normal;}
+.ListVisit_log a{color:#555;text-decoration:none;outline:none;blr:this.onFocus=this.blur();}
+.ListVisit_log a:hover{color:#000;text-decoration:underline;}
+.ListVisit_log .clear{height:0;overflow:hidden;clear:both;}
+.ListVisit_log h4{font-size:14px;height:27px;line-height:27px;padding-left:10px;border-bottom:#ddd 1px solid;}
+.ListVisit_log{width:98%;}
+.ListVisit_log ul{padding:5px 10px;}
+.ListVisit_log ul li{height:24px;line-height:24px;overflow:hidden;}
+.ListVisit_log .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}
+</style>
+<div class="Yocms_list_90" id="Yocms_list_visit_log_90">
+	<div class="header">
+		<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">访问列表</span>
+		<span class="close" id="ListVisit_log_toggle" title="关闭">x</span>
+	</div>
+	<ul>
+	<volist name="list" id="visit_log">
+	<li><a href="{:U('Visit_log/detail_visit_log@common',array('visit_log_id'=>$visit_log['id']))}" target="_blank">{$visit_log['visit_user_id']}访问了{$visit_log['visit_content']}</a></li>
+	</volist>
+	</ul>
+	<input id="visit_log_id" type="hidden" name="visit_log_id" value="0">
+	<div class="footer">列表板块</div>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<script>
+//显示隐藏，id一般为widget内使用,类widget外使用
+$("#ListVisit_log_toggle,.ListVisit_log_toggle,#ListVisit_log_close,.ListVisit_log_close,#ListVisit_log_90_open,.ListVisit_log_open").live("click",function(event){
+	$("#ListVisit_log").css("top",$(document).scrollTop()+50);
+	$("#ListVisit_log").css("left",($(window).width())/4);
+	$("#ListVisit_log").css("position","absolute");
+	$("#ListVisit_log").toggle();
+})
+</script>
+<script>
+$("#ListVisit_log ul li").live("click",function(){
+	$("#ListVisit_log #visit_log_id").val($(this).attr("data-visit_log-id"));
+})
+</script>

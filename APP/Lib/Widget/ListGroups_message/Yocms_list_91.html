@@ -1,0 +1,24 @@
+<style type="text/css"> 
+.Yocms_list_91{width:98%;position: relative;background-color: #fff;border: 1px solid #ccc;border-radius: 20px;}
+.Yocms_list_91 .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.Yocms_list_91 .header span{height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float:left;width: 110px;text-align: left;line-height: 35px;}
+.Yocms_list_91 .header .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+.Yocms_list_91 .header .close:hover{background-color: #9c9c9c;}
+.Yocms_list_91 ul, .Yocms_list_91 li { list-style:none; } 
+.Yocms_list_91 li { width:98%; height: 28px; text-align: right; background-repeat: no-repeat; background-position: 50px center; padding-left: 0px; line-height:28px; color:#CCC; border-bottom:dashed 1px #CCC; } 
+.Yocms_list_91 li a { float:left; text-align:left; line-height:28px; color:#666; text-decoration:none; } 
+.Yocms_list_91 li a:hover { color:#F00; } 
+.Yocms_list_91 .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}
+</style> 
+<div class="Yocms_list_91"> 
+	<div class="header">
+		<span style="color:#357ebd;font-size:15px;width:200px;height:45px;float:left;font-family: cursive;">分享新发现</span>
+		<span class="close" id="Yocms_user_add_article_2_toggle" title="关闭">x</span>
+	</div>
+	<ul> 
+	<volist name="list" id="message">
+		<li><a href="javascript:;">{$message['message_content']}</a>{$share['add_time']|date="Y-m-d",###}</li> 
+	</volist>
+	</ul> 
+	<div class="footer">列表内容板块</div>
+</div> 

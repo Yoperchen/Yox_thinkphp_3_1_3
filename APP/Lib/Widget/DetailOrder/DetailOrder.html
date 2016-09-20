@@ -1,0 +1,13 @@
+订单确认页
+{$data['name']|default='无name'}<br/>
+{$data['site_id']|default='无site_id'}<br/>
+{$data['order_num']|default='无order_num'}<br/>
+{$data['goods_id']|default='无goods_id'}<br/>
+{$data['buy_quantity']|default='无buy_quantity'}<br/>
+
+{$data['address']|default='无address'}<br/>
+{$data['mobile']|default='无mobile'}<br/>
+
+{$data['total_price']|default='无total_price'}<br/>
+{$data['pay_price']|default='无pay_price'}<br/>
+<a target="_blank" href="{:U('Order/index@Home',array('goods_id'=>$data['goods_id'],'buy_quantity'=>1))}">去支付</a>

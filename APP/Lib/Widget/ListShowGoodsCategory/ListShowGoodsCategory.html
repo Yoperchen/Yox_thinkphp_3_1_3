@@ -1,0 +1,18 @@
+<br/>商品分类:<br/>
+                <volist name="good_category_list" id="cat">
+                   <php>if($cat['count']==''):</php>
+                   		<!-- 顶级分类 -->
+                 		 <a href="{$cat.id}"> {$cat.name}</a>
+                   <php>endif;</php>
+                   
+                   <php>if($cat['count']=='---'):</php>
+                   <!-- 二级分类 -->
+                  		 -<a href="{$cat.id}">{$cat.name}</a>
+                   <php>endif;</php>
+                   
+                   <php>if($cat['count']=='------'):</php>
+                    <!-- 三级分类 -->
+                 		  --<a href="{$cat.id}">{$cat.name}</a>
+                   <php>endif;</php>
+                   <br/>
+                </volist>

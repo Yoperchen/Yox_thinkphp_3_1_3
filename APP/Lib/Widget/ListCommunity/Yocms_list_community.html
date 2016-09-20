@@ -1,0 +1,44 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Widget/ListCommunity/Yocms_list_community/Yocms_list_community_{$css|default='w1200_gray'}.css">
+<div id="Yocms_list_community" class="Yocms_list_community" style="z-index:999999999">
+	<div class="header">
+			<span style="color:#357ebd;font-size:15px;width:75px;float:left;font-family: cursive;    line-height: 55px;">学校/社区</span>
+			<span class="close" id="Yocms_list_community_toggle" title="关闭">x</span>
+		</div>
+	<!--  <form action="{$action_url|default='/'}" method="post">-->
+	<!-- TAB代码 开始 -->
+	<div id="tab">
+	  <div class="tabList">
+		<ul>
+		<volist name="list" id="alphabet">
+			<li <if condition="$key eq 'Hot'">class="cur" style="color: #c52d2d;font-weight: 800;"</if>>{$key}</li>
+		</volist>
+		</ul>
+	  </div>
+	  <div class="tabCon">
+	  <volist name="list" id="communitys">
+		<div <if condition="$key eq 'Hot'">class="cur"</if>>
+			<dl>
+			   
+				<dt>{$key}</dt>
+				<dd>
+				<volist name="communitys" key="k" id="community">
+					<a title="{$community.name}" data-community-id="{$community.id}">{$community.name}</a>
+					</volist>
+				</dd>
+				
+			</dl>
+		</div>
+</volist>
+	  </div>
+	</div>
+	<!-- TAB代码 结束 -->
+	<!--  </form>-->
+	<div class="footer">列表板块</div>
+</div>
+<script>
+require(['jquery'], function($){
+	if(typeof(Yocms_list_community_is_load)=="undefined"){
+		$("body").append('<script src="__PUBLIC__/Widget/ListCommunity/Yocms_list_community/Yocms_list_community.js" type="text/javascript"><\/script>');
+	}
+});
+</script>

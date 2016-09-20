@@ -1,0 +1,43 @@
+<link href="__PUBLIC__/Widget/ListShare/Yocms_image_list_90/Yocms_image_list_90_{$css|default='w1200_gray'}.css" rel="stylesheet"/>
+<div id="Yocms_image_list_90" class="Yocms_image_list_90">
+	<div class="header">
+		<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">热点</span>
+		<span class="close" id="Yocms_image_list_90_toggle" title="关闭">x</span>
+	</div>
+  <ul>
+  <volist name="list" id="share">
+    <li class="listbox mr20">
+      <div class="listimg"> <a href="{$share['url']|default=U('Share/share_detail',array('share_id'=>$share['id']))}" title="{$share['title']}" target="_blank">
+      <img src="{$share['img1']|default='__PUBLIC__/Widget/ListGoods/Yocms_image_list_90/default_image.jpg'}" class="attachment-thumbnail wp-post-image" alt="{$share['share_say']}" /></a>
+        <div class="summary">
+          <div class="summarytxt">
+            <p>{$share['share_say']|default='分享者木有说话'}</p>
+          </div>
+        </div>
+      </div>
+      <div class="listinfo">
+        <div class="listtitle">
+		<a href="{$share['url']|default=U('Share/share_detail',array('share_id'=>$share['id']))}" title="{$share['title']}" target="_blank">{$share['title']}</a>
+		</div>
+        <div class="listtag"><a href="{$share['host']}" target="_blank" rel="tag">站点</a><a href="{$share['host']}" rel="tag">杂志</a></div>
+        <div class="listdate">{$share['add_time']|date="Y-m-d",###}</div>
+        <div class="listview">{$share['view']|default='167'}</div>
+        <div onclick="get_comment_list(this)" class="listcomment" share-data-id="{$share['id']|default='0'}">评论</div>
+        <div class="listdemo"><a href="{:U('Share/share_detail',array('share_id'=>$share['id']))}" rel="external nofollow" target="_blank">详细</a></div>
+      </div>
+    </li>
+   </volist>
+  </ul>
+	<div class="footer">列表板块</div>
+</div>
+  <include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<!--<script src="__PUBLIC__/Widget/ListShare/Yocms_image_list_90/Yocms_image_list_90.js" type="text/javascript"></script>-->
+<script>
+require(['jquery'], function($){
+if(typeof(Yocms_ListShare_image_list_90_is_load)=="undefined"){
+	$("body").append('<script src="__PUBLIC__/Widget/ListShare/Yocms_image_list_90/Yocms_image_list_90.js" type="text/javascript" type="text/javascript"><\/script>');
+}
+});
+
+</script>
+

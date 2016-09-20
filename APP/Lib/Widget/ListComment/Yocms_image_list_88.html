@@ -1,0 +1,22 @@
+<style type="text/css">
+.Yocms_image_list_88 {margin: 5px;}
+.Yocms_image_list_88 ul {list-style-type: none;width: 100%;padding:0px;}
+.Yocms_image_list_88 h3 {font: bold 20px/1.5 Helvetica, Verdana, sans-serif;}
+.Yocms_image_list_88 li img {float: left;margin: 0 15px 0 0;border-radius: 25px;}
+.Yocms_image_list_88 li p {font: 200 12px/1.5 Georgia, Times New Roman, serif;}
+.Yocms_image_list_88 li {padding: 10px;overflow: auto;}
+.Yocms_image_list_88 li:hover {background: #eee;cursor: pointer;}
+.Yocms_image_list_88 img{width:99px;}
+</style>
+<div class="Yocms_image_list_88">
+<ul>
+<volist name="list" id="comment" empty="没有评论">
+<li>
+<img src="{$comment['img1']|default='__PUBLIC__/Uploads/default_avatar/face_1.jpg'}" />
+<h3>{$comment['title']}</h3>
+<p>{$comment['content']}...</p>
+</li>
+</volist>
+
+</ul>
+</div>

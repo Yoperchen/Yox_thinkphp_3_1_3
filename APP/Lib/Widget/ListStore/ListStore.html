@@ -1,0 +1,16 @@
+<link href="__PUBLIC__/Widget/ListStore/ListStore/ListStore_{$css|default='w105_pink'}.css" rel="stylesheet"/>
+<div class="ListStore" id="ListStore">
+<div class="header">
+	<span style="">商家</span>
+	<span class="close" id="ListStore_toggle" title="关闭">x</span>
+</div>
+<ul>
+	<volist name="list" id="store">
+		<li data-store-id="{$store['id']}"><a title="{$store['store_name']}" data-store-id="{$store['id']}" href="{:U('Store/store_detail@'.$application,array('store_id'=>$store['id']))}" target="_blank">{$store['store_name']}</a></li>
+	</volist>
+</ul>
+<input id="store_id" type="hidden" name="store_id" value="0">
+<div class="footer">列表板块</div>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<script src="__PUBLIC__/Widget/ListStore/ListStore/ListStore.js" type="text/javascript"></script>

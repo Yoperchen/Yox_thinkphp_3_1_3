@@ -1,0 +1,41 @@
+<div class="Yocms_image_list_89">
+<ul>
+<volist name="list" id="comment" empty="没有评论">
+<li>
+<img src="{$comment['img1']}" />
+<h3>{$comment['title']}</h3>
+<p>{$comment['content']}...</p>
+</li>
+</volist>
+</ul>
+</div>
+<style type="text/css">
+.Yocms_image_list_89 {
+margin: 5px;
+}
+.Yocms_image_list_89 ul {
+list-style-type: none;
+width: 100%;
+}
+.Yocms_image_list_89 h3 {
+font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+.Yocms_image_list_89 li img {
+float: left;
+margin: 0 15px 0 0;
+}
+.Yocms_image_list_89 li p {
+font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+.Yocms_image_list_89 li {
+padding: 10px;
+overflow: auto;
+}
+.Yocms_image_list_89 li:hover {
+background: #eee;
+cursor: pointer;
+}
+.Yocms_image_list_89 img{
+width:100%;
+}
+</style>

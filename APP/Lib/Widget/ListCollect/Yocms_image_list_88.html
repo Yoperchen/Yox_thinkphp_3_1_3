@@ -1,0 +1,43 @@
+<div class="Yocms_image_list_88">
+<ul>
+<volist name="list" id="collcet">
+<li>
+<img src="{$collcet['img1']|default='__PUBLIC__/Widget/ListArticle/Yocms_image_list_90/default_image.jpg'}" />
+<h3>{$collcet['title']}</h3>
+<p>{$collcet['collect_say']}...</p>
+</li>
+</volist>
+</ul>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<style type="text/css">
+.Yocms_image_list_88 {
+margin: 5px;
+}
+.Yocms_image_list_88 ul {
+list-style-type: none;
+width: 100%;
+padding:0px;
+}
+.Yocms_image_list_88 h3 {
+font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+.Yocms_image_list_88 li img {
+float: left;
+margin: 0 15px 0 0;
+}
+.Yocms_image_list_88 li p {
+font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+.Yocms_image_list_88 li {
+padding: 10px;
+overflow: auto;
+}
+.Yocms_image_list_88 li:hover {
+background: #eee;
+cursor: pointer;
+}
+.Yocms_image_list_88 img{
+width:99px;
+}
+</style>

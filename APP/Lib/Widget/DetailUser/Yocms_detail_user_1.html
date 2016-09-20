@@ -1,0 +1,137 @@
+<!-- TAB代码 开始 -->
+<div id="Yocms_detail_user_1">
+	  <div class="tabList">
+		<ul>
+			<li class="cur">帐号设置</li>
+			<li>绑定邮箱</li>
+			<!--<li>会员收藏</li>
+			<li>通知设置</li>-->
+		</ul>
+		<span class="close" id="Yocms_detail_user_1_toggle">x</span>
+	  </div>
+	  <div class="tabCon">
+		<div class="cur">
+			<div class="clean"><span>ID:</span><span>{$data['id']|default='木有萌萌的id'}</span></div>
+			<div class="clean"><span>登录名:</span><span>{$data['name']|default='木有萌萌的登录名'}</span></div>
+			<div class="clean"><span>昵称:</span><span><input type="text" name="nick_name" value="{$data['nick_name']|default='木有萌萌的昵称'}"></span></div>
+			<div class="clean"><span>头像:</span><span><img style="border-radius: 25px;border: 2px solid #ccc;" id="Yocms_detail_user_1_show_avatar" height="50" src="{$data['avatar']|default='Public/Uploads/default_avatar/face_1.jpg'}"><input type="file" name="avatar"></span></div>
+			<div class="clean"><span>性别:</span><span><select name="sex"><option <if condition="$data['sex'] eq 0"> selected </if> value="0">不告诉你</option><option <if condition="$data['sex'] eq 1"> selected </if> value="1">男</option><option <if condition="$data['sex'] eq 2"> selected </if> value="2">女</option><option <if condition="$data['sex'] eq 3"> selected </if> value="3">其他</option></select></span></div>
+		</div>
+		<div>
+			<div style="font-size: 12px;height: 22px;line-height: 22px;border-bottom: 1px solid #dbe6f2;font: 12px Tahoma,Verdana,Arial,Helvetica,'\5b8b\4f53',sans-serif;color:#333;">未经授权，零零糖不会向任何第三方泄露您的邮箱，请放心操作。</div>
+			<div style="font-size: 13px;font-weight: bold;margin-top: 8px;">当前绑定邮箱是:{$data['email']|default='木有萌萌的邮箱'}</div>
+		</div>
+		<!--<div>会员收藏-被风吹过的夏天、江南、一千年以后</div>
+		<div>通知设置~</div>-->
+	  </div>
+	</div>
+<!-- TAB代码 结束 -->
+<style type="text/css">
+/* tab 开始 */
+#Yocms_detail_user_1{
+	width: 100%;
+	clear: both;
+	min-height: 135px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 20px;}
+#Yocms_detail_user_1 .clean{
+	clear: both;
+}
+#Yocms_detail_user_1 ul{margin: 15px;float: left;padding-left: 10px;margin-bottom: 0px;}
+#Yocms_detail_user_1 .close{
+color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;
+}
+#Yocms_detail_user_1 .tabList ul li{
+	float:left;
+	background:#fefefe;
+	background:-moz-linear-gradient(top, #fefefe, #ededed);	
+	background:-o-linear-gradient(left top,left bottom, from(#fefefe), to(#ededed));
+	background:-webkit-gradient(linear,left top,left bottom, from(#fefefe), to(#ededed));
+	border:1px solid #ccc;
+	padding:5px 0;
+	width:100px;
+	text-align:center;
+	margin-left:-1px;
+	position:relative;
+	cursor:pointer;
+	list-style:none;
+}
+#Yocms_detail_user_1 .tabList{height:35px;}
+#Yocms_detail_user_1 .tabCon{
+	left:-1px;
+	border-top:none;
+	width:100%;
+	clear: both;
+}
+#Yocms_detail_user_1 .tabCon span{
+	width: 88px;
+    text-align: left;
+    color: #666;
+    font: 12px Tahoma,Verdana,Arial,Helvetica,"\5b8b\4f53",sans-serif;
+    height: 35px;
+    line-height: 35px;
+    margin: 5px;
+    margin-left: 25px;
+}
+#Yocms_detail_user_1 .tabCon >div{
+	padding:10px;
+	display:none;
+	width:100%;
+}
+#Yocms_detail_user_1 .tabList li.cur{
+	border-bottom:none;
+	background:#fff;
+}
+#Yocms_detail_user_1 .tabCon div.cur{
+	display:block;
+	padding-top: 10px;
+	margin-left: 18px;
+}
+/* tab 结束 */
+</style>
+<script type="text/javascript">
+//TAB js代码
+$(function(){
+          $("#Yocms_detail_user_1 .tabList ul li").each(function(index){
+            $(this).click(function(){
+              $("#Yocms_detail_user_1 .tabList .cur").removeClass("cur");
+              $("#Yocms_detail_user_1 .tabCon >div").removeClass("cur");
+              //$("#Yocms_detail_user_1 .tabCon >div").css("display","none")
+              $(this).addClass("cur");
+              $("#Yocms_detail_user_1 .tabCon > div:eq("+index+")").addClass("cur");
+              //$("#Yocms_detail_user_1 .tabCon > div:eq("+index+")").css("display","block");
+            })
+          })                
+        })
+</script>
+<script>
+	//显示隐藏，id一般为widget内使用,类widget外使用
+	$("#Yocms_detail_user_1_toggle,.Yocms_detail_user_1_toggle,#Yocms_detail_user_1_close,.Yocms_detail_user_1_close,#Yocms_detail_user_1_open,.Yocms_detail_user_1_open").live("click",function(event){
+		$("#Yocms_detail_user_1").css("top",($(window).height())/7);
+		$("#Yocms_detail_user_1").css("left",($(window).width())/4);
+		$("#Yocms_detail_user_1").toggle();
+	})
+</script>
+<script>
+	//图片预览
+	$("#Yocms_detail_user_1 input[name='avatar']").bind("change",function(){
+		var objUrl = Yocms_getObjectURL(this.files[0]) ;
+		console.log("objUrl = "+objUrl) ;
+		if (objUrl) {
+		$("#Yocms_detail_user_1_show_avatar").attr("src",objUrl);
+		}
+	})
+	//建立一個可存取到該file的url
+	function Yocms_getObjectURL(file) {
+		var url = null ; 
+		if (window.createObjectURL!=undefined) { // basic
+			url = window.createObjectURL(file) ;
+		} else if (window.URL!=undefined) { // mozilla(firefox)
+			url = window.URL.createObjectURL(file) ;
+		} else if (window.webkitURL!=undefined) { // webkit or chrome
+			url = window.webkitURL.createObjectURL(file) ;
+		}
+		return url ;
+	}
+</script>

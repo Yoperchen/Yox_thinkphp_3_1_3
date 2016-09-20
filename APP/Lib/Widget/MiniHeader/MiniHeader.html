@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Widget/MiniHeader/MiniHeader/MiniHeader_{$css|default='w1200_gray'}.css">
+<div id="MiniHeader" class="MiniHeader">
+	<div class="top-wrap">
+              <a href="{:U('Index/index@yo81008')}" title="首页" style="color:#D80321">零零糖</a> - 零食的零，糖果的糖 - 上网、购物、搜索、爱学习从这里开始
+    		<div class="userinfo">
+			<a id="community_name" data-community-id="{$Think.cookie.community_id|default='44'}" title="学校名称" style="color:#D80321">{$Think.cookie.community_name|default='北京大学'}</a>
+			<a href="javascript:;" onclick="get_community_list(this)" title="选择学校">切换</a>&nbsp;
+			<if condition="$Think.session.id != ''">
+			欢迎您<!--<a href="{:U('User/index@Yo81008')}" title="喵~">{$Think.session.name|default="这家伙很懒，什么也没留下"}</a>-->
+			<a href="{:U('User/logout@Yo81008')}">退出</a>
+ 			<else />
+			<form id="login_form" name="login_form" action="{:U('Index/login@Yo81008')}" method="post">
+                <span>账号</span>
+                <input type="text" id="user_id" name="id"/>
+                <span>密码</span>
+                <input type="password" id="user_password" name="password" />
+                <input style="border-radius: 15px;  BACKGROUND: #FF0000;border: 1px solid #FFFFFF;color: #fff;cursor: pointer;" type="submit" name="submit_login" value="登陆"/>
+            </form>
+			没有帐号?去<a style="color:green;" href="{:U('Index/register@Yo81008')}">注册</a>
+			
+			 </if>
+        </div>
+    </div>
+</div>
+<script>
+require(['jquery'], function($){
+	if(typeof(MiniHeader_is_load)=="undefined"){
+		$("body").append('<script src="__PUBLIC__/Widget/MiniHeader/MiniHeader/MiniHeader.js" type="text/javascript"><\/script>');
+	}
+});
+</script>

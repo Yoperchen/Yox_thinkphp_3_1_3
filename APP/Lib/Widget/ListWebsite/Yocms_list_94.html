@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Widget/ListWebsite/Yocms_list_94/Yocms_website_list_94_{$css|default='w1000_pink'}.css">
+<div class="Yocms_website_list_94" id="Yocms_website_list_94">
+<!--	<div class="header">
+		<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">热点</span>
+		<span class="close" id="Yocms_website_list_93_toggle" title="关闭">x</span>
+	</div>-->
+	<div>
+	<volist name="list" id="website">
+		<span><a href="{$website.url|default='#'}" title="{$website.name}" target="_blank" class="yd-black">{$website.short_name|default=$website.name}</a></span>
+	</volist>
+	</div>
+	<input id="website_id" type="hidden" name="website_id" value="0">
+	<!--<div class="footer">列表板块</div>-->
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<script>
+require(['jquery'], function($){
+	if(typeof(Yocms_website_list_94_is_load)=="undefined"){
+		$("body").append('<script src="__PUBLIC__/Widget/ListWebsite/Yocms_website_list_94/Yocms_website_list_94.js" type="text/javascript"><\/script>');
+	}
+});
+</script>

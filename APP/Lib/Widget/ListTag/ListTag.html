@@ -1,0 +1,45 @@
+<style type="text/css">
+.ListTag *{margin:0;padding:0;}
+.ListTag{border: 1px solid #ccc;border-radius: 20px;display:block;margin:0 auto; width:98%; position:relative;clear:both;overflow:auto}
+.ListTag .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.ListTag span {height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+.ListTag .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+.ListTag .close:hover{background-color: #9c9c9c;}
+.ListTag li{list-style:none;}img{border:none;}em{font-style:normal;}
+.ListTag a{color:#555;text-decoration:none;outline:none;blr:this.onFocus=this.blur();}
+.ListTag a:hover{color:#000;text-decoration:underline;}
+.ListTag .clear{height:0;overflow:hidden;clear:both;}
+.ListTag h4{font-size:14px;height:27px;line-height:27px;padding-left:10px;border-bottom:#ddd 1px solid;}
+.ListTag{width:98%;}
+.ListTag ul{padding:5px 10px;}
+.ListTag ul li{height:24px;line-height:24px;overflow:hidden;}
+.ListTag .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}
+</style>
+<div class="ListTag" id="ListTag">
+<div class="header">
+	<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">标签</span>
+	<span class="close" id="ListTag_toggle" title="关闭">x</span>
+</div>
+<ul>
+	<volist name="list" id="tag">
+		<li data-tag-id="{$tag['id']}"><a title="{$tag['tag']}" data-tag-id="{$tag['id']}" href="{:U('Tag/tag_detail@Common',array('tag_id'=>$tag['id']))}" target="_blank">{$tag['tag']}</a></li>
+	</volist>
+</ul>
+<input id="tag_id" type="hidden" name="tag_id" value="0">
+<div class="footer">列表板块</div>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<script>
+//显示隐藏，id一般为widget内使用,类widget外使用
+$("#ListTag_toggle,.ListTag_toggle,#ListTag_close,.ListTag_close,#ListTag_open,.ListTag_open").live("click",function(event){
+	$("#ListTag").css("top",$(document).scrollTop()+50);
+	$("#ListTag").css("left",($(window).width())/4);
+	$("#ListTag").css("position","absolute");
+	$("#ListTag").toggle();
+})
+</script>
+<script>
+$("#ListTag ul li").live("click",function(){
+	$("#ListTag #tag_id").val($(this).attr("data-tag-id"));
+})
+</script>

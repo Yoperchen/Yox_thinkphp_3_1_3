@@ -1,0 +1,45 @@
+<style type="text/css">
+.ListAd *{margin:0;padding:0;}
+.ListAd{border: 1px solid #ccc;border-radius: 20px;display:block;margin:0 auto; width:98%; position:relative;clear:both;overflow:auto}
+.ListAd .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.ListAd span {height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+.ListAd .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+.ListAd .close:hover{background-color: #9c9c9c;}
+.ListAd li{list-style:none;}img{border:none;}em{font-style:normal;}
+.ListAd a{color:#555;text-decoration:none;outline:none;blr:this.onFocus=this.blur();}
+.ListAd a:hover{color:#000;text-decoration:underline;}
+.ListAd .clear{height:0;overflow:hidden;clear:both;}
+.ListAd h4{font-size:14px;height:27px;line-height:27px;padding-left:10px;border-bottom:#ddd 1px solid;}
+.ListAd{width:98%;}
+.ListAd ul{padding:5px 10px;}
+.ListAd ul li{height:24px;line-height:24px;overflow:hidden;}
+.ListAd .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}
+</style>
+<div class="ListAd" id="ListAd">
+<div class="header">
+	<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">广告</span>
+	<span class="close" id="ListAd_toggle" title="关闭">x</span>
+</div>
+<ul>
+	<volist name="list" id="ad">
+		<li data-ad-id="{$ad['id']}"><a data-ad-id="{$ad['id']}" href="{:U('Ad/ad_detail@Common',array('ad_id'=>$ad['id']))}" target="_blank">{$ad['title']}</a></li>
+	</volist>
+</ul>
+<input id="ad_id" type="hidden" name="ad_id" value="0">
+<div class="footer">列表板块</div>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<script>
+	//显示隐藏，id一般为widget内使用,类widget外使用
+	$("#ListAd_toggle,.ListAd_toggle,#ListAd_close,.ListAd_close,#ListAd_open,.ListAd_open").live("click",function(event){
+		$("#ListAd").css("top",$(document).scrollTop()+50);
+		$("#ListAd").css("left",($(window).width())/4);
+		$("#ListAd").css("position","absolute");
+		$("#ListAd").toggle();
+	})
+</script>
+<script>
+$("#ListAd ul li").live("click",function(){
+	$("#ListAd #ad_id").val($(this).attr("data-ad-id"));
+})
+</script>

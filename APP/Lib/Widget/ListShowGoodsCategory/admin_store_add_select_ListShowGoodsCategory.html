@@ -1,0 +1,21 @@
+<!-- 添加选择 -->
+<select name="category_id" class="chosen-select">
+<option value="">顶级分类</option>
+<volist name="good_category_list" id="cat">
+    <option value="{$cat['id']}" >{$cat['count']}{$cat['id']}|{$cat['name']}</option>
+ </volist>
+</select>
+<link rel="stylesheet" href="__PUBLIC__/plugins/chosen_1_4_2/chosen.css">
+<script src="__PUBLIC__/plugins/chosen_1_4_2/chosen.jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+  </script>

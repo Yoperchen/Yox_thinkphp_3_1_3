@@ -1,0 +1,5 @@
+<select name="brand">
+<volist name="brand_list" id="list">
+    <option <eq name="list.id" value="$select_id">selected</eq>>{$list['id']}|{$list['name']}</option>
+ </volist>
+</select>

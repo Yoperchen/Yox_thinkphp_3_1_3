@@ -1,0 +1,25 @@
+<div class="Yocms_image_list_92" empty="没有评论"> 
+<div class="inner"> 
+<ul class="rank_list"> 
+<volist name="list" id="comment" key="k" empty="暂时没有数据">
+<li <if condition="$k lt 3"> class="top3" </if>><em>1</em><a href="#">{$comment['content']}</a><span>{$comment['view']}</span></li>
+</volist>
+</ul> 
+</div> 
+</div> 
+<style type="text/css"> 
+.Yocms_image_list_92 { font-size:12px; text-align:center;} 
+.Yocms_image_list_92 ul, .Yocms_image_list_92 li { list-style:none;} 
+.Yocms_image_list_92 a{ text-decoration:none; color:#3381BF;float: left;} 
+.Yocms_image_list_92 a:hover{ text-decoration:underline;} 
+.Yocms_image_list_92 { height:260px;} 
+.Yocms_image_list_92 .box2 { border:1px solid #ADDFF2; text-align:left; overflow:hidden; color:#9C9C9C; text-align:left;} 
+.Yocms_image_list_92 .box2 { margin-bottom:7px;} 
+.Yocms_image_list_92 .box2 .inner{ padding:8px; line-height:18px; overflow:hidden; color:#3083C7;} 
+.Yocms_image_list_92 .box2 a{ color:#3083C7; white-space:nowrap;} 
+.Yocms_image_list_92 .rank_list{ line-height:14px; margin:auto; padding-top:5px;padding:0px;} 
+.Yocms_image_list_92 .rank_list li{ height:14px; margin-bottom:8px; width:290px; padding-left:20px; white-space:nowrap; overflow:hidden; position:relative;width:98%} 
+.Yocms_image_list_92 .rank_list li.top3 em{ background:#FFE4B7; border:1px solid #FFBB8B; color:#FF6800;} 
+.Yocms_image_list_92 .rank_list em{ position:absolute; left:0; top:0; width:15px; height:12px; border:1px solid #B1E0F4; color:#6298CC; font-style:normal; font-size:10px; font-family:Arial; background:#E6F0FD; text-align:center; line-height:12px; overflow:hidden;} 
+.Yocms_image_list_92 .rank_list span{  width:40px; color:#B7B7B7; text-align:right; height:14px; background:#fff; float:right;} 
+</style> 

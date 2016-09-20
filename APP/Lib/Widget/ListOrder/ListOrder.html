@@ -1,0 +1,71 @@
+<link href="__PUBLIC__/Widget/ListOrder/ListOrder/ListOrder_{$css|default='w1200'}.css" rel="stylesheet"/>
+<div id="ListOrder">
+<div class="header">
+	<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">订单</span>
+	<span class="close" id="ListOrder_toggle" title="关闭">x</span>
+</div>
+<table class="gridtable">
+	<tr>
+		<if condition="$css eq 'w1200'">
+		<th>订单ID</th>
+		</if>
+		<th>订单编号</th>
+		<if condition="$css eq 'w1200'">
+		<th>支付者</th>
+		<th>收款商家</th>
+		<th>购买数量</th>
+		<th>订单名称</th>
+		</if>
+		<th>总价</th>
+		<th>支付金额</th>
+		<th>使用余额</th>
+		<th>使用积分</th>
+		<th>优惠券价值</th>
+		<th>交换物</th>
+		<th>支付方式</th>
+		<th>状态</th>
+		<th>操作</th>
+	</tr>
+	<volist name="list" id="order">
+	<tr>
+		<if condition="$css eq 'w1200'">
+		<td>{$order['id']}</td>
+		</if>
+		<td>{$order['order_num']}</td>
+		<if condition="$css eq 'w1200'">
+		<td>{$order['pay_money_user_id']}</td>
+		<td>{$order['get_money_store_id']}</td>
+		<td>{$order['buy_quantity']}</td>
+		<td>{$order['name']}</td>
+		</if>
+		<td>{$order['total_price']}</td>
+		<td>{$order['pay_price']}</td>
+		<td>{$order['use_funds']|default='无'}</td>
+		<td>{$order['use_integral']|default='无'}</td>
+		<td>{$order['user_coupon']|default='无'}</td>
+		<td>{$order['pay_goods_id']|default='无'}</td>
+		<td>{$order['payment_method']|default='未知'}</td>
+		<td>{$order['status']}</td>
+		<td>
+		<a href="">详情</a>&nbsp;|&nbsp;
+		<if condition="$order['status'] neq 9">
+		<a href="">确认收货</a>
+		<else/>
+		<a href="">投诉</a>
+		</if>
+		</td>
+	</tr>
+	 </volist>
+</table>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<div class="footer">列表板块</div>
+</div>
+<script>
+//显示隐藏，id一般为widget内使用,类widget外使用
+$("#ListOrder_toggle,.ListOrder_toggle,#ListOrder_close,.ListOrder_close,#ListOrder_open,.ListOrder_open").live("click",function(event){
+	$("#ListOrder").css("top",$(document).scrollTop()+50);
+	$("#ListOrder").css("left",($(window).width())/4);
+	$("#ListOrder").css("position","absolute");
+	$("#ListOrder").toggle();
+})
+</script>

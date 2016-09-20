@@ -1,0 +1,56 @@
+<div class="Yocms_image_list_90">
+  <ul>
+  <volist name="list" id="collcet">
+    <li class="listbox mr20">
+      <div class="listimg"> <a href="{$collcet['url']|default=U('Collcet/collcet_detail',array('collcet_id'=>$collcet['id']))}" title="{$collcet['title']}" target="_blank">
+      <img src="{$collcet['img1']|default='__PUBLIC__/Widget/ListGoods/Yocms_image_list_90/default_image.jpg'}" class="attachment-thumbnail wp-post-image" alt="{$collcet['collcet_say']}" /></a>
+        <div class="summary">
+          <div class="summarytxt">
+            <p>{$collcet['collect_say']|default='分享者木有说话'}</p>
+          </div>
+        </div>
+      </div>
+      <div class="listinfo">
+        <div class="listtitle">
+		<a href="{$collcet['url']|default=U('Collcet/collcet_detail',array('collcet_id'=>$collcet['id']))}" title="{$collcet['title']}" target="_blank">{$collcet['title']}</a>
+		</div>
+        <div class="listtag"><a href="{$collcet['id']}" rel="tag">站点</a><a href="{$collcet['id']}" rel="tag">杂志</a></div>
+        <div class="listdate">{$collcet['add_time']|date="Y-m-d",###}</div>
+        <div class="listview">{$collcet['view']|default='167'}</div>
+        <div class="listcomment">16</div>
+        <div class="listdemo"><a href="{:U('Collcet/collcet_detail',array('collcet_id'=>$collcet['id']))}" rel="external nofollow" target="_blank">详细</a></div>
+      </div>
+    </li>
+   </volist>
+  </ul>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<style type="text/css">
+.Yocms_image_list_90 *{margin:0;padding:0;}
+.Yocms_image_list_90{margin:0 auto; width:1200px; position:relative;}
+.Yocms_image_list_90 a{font-family:Tahoma,Helvetica,Arial,sans-serif; font-size:14px; color:#666; text-decoration:none; outline:none;}
+.Yocms_image_list_90 ul li{margin-left:20px;}
+.Yocms_image_list_90 .clear{clear:both;}
+.Yocms_image_list_90 .summary{background:#333;}
+.Yocms_image_list_90 .listbox{float:left;margin-bottom:20px; padding:10px; _padding:10px 10px 8px 10px ;background:#f6f6f6; width:260px; height:240px; position:relative;list-style: none;}
+.Yocms_image_list_90 .listimg{float:left; width:260px; height:165px; position:relative; overflow:hidden;}
+.Yocms_image_list_90 .listimg img{background:#333; width:260px; height:165px; top:0; left:0; position:absolute;}
+.Yocms_image_list_90 .summary{width:260px;height:165px;top:165px;left:0;position:absolute;}
+.Yocms_image_list_90 .summarytxt{text-align: left;margin:5px 10px;width:250px;height:auto;line-height:22px;font-size:12px;color:#cfcfcf;}
+.Yocms_image_list_90 .listinfo{_margin-bottom:3px; padding-left:10px; width:250px; line-height:22px; font-size:12px;}
+.Yocms_image_list_90 .listinfo a{font-size:12px;}
+.Yocms_image_list_90 .listtitle{float:left; margin-top:8px; _margin-top:-2px; width:250px; font-size:14px;}
+.Yocms_image_list_90 .listtitle a{font-size:14px;height: 25px;overflow: hidden;display: block;}
+.Yocms_image_list_90 .listtitle a:hover{color:#f55555;}
+.Yocms_image_list_90 .listtag{text-align: left;float:left;padding-left:18px;background:url(__PUBLIC__/Widget/ListArticle/Yocms_image_list_90/taglist.gif) 0 5px no-repeat;width:232px;color:#999;}
+.Yocms_image_list_90 .listtag a{margin:0 8px 0 0;margin:2px 8px -2px 0\9;_margin:0 8px 0 0;color:#999;}
+.Yocms_image_list_90 .listtag a:hover{color:#2ad2bb;}
+.Yocms_image_list_90 .listdate{float:left;margin-right:13px;padding-left:18px;background:url(__PUBLIC__/Widget/ListArticle/Yocms_image_list_90/time.gif) 0 5px no-repeat;color:#999;}
+.Yocms_image_list_90 .listview{float:left;margin-right:13px;padding-left:24px;background:url(__PUBLIC__/Widget/ListArticle/Yocms_image_list_90/view.gif) 0 5px no-repeat;color:#999;}
+.Yocms_image_list_90 .listcomment{float:left;margin-right:13px;padding-left:20px;background:url(__PUBLIC__/Widget/ListArticle/Yocms_image_list_90/comment.gif) 0 5px no-repeat;color:#999;}
+.Yocms_image_list_90 .listdemo a{float:left;margin-top:0;margin-top:2px\9;_margin-top:0;color:#999;white-space:nowrap;}
+.Yocms_image_list_90 .listdemo a:hover{color:#2ad2bb;}
+</style>
+<script>
+$(document).ready(function(){$('.listimg').hover(function(){$(".summary",this).stop().animate({top:'110px'},{queue:false,duration:180});},function(){$(".summary",this).stop().animate({top:'165px'},{queue:false,duration:180});});});
+</script>

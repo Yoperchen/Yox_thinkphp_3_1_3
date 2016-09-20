@@ -1,0 +1,9 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Widget/WidgetFooter/WidgetFooter/WidgetFooter_{$css|default='whp_gray'}.css">
+<div class="WidgetFooter"><span class="description">{$Yocms_data.description|default='列表板块'}</span></div>
+<script>
+require(['jquery'], function($){
+	if(typeof(WidgetFooter_is_load)=="undefined"){
+		$("body").append('<script src="__PUBLIC__/Widget/WidgetFooter/WidgetFooter/WidgetFooter.js" type="text/javascript"><\/script>');
+	}
+});
+</script>

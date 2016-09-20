@@ -1,0 +1,12 @@
+根据品牌获取商品列表:<br/>
+<volist name="goods_list" id="list">
+    <li>商品id:{$list['goods_id']}</li>
+    <li>商品所属分类：{$list['category']}</li>
+     <li>商品所属分类：{$list['brand']}</li>
+   <li>分类排序：{$list['sort']}</li>
+   <li>商品所属商家：{$list['store_id']}</li>
+     <li>商品名称：<a href="{:U('Home/Goods/good_detail?goods_id='.$list['goods_id'])}">{$list['goods_name']}</a></li>
+    <li>商品价格：{$list['price']}</li>
+    <li>商品描述：{$list['desc']}</li>
+      <li>商品图片：{$list['img']}</li>
+ </volist>

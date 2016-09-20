@@ -1,0 +1,45 @@
+<style type="text/css">
+.ListAppointment *{margin:0;padding:0;}
+.ListAppointment{border: 1px solid #ccc;border-radius: 20px;display:block;margin:0 auto; width:98%; position:relative;clear:both;overflow:auto}
+.ListAppointment .header{border-bottom: 1px solid #357ebd;width: 100%;height: 55px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.ListAppointment span {height: 30px;font-size: 15px;margin: 10px;padding: 2px;display: block;float: left;width: 110px;text-align: left;line-height: 35px;}
+.ListAppointment .close{color:red;font-size:30px;width:45px;height:45px;float:right;font-family: cursive;cursor: pointer;border-radius: 20px;text-align: center;margin-top: 6px;}
+.ListAppointment .close:hover{background-color: #9c9c9c;}
+.ListAppointment li{list-style:none;}img{border:none;}em{font-style:normal;}
+.ListAppointment a{color:#555;text-decoration:none;outline:none;blr:this.onFocus=this.blur();}
+.ListAppointment a:hover{color:#000;text-decoration:underline;}
+.ListAppointment .clear{height:0;overflow:hidden;clear:both;}
+.ListAppointment h4{font-size:14px;height:27px;line-height:27px;padding-left:10px;border-bottom:#ddd 1px solid;}
+.ListAppointment{width:98%;}
+.ListAppointment ul{padding:5px 10px;}
+.ListAppointment ul li{height:24px;line-height:24px;overflow:hidden;}
+.ListAppointment .footer{padding: 10px;font-size: 12px;color: #999;text-align: left;float: left;clear: both;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;width: 95%;}
+</style>
+<div class="ListAppointment" id="ListAppointment">
+<div class="header">
+	<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">约会</span>
+	<span class="close" id="ListAppointment_toggle" title="关闭">x</span>
+</div>
+<ul>
+	<volist name="list" id="appointment">
+		<li data-Appointment-id="{$appointment['id']}"><a title="{$appointment['desc']}" data-Appointment-id="{$appointment['id']}" href="{:U('Appointment/appointment_detail@Common',array('appointment_id'=>$appointment['id']))}" target="_blank">{$appointment['title']}</a></li>
+	</volist>
+</ul>
+<input id="appointment_id" type="hidden" name="appointment_id" value="0">
+<div class="footer">列表板块</div>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<script>
+	//显示隐藏，id一般为widget内使用,类widget外使用
+	$("#ListAppointment_toggle,.ListAppointment_toggle,#ListAppointment_close,.ListAppointment_close,#ListAppointment_open,.ListAppointment_open").live("click",function(event){
+		$("#ListAppointment").css("top",$(document).scrollTop()+50);
+		$("#ListAppointment").css("left",($(window).width())/4);
+		$("#ListAppointment").css("position","absolute");
+		$("#ListAppointment").toggle();
+	})
+</script>
+<script>
+$("#ListAppointment ul li").live("click",function(){
+	$("#ListAppointment #appointment_id").val($(this).attr("data-appointment-id"));
+})
+</script>

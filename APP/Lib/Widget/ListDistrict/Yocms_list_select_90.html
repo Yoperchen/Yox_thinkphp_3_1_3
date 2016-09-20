@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Widget/ListDistrict/Yocms_list_select_90/Yocms_list_select_90_{$css|default='w1200_gray'}.css">
+<div class="Yocms_list_select_90" id="Yocms_list_select_90" data-action-url="{$action_url|default='/'}">
+	<div class="header">
+		<span style="color:#357ebd;font-size:15px;width:200px;float:left;font-family: cursive;">热点</span>
+		<span class="close" id="Yocms_list_select_90_toggle" title="关闭">x</span>
+	</div>
+	<ul>
+	<volist name="list" id="district">
+		<li><a data-district-id="{$district['id']}" href="javascript:;" target="_blank">{$district['name']}</a></li>
+	</volist>
+	</ul>
+	<div id="Yocms_list_select_90_footer" class="footer">选择列表板块</div>
+</div>
+<include file="./APP/Tpl/Common/Public/widget_page.html" /> 
+<script>
+require(['jquery'], function($){
+	if(typeof(Yocms_district_list_90_is_load)=="undefined"){
+		$("body").append('<script src="__PUBLIC__/Widget/ListDistrict/Yocms_list_select_90/Yocms_list_select_90.js" type="text/javascript"><\/script>');
+	}
+});
+</script>
