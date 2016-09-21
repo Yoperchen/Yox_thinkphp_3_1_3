@@ -1,0 +1,88 @@
+<include file="Public/mini_header" />
+
+
+<div style="width: 1000px;margin: 0 auto;">
+	<div id="hd">
+	            <!-- logo -->
+	            <a class="logo" href="http://www.linglingtang.com/" title="零零糖网购首页" onclick="" target="_blank">网购导航 - 网址导航</a>
+	            <!-- 日历 -->
+	            <div id="calendarWrap">
+	    <p class="date" curdate="1399951259983">
+	        <span>逛逛街</span>
+	        <span>&nbsp;</span>
+	        <span class="time">买东西</span>
+	    </p>
+	            <p class="qa">
+	        <a href="http://union.click.jd.com/jdc?e=&p=AyIEZRhaFgAaB1YdXCUBEwRXE1sWBBs3EUQDS10iXhBeGh4cDFsFRgYKWUcYB0UHC1pNUgFSRxwKEA5RBAJQXk83HWcfEXF0BQl7KE11blQxUz9nXVJZJRdXJQMiBFEZWxYCEgdRK2t0cCJGOxJTFwsW&t=W1dCFBBFC15CWggEAEAdQFkJBQNKV0ZOSRJTFwsWGAxeB0g%3D" onclick="" target="_blank">天天特价精选<!--Yoper--></a>
+	    </p>
+	    </div>  
+		<div class="weatherWrap" style="left:308px;">
+		<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=7" width="225" height="90" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+				<!-- 广告 -->
+	            <div id="adao">
+				<!--京东推广-->
+				<a href="#"><img height="100%" src="../Public/image/face/luo_1.gif"></a>
+				<a href="#"><img height="100%" src="../Public/image/face/luo_2.png"></a>
+				<a href="#"><img height="100%" src="../Public/image/face/luo_3.png"></a>
+				<a href="#"><img height="100%" src="../Public/image/face/luo_4.png"></a>
+				<!--京东推广-->
+				</div>
+	</div>
+</div>
+<style type="text/css">
+#hd {
+  font-size: 12px;
+  height: 160px;
+  position: relative;
+  z-index: 1;
+}
+.logo, .weatherWrap, #calendarWrap, #adao {
+  position: absolute;
+  top: 0;
+  height: 65px;
+  overflow: hidden;
+}
+/*
+logo
+*/
+.logo {
+  left: 0;
+  width: 185px;
+  background: url(../Public/image/logo.png) no-repeat 0 0;
+  overflow: hidden;
+  text-indent: -999px;
+}
+/*
+日历
+*/
+#calendarWrap {
+  left: 165px;
+  width: 193px;
+  color: #666666;
+}
+#calendarWrap p.date {
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+#calendarWrap p {
+  text-align: center;
+  margin: 10px 16px;
+}
+/*
+天气
+*/
+.weatherWrap {
+  left: 185px;
+  width: 219px;
+  z-index: 3;
+}
+#adao {
+  width: 472px;
+  right: 0;
+  height: 51px;
+  overflow: hidden;
+  line-height: 45px;
+  margin-top: 5px;
+}
+</style>

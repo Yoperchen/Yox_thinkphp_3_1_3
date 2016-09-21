@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/ckeditor/ckeditor.js"></script>
+<title>商品管理</title>
+</head>
+<body>
+<h1>商品管理=>商品详细</h1>
+<table>
+	<tr><td>ID：</td><td>{$good_info_result['data']['goods_id']}</td></tr>
+	<tr><td>名称；</td><td>{$good_info_result['data']['name']}</td></tr>
+	<tr><td>数量：</td><td>{$good_info_result['data']['quantity']}</td></tr>
+	<tr><td>价格：</td><td>{$good_info_result['data']['price']}</td></tr>
+	<tr><td>状态：</td><td>{$good_info_result['data']['status']}</td></tr>
+	<tr><td><a href="{:U('Admin/Goods/detailGood',array('is_export'=>1,'goods_id'=>$good_info_result['data']['goods_id']))}">导出资料</a></td><td></td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<table cellpadding=3 cellspacing=5>
+	<volist name="list" id="vo">
+	<form action="" method="post">
+	<tr>
+		<td style="border-bottom:1px solid silver;">
+			<span style="color:gray">
+			{$vo.goods_id}-{$vo.goods_name}-[ {$vo.last_update|date='Y-m-d H:i:s',###} ]-价格：{$vo.shop_price}
+			<input type="submit" name="提交">
+			</span>  
+		</td>
+	</tr>
+	</form>
+	</volist>
+	<tr></tr>
+</table>
+<div class="result page" id="page">{$page}</div>

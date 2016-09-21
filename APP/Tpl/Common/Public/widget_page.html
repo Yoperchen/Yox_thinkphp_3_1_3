@@ -1,0 +1,32 @@
+<div class="Yocms_page">
+<!-- 分页 -->
+<if condition="$page_template eq '' OR $page_template eq 0">
+<!-- 不显示分页0 -->
+<elseif condition="$page_template eq 1"/>
+<!-- 分页模版1 -->
+{$page['page_str']}
+<style type="text/css">
+.Yocms_page{clear: both;text-align: center;width: 100%;height: 30px;line-height: 30px;display: block;}
+.Yocms_page a{}
+.Yocms_page span{}
+.Yocms_page .current{}
+</style>
+<elseif condition="$page_template eq 2"/>
+<style type="text/css">
+.Yocms_next_page{background-color: #e1e1e1;
+    width: 100%;
+    display: block;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 35px;
+    color: #514F4F;
+    text-decoration: none;
+	}
+</style>
+<a class="Yocms_next_page" href="#">下一页</a>
+<!-- 分页模版2 -->
+<else />
+<!-- 默认分页模版 -->
+{$page['page_str']}
+</if>
+</div>

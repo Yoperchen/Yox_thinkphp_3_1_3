@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="language" content="chinese" />
+<title>七爷租车-中国最大私家车共享平台 </title>
+<link rel="stylesheet" href="../Public/style.css" type="text/css" media="all"/>
+<script type="text/javascript" src="__Public__/jquery-1.10.2.js"></script>
+<!--[if lte IE 6]>
+	<script src="/qiyezuche/Tpl/Home/default_theme/Public/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	  DD_belatedPNG.fix('div,li,a,h3,span,img,.png_bg,ul,input,dd,dt,a');
+	</script>
+<![endif]-->
+</head>
+<body>
+	<include file="Public/header" />
+<!--content-->
+<div class="wrapper mb50 m20">
+    <div class="cardt_left">
+        <div class="cardt_img"><img src="/Public/qiyezuche/user/36/5487ba220e9ac.jpg" width="640" height="450" id="big_img"/></div>
+        <div class="cardt_thumbnail"> <span class="float_left arrow"><a href="#"><img src="/qiyezuche/Tpl/Home/default_theme/Public/images/icon_thumbnail_larrow.png" width="19" height="30" /></a></span>
+            <ul class="showimg">
+                <li class="hover"><img src="/Public/qiyezuche/user/36/5487ba220e9ac.jpg" width="109" height="109"/></li>
+                <li><img src="/Public/qiyezuche/user/36/5487ba2232619.jpg" width="109" height="109"/></li>                            </ul>
+            <span class="float_left arrow"><a href="#"><img src="/qiyezuche/Tpl/Home/default_theme/Public/images/icon_thumbnail_rarrow.png" width="19" height="30"/></a></span> </div>
+        <h2>车辆信息</h2>
+        <div class="cardt_txt"> <span class="w100 ctitle">海马family</span> <span class="float_left">车型：<br />
+            变速箱：手动<br />
+            座位：人</span> <span class="float_right" style="width:226px;">颜色：<br />
+            排量： <br />
+            驶程：公里</span> </div>
+        <h2>提车备注</h2>
+        <div class="cardt_txt">租客当面提车时，请租客本人带好身份证，驾驶证等相关证件.(原件)。</div>
+        <h2>提车地点</h2>
+		<include file="Public/inc_car_detail_baidu_map" />
+        <div class="cardt_maps">
+             <input type="hidden"  id="getLng" name="lng"   value="">
+            <input type="hidden"  id="getLat" name="lat"   value="">
+            <div id="iCenter" style="width:600px;height:380px;border:1px solid #dedede;padding:2px"></div>
+        </div>
+    </div>
+    <div class="cardt_right">
+        <div class="cardt_price">
+            <div class="price_day w100"><b>200.00元</b>/天</div>
+            <div class="price_week w100"><b></b>/时 <b></b>/月</div>
+            <div class="cardt_price_bt"><a href="#" class="bt_orange">立即租用</a></div>
+        </div>
+        <div class="cardt_cheinfo"> <span class="cheinfo w100">车主信息</span>
+            <div class="cheface w100"><img src="/qiyezuche/Tpl/Home/default_theme/Public/images/img_my_face.png" width="150" height="150"  /></div>
+            <span class="chename w100"></span> </div>
+        <!--<div class="cardt_date">
+        	<h2>可租用日期</h2>
+            <div class="cardt_date_ct"><img src="/qiyezuche/Tpl/Home/default_theme/Public/images/img_day.jpg" width="240" height="260"  /></div>
+        </div>-->
+        <div class="cardt_hot cardt_date">
+            <h2>同一品牌车辆</h2>
+            <ul>
+            	 <li>
+                    <div class="cardt_hot_img"> <a href=""><img src="/Public/qiyezuche/Admin/5425174e23478.jpg" width="100" height="90"/></a> </div>
+                    <div class="cardt_hot_txt"> <span class="cardt_hot_title w100"><a href="">长安</a></span> <span class="cardt_hot_add">广州白云区云台花园</span> <span class="cardt_hot_price w100"><b>100.00元</b>/天</span> </div>
+                </li><li>
+                    <div class="cardt_hot_img"> <a href=""><img src="/Public/qiyezuche/Admin/542518373b63c.jpg" width="100" height="90"/></a> </div>
+                    <div class="cardt_hot_txt"> <span class="cardt_hot_title w100"><a href="">江玲</a></span> <span class="cardt_hot_add"></span> <span class="cardt_hot_price w100"><b>80.00元</b>/天</span> </div>
+                </li><li>
+                    <div class="cardt_hot_img"> <a href=""><img src="/Public/qiyezuche/Admin/5425192c0382d.jpg" width="100" height="90"/></a> </div>
+                    <div class="cardt_hot_txt"> <span class="cardt_hot_title w100"><a href="">别克</a></span> <span class="cardt_hot_add"></span> <span class="cardt_hot_price w100"><b>800.00元</b>/天</span> </div>
+                </li><li>
+                    <div class="cardt_hot_img"> <a href=""><img src="/Public/qiyezuche/Admin/54251aaa3bba1.jpg" width="100" height="90"/></a> </div>
+                    <div class="cardt_hot_txt"> <span class="cardt_hot_title w100"><a href="">宝劲 </a></span> <span class="cardt_hot_add"></span> <span class="cardt_hot_price w100"><b>300.00元</b>/天</span> </div>
+                </li><li>
+                    <div class="cardt_hot_img"> <a href=""><img src="/Public/qiyezuche/Admin/54251b8a6a9e1.jpg" width="100" height="90"/></a> </div>
+                    <div class="cardt_hot_txt"> <span class="cardt_hot_title w100"><a href="">宝劲</a></span> <span class="cardt_hot_add"></span> <span class="cardt_hot_price w100"><b>300.00元</b>/天</span> </div>
+                </li><li>
+                    <div class="cardt_hot_img"> <a href=""><img src="/Public/qiyezuche/Admin/54251c8c3634b.jpg" width="100" height="90"/></a> </div>
+                    <div class="cardt_hot_txt"> <span class="cardt_hot_title w100"><a href="">野马</a></span> <span class="cardt_hot_add"></span> <span class="cardt_hot_price w100"><b>180.00元</b>/天</span> </div>
+                </li><li>
+                    <div class="cardt_hot_img"> <a href=""><img src="/Public/qiyezuche/Admin/54251d9131921.jpg" width="100" height="90"/></a> </div>
+                    <div class="cardt_hot_txt"> <span class="cardt_hot_title w100"><a href="">大众</a></span> <span class="cardt_hot_add"></span> <span class="cardt_hot_price w100"><b>250.00元</b>/天</span> </div>
+                </li><li>
+                    <div class="cardt_hot_img"> <a href=""><img src="/Public/qiyezuche/Admin/5425212d35640.jpg" width="100" height="90"/></a> </div>
+                    <div class="cardt_hot_txt"> <span class="cardt_hot_title w100"><a href="">北京现代</a></span> <span class="cardt_hot_add"></span> <span class="cardt_hot_price w100"><b>250.00元</b>/天</span> </div>
+                </li>            
+            </ul>
+        </div>
+    </div>
+</div>
+<include file="Public/footer" />
+</body>
+</html>

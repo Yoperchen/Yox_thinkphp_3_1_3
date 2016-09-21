@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{$site_info['data']['site_name']|default="站点名称"}</title>
+    <!-- CSS -->
+    <link href="../Public/css/bootstrap.css" rel="stylesheet">
+    <link href="../Public/css/blog.css" rel="stylesheet">
+	<link rel="icon" href="__PUBLIC__/favicon.ico" mce_href="/Public/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+		<foreach name="navigation_result.data.list" item="vo">
+          <a class="blog-nav-item" href="{$vo['url']}">{$vo['name']|default="站点名称"}</a>
+		   </foreach>
+        </nav>
+      </div>
+    </div>
+	<div class="intr">
+    	<span class="avtar"></span>
+        <p class="peointr">{$user_info['data']['user_sign']|default="签名"}。</p>
+        <p class="peointr">爱生活，爱旅行，爱技术。</p>
+    </div>
+    <div class="title" id="part1">爱生活</div>
+    <div class="content">
+    	<div class="pic pic1">
+    		<img src="../Public/image/h1.jpg" alt="">
+    		<p>爱-朦胧夜色</p>
+    	</div>
+    	<div class="pic pic2">
+    		<img src="../Public/image/h2.jpg" alt="">
+    		<p>爱-动物</p>
+    	</div>
+    	<div class="pic pic3">
+    		<img src="../Public/image/h3.jpg" alt="">
+    		<p>爱-风景</p>
+    	</div>
+    </div>
+    <div class="title" id="part2">爱旅行</div>
+    <div class="content">
+    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="../Public/image/s1.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <img src="../Public/image/s2.jpg" alt="...">
+                </div>
+				<div class="item">
+                  <img src="../Public/image/s3.jpg" alt="...">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+    </div>
+	<div class="title" id="part3">爱技术</div>
+    <div class="content">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active"><a href="#home" role="tab" data-toggle="tab">web后端</a></li>
+          <li><a href="#profile" role="tab" data-toggle="tab">PHP语言</a></li>
+          <li><a href="#messages" role="tab" data-toggle="tab">技能</a></li>
+		   <li><a href="#me" role="tab" data-toggle="tab">我</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+          	<p class="text">目前就职于 星美集团旗下 票量网</p>
+            <p class="text">当前主要为星美集团 及 票量网 业务做开发</p>
+            <p class="text">主导或参与星美电影、票量网、娱乐猫等项目的开发，涉及电商、票务、会员、娱乐、支付、秒杀、优惠策略等</p>
+          </div>
+          <div class="tab-pane" id="profile">
+          	<p class="text">作为一个最初掌握的技术</p>
+            <p class="text">在很长的一段时间  我都用它来开发web,开发应用程序</p>
+            <p class="text">今后还将继续研究它，并且研究其他一些语言</p>
+          </div>
+          <div class="tab-pane" id="messages">
+            <p class="text">1、多年PHP项目开发经验，熟悉Apache(nginx)+Mysql+PHP</p>
+            <p class="text">2、开发常用工具fiddler/zend studio/Beyond Compare/navicat/SecureCRT/TortoiseSVN</p>
+			<p class="text">3、熟悉HTML、Javascript、Ajax、CSS</p>
+			<p class="text">4、熟悉thinkphp、smarty、shopnc B2B2C 、dedecms等系统或框架</p>
+			<p class="text">5、熟悉Linux操作系统</p>
+			<p class="text">6、具有良好的学习能力</p>
+          </div>
+		  <div class="tab-pane" id="me">
+		  <p class="text">我是陈永鹏</p>
+		  <p class="text"><a title="yoperchen的CSDN博客" href="http://blog.csdn.net/chenyoper">csdn博客</a>:http://blog.csdn.net/chenyoper</p>
+		  <p class="text">PHP技术群:201923866、370648191(我是群主哦)</p>
+		  <p class="text">零零糖 http://www.linglingtang.com/</p>
+		  </div>
+        </div>
+    </div>
+    <div class="blog-footer">
+	  <p>备案号：粤ICP备15029177号-1</p>
+      <p>by <a href="http://www.linglingtang.com">Yoper</a>.</p>
+    </div>
+    <a href="" class="btt">顶部</a>
+    <!-- Js-->
+    <script src="../Public/js/jquery-1.9.1.min.js"></script>
+    <script src="../Public/js/bootstrap.min.js"></script>
+    <script src="../Public/js/plugin.js"></script>
+  </body>
+</html>

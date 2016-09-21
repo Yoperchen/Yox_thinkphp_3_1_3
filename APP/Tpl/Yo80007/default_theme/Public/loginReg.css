@@ -1,0 +1,120 @@
+/* CSS Document */
+html { color: #333; background: #fff; }
+body, td, th { font: 12px Helvetica, Arial, sans-serif; line-height: 1.6 }
+html,body{ height:100%; }
+.left { position: fixed; _position:absolute; left:0; width: 31%; min-width: 180px; background: #f0f0f0; height: 100%; text-align: center; }
+.left .con { position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; *left:35%; *top:20%; width: 145px; height: 205px }
+.left .info { padding: 15px; display: table-cell; vertical-align: middle; color: #777; text-align: left }
+.left .icon-con { margin-top: 10px }
+
+.right { background: #fff; position: relative; float: left; width: 425px; top: 0; left: 38%; font-size: 13px }
+.right .logo { margin: 50px 0 40px }
+.right .slogan { display: inline-block; padding-top: 35px; padding-left: 15px;font-size: 20px; color: #50a055 }
+.right .third-login { margin-bottom: 20px }
+.copyright-info { font-size: 14px; color: #ccc; margin: 40px 0 30px }
+.edit-header { background: #fff; border-bottom: 1px solid #d8d8d8; min-width: 960px }
+.edit-header .edit-logo { padding: 20px 0 15px 20px }
+.edit-header .edit-logo a:active, .edit-header .edit-logo a:hover, .edit-header .edit-logo a:link, .edit-header .edit-logo a:visited { background: none!important }
+.edit-wrapper { width: 960px; margin: 0 auto }
+.edit-wrapper h1 { font-size: 18px; margin: 30px 0 }
+.edit-wrapper .edit-content { background: #fff; width: 500px; min-height: 500px; padding: 20px 60px }
+input, textarea { -webkit-appearance: none; -webkit-border-radius: 0 }
+input[type=checkbox], textarea[type=checkbox] { -webkit-appearance: checkbox }
+.basic-input { width: 397px; background: #f3f3f3; border: 1px solid #ccc; padding: 12px; font-size: 14px }
+.basic-input:focus { border: 1px solid #999 }
+.short-input { width: 200px; background: #f3f3f3; border: 1px solid #ccc; padding: 12px; font-size: 14px; margin-right:20px;}
+.short-input:focus { border: 1px solid #999 }
+.captcha-input { width: 143px; vertical-align: top }
+.btn-submit { outline: 0; width: 170px; color: #50a055; border: 1px solid #50a055; background-color: #fff; padding: 9px; font-size: 16px; cursor: pointer }
+.btn-submit:hover { background-color: #50a055; color: #fff }
+.btn-phone-captcha { margin-top: 0; margin-bottom: 20px; width: 250px; font-size: 14px; height: 41px }
+.btn-disabled { color: #777; border: 1px solid #888; background-color: #fff; cursor: not-allowed }
+.btn-disabled:hover { background-color: #fff; color: #777 }
+.info-tips { color: #999; float: right; font-size: 14px }
+.info-tips a{ color:#50a055; }
+.form-error { color: #f00; margin-bottom: 10px }
+.form-row { margin-bottom: 30px; position: relative; font-size:14px; }
+.captcha-row { margin-bottom: 0 }
+.cap-resend-con { width: 423px; text-align: right; color: #777 }
+.remember-item { margin-top: 10px; color: #777 }
+.back-login { margin-top: 40px; font-size: 12px }
+.forget-pass{ color: #50a055; }
+.forget-pass a{ color: #50a055; }
+.agreement-con { margin-bottom:30px; }
+
+.blockarea {
+    border: 1px solid #CCC;
+    padding: 12px 1px;
+    margin: 12px auto;
+    float: left;
+    width: 600px;
+}
+.mt5 {
+    margin-top: 5px;
+}
+.register .ulbottom {
+    border-bottom: 1px solid #CCC;
+}
+.register ul {
+    float: left;
+    padding: 20px 20px 40px 70px;
+}
+ul, li {
+    list-style: none outside none;
+}
+.picTip {
+    padding: 0px;
+    position: relative;
+}
+.register ul .right {
+    background-position: 0px -400px;
+    width: 32px;
+    left: -40px;
+}
+.register ul .picbefregisted {
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    height: 32px;
+    background: url('img/success.png') no-repeat scroll 0% 0% transparent;
+}
+.register ul .picbefregisted-error {
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    height: 32px;
+    background: url('img/error.png') no-repeat scroll 0% 0% transparent;
+}
+.icon-alert4 {
+    background-position: 0px -450px;
+    width: 9px;
+    height: 27px;
+}
+.font24 {
+    font-size: 24px;
+}
+.font-green {
+    color: #348B00;
+}
+.lh30 {
+    line-height: 30px;
+}
+.font14 {
+    font-size: 14px;
+}
+.lh30 {
+    line-height: 30px;
+}
+.font14 {
+    font-size: 14px;
+}
+.font-or {
+    color: #FF4E00;
+}
+a {
+    text-decoration: none;
+    color: #06C;
+}
+ul, li {
+    list-style: none outside none;
+}

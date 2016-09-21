@@ -1,0 +1,68 @@
+<?php
+class OrderAction extends Action {
+	/**
+	 * 把要购买的商品的good_id发到这里
+	 */
+	public function index() {
+		$good_id = $_REQUEST['good_id'];
+		$Goods   =   M('Goods');
+		$goods_data =   $Goods->find($good_id);							//商品信息
+		if($goods_data) {																			//存在商品
+			$order_data['goods_id']  =   $goods_data['goods_id'];//商品id
+			$order_data['store_id']  =   $goods_data['store_id'];//商家id
+			$order_data['goods_name']  =   $goods_data['goods_name'];//商品名称
+			$order_data['price']  =   $goods_data['price'];//订单价格
+			$order_data['desc']  =   $goods_data['desc'];//订单描述
+			$order_data['payment']  =   1; //付款方式|0：余额支付，1:网上支付，2：银行支付，3：货到付款，4信用卡支付
+			$order_data['status']    =   0;		//状态|0:等待买家付款，1支付成功，2支付失败，3取消
+			$order_data['order_num'] =  'YO'.date('Ymd-His').'-'.(int)microtime(true).'-'.rand(1,100);//订单编号
+			$Goods_order   =   M('Goods_order');
+			$Goods_order->add($order_data);
+			$this->goods_data =   $goods_data;// 模板变量赋值
+			
+			$Store   =   M('Stores');
+			$store_data   =   $Store->find($goods_data['store_id']);//该商品对应的商家信息
+			//$this->store_data = $store_data;//为Alipay/alipayapi.php提供配置信息
+			//print_r($store_data);
+		}else{
+			$this->error('数据错误');
+		}
+		require_once(VENDOR_PATH."Alipay/alipayapi.php");
+		echo '到了 index<br/><br/>';
+		$this->display();
+	}
+	
+	public function order() {
+		echo '到了function order<br/><br/>';
+		$id = $_REQUEST['goods_id'];
+		
+		$Form   =   M('Goods');
+		$data =   $Form->find($id);
+		if($data) {
+			$this->data =   $data;// 模板变量赋值
+		}else{
+			$this->error('数据错误');
+		}
+		$this->display();
+	}
+	
+	//页面跳转同步通知页面路径
+	public function return_url() {
+		//处理一些逻辑就unset掉
+		unset($_GET['_URL_']);
+		//unset掉之后就可以request return_url了
+		require_once(VENDOR_PATH."Alipay/return_url.php");
+		echo '<br/>到了function return_url<br/><br/>';
+	//print_r($_GET);
+	
+		$this->display();
+	}
+	//服务器异步通知页面路径
+	public function notify_url() {
+		$Log->add_log($_REQUEST, __CLASS__.'::'.__FUNCTION__.'::BEGIN', 'HOME_INDEX');
+		require_once(VENDOR_PATH."Alipay/notify_url.php");
+		//echo '<br/>到了function notify_url<br/><br/>';
+		exit;
+		//$this->display();
+	}
+}

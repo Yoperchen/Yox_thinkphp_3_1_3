@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript" src="__PUBLIC__/plugins/ckeditor/ckeditor.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>修改商品</title>
+</head>
+<body>
+<h1>修改商品</h1>
+	<form action="{:U('AdminStore/Goods/updateGoods?op=update')}" method="get" enctype="multipart/form-data">
+		商品id:<input type="text" readonly name="good_id" value="{$data.goods_id}">&nbsp;&nbsp;
+		商品名称：<input type="text" name="goods_name" value="{$data.goods_name}">
+		当前价：<input type="text" name="price" value="{$data.price}">
+		选择品牌：{:W('ListShowBrands',array('template'=>'admin_select_ListShowBrands','select_id'=>$data['brand']))}
+		商品分类：{:W('ListShowGoodsCategory',array('template'=>'admin_select_ListShowGoodsCategory','select_id'=>$data['category']))}
+		商家：{:W('ListShowStores',array('template'=>'admin_select_ListShowStores','select_id'=>$data['store_id']))}
+		排序：<input type="number" name="sort" value="{$data.sort}">
+		商品数量：<input type="number" name="quantity" value="{$data.quantity}">
+		星级：<input type="text" name="starLevel" value="<?=$productDetails[0]['starLevel']?>">
+		<br/>商品概要：<br/><textarea rows="5" cols="150" name="brief" placeholder="概要...">{$data.brief}</textarea>
+		<br/>
+		商品图片：
+		<table>
+				<tr>
+				<td>
+				 <?=!empty($productDetails[0]['img1'])?'<img title="商品图片1" style="height: 98px;" src="'.$productDetails[0]['img1'].'">':''?>
+				</td>
+				<td>
+				 <?=!empty($productDetails[0]['img2'])?'<img title="商品图片2" style="height: 98px;" src="'.$productDetails[0]['img2'].'">':''?>
+				</td>
+				<td>
+				 <?=!empty($productDetails[0]['img3'])?'<img title="商品图片3" style="height: 98px;" src="'.$productDetails[0]['img3'].'">':''?>
+				</td>
+				</tr>
+			<tr>
+				<td><input name="img1" type="file"></td>
+				<td><input name="img2" type="file"></td>
+				<td><input name="img3" type="file"></td>
+				</tr>
+			</table>
+		<br/>商品详细：<br/><textarea rows="30" cols="50" name="desc" id="editor01">{$data.desc}</textarea>
+		<script type="text/javascript">CKEDITOR.replace('editor01');</script>
+		<br/>
+		<center><input style="width:255px;height:35px;" type="submit" name="submit" value="修改"></center>
+	</form>
+</body>
+</html>

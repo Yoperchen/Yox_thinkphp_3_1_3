@@ -1,0 +1,65 @@
+<script src="__PUBLIC__/js/jquery.min.js"></script>
+<div id="top">
+    <div class="top-wrap">
+                <a id="setHomePage" href="javascript:void(0);" onclick="window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.linglingtang.com');">零食的零，糖果的糖 - 上网、购物、搜索、爱学习从这里开始</a>
+    		<div class="userinfo">
+			<if condition="$Think.session.id != ''">
+			欢迎您：{$Think.session.name|default="这家伙很懒，什么也没留下"}
+			<a href="{:U('Yo81008/User/logout')}">退出</a>
+ 			<else />
+			<form id="login_form" name="login_form" action="{:U('Yo81008/Index/login')}" method="post">
+                <span>账号</span>
+                <input type="text" id="user_id" name="id"/>
+                <span>密码</span>
+                <input type="password" id="user_password" name="password" />
+                <input style="border-radius: 15px;  BACKGROUND: #FF0000;border: 1px solid #FFFFFF;color: #fff;cursor: pointer;" type="submit" name="submit_login" value="登陆"/>
+            </form>
+			没有帐号?去<a style="color:green;" href="{:U('Yo81008/Index/register')}">注册</a>
+			 </if>
+        </div>
+    </div>
+</div>  
+<style type="text/css">
+#top {
+  height: 30px;
+  line-height: 30px;
+  background-color: #FCCFCF;
+  font-size: 12px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+.top-wrap {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  z-index: 2;
+}
+.userinfo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  _padding-top: 2px;
+}
+#login_form {
+  color: #666666;
+  cursor: pointer;
+float: left;
+
+  text-align: center;
+}
+
+#login_form span {
+  line-height: 20px;
+}
+#top, #top a {
+  color: #727171;
+}
+#login_form input[type="text"], #login_form input[type="password"] {
+  width: 100px;
+  border: 1px solid #C2C2C2;
+  margin-right: 5px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+</style>

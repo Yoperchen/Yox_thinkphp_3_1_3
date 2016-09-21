@@ -1,0 +1,201 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="__PUBLIC__/js/require.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/main.js"></script>
+<title>接口调试工具</title>
+</head>
+<body style="margin: 0;">
+<!--<span style="float:left;font-size:12px;">
+	<a style="font-size:12px;" target="_blank" href="#">申请成为第三方开发者</a>
+	<a style="font-size:12px;" target="_blank" href="#">成为开发者有什么好处</a>
+</span>
+<span style="float:left;font-size:12px;">&nbsp;|&nbsp;我的社区、圈子、社交、我的家、健康饮食、家用菜谱、附近的人在吃啥、附近的商家、订餐、买卖、文化、分享、娱乐、视频、团购、支付、科技、讨论、公告、休闲、乐趣、优惠、附近的便利店、对比附近的商店价格、附近的酒店、新生活</span>
+-->
+<table width="960" border="0" align="center" cellpadding="2" style="font-family:'微软雅黑', '幼圆'; font-size:13px;">
+  <tr>
+    <td colspan="2">
+	<h2 align="center">第三方合作伙伴(应用)接口调试工具</h2>
+	</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="510">&nbsp;</td>
+    <td>返回结果：</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+    <form name="apiform" id="apiform" method="post" enctype="multipart/form-data"  action="{:U('Api/Page/index')}">
+    <div>
+    <table width="500" border="0" cellpadding="2">
+	<tr>
+    <td width="100" align="right">api_language：</td>
+    <td>    
+    <select name="api_language" id="api_language">
+    <option value="Chinese" selected="selected">中文</option>
+    <option value="English">English</option>
+    </select>*语言
+    </td>
+  </tr>
+  <tr>
+    <td width="100" align="right">api_format_type：</td>
+    <td>    
+    <select name="api_format_type" id="api_format_type">
+    <option value="json" selected="selected">json</option>
+    <option value="xml">xml</option>
+    </select>*返回格式
+    </td>
+  </tr>
+  <tr>
+    <td align="right">api_category：</td>
+    <td>
+    <select name="api_category" id="api_category">
+    <option value="0" selected="selected">请选择Api类目..</option>
+    <foreach name="api_array" item="api">
+    <option value="{$key}">{$key}</option>
+    </foreach>
+    <!--  <option value="user">用户</option>
+	 <option value="store">商家</option>
+	<option value="goods">商品</option>
+	<option value="friend">好友/成员/消息/约会/群/群消息</option>
+	<option value="payment">支付</option>
+	<option value="article">文章</option>
+	<option value="course">课程表</option>
+	<option value="cuisine">烹饪</option>
+	<option value="share">分享/收藏</option>
+	<option value="tag">标签/广告</option>
+	<option value="toll">用户收费缴费</option>
+	<option value="rental">租车/拼车/租飞机/租房/租模特/租女友/租场地</option>
+	<option value="address">地址</option>
+
+    <option value="push">推送</option>
+	<option value="activity">活动</option>
+	<option value="file">文件图片上传</option>
+	<option value="yocms_widget">小部件</option>
+	<option value="api_partner">第三方</option>
+	<option value="analog_applications">模拟应用</option>-->
+    </select>*Api类目
+    </td>
+  </tr>
+  <tr>
+    <td align="right">api_key：</td>
+    <td>
+    <select name="api_key" id="api_key">
+    <option value="0" selected="selected">请选择api..</option>
+    </select>*api接口编号
+    </td>
+  </tr>
+  <tr>
+    <td align="right">api_partner：</td>
+    <td><input type="text" name="api_partner" id="api_partner" value="16080000008" />*合作伙伴</td>
+  </tr>
+  <tr>
+    <td align="right">api_sign：</td>
+    <td><input type="text" name="api_sign" id="api_sign" value="64aee47a" style="width:300px;" />*签名</td>
+  </tr>
+    <tr>
+    <td align="right">api_app_v：</td>
+    <td><input type="text" name="api_app_v" id="api_app_v" value="linglingtang_v3.2.6" /> *app版本号</td>
+  </tr>
+  <tr>
+    <td align="right">loginCode：</td>
+    <td><input type="text" name="loginCode" id="loginCode" value="" style="width:300px;" />有登录就传，没有登录就不传</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="paramform"></div>
+<div style="text-align:center; margin-top:20px;"><input type="submit" name="submit" value="提 交" style="width:80px; height:30px; font-family:'微软雅黑', '幼圆'; font-size:14px; cursor:pointer;" /></div>
+</form>
+</td>
+    <td><textarea name="resultbox" id="resultbox" rows="30" cols="55" style="width:450px; height:450px;"></textarea>
+    <div id="result_box"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+{:W('Tool',array('tool'=>'Tongji','template'=>'Baidutongji'))}
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+免费获取合作伙伴帐号请联系 chen.yong.peng@foxmail.com
+<br>
+<a title="零零糖购物网站首页" href="http://www.linglingtang.com">零零糖</a>
+<a title="礼物" href="http://linglingtang.uz.taobao.com">礼物</a>
+<!--  <script type="text/javascript" src="__PUBLIC__/js/jquery.form.js"></script>-->
+<script type="text/javascript">
+require(['jquery','jqueryform'], function($){
+$(document).ready(function(){
+	var form_type='json';
+	var form_obj = {
+		beforeSubmit:  checkForm,  // pre-submit callback
+		success:       complete,  // post-submit callback
+		dataType: 'text'
+	};
+	
+	$("#api_format_type").change(function(){		
+		if($(this).val()!='json'){
+			form_type='text';
+		}else{
+			form_type='json';
+		}
+	});
+	
+  $("#api_category").change(function(){
+	var api_category = $(this).val();
+  	$.post("{:U('Api/Tool/get_apilist')}",
+  	{
+   	 	'api_category':api_category,
+  	},
+  	function(data,status){
+  		console.log(data);
+		var option_str = '<option value="0" selected="selected">请选择..</option>';
+		$.each(data.data,function(index,data){
+    		option_str+='<option value="'+index+'">'+index+' - '+data.title+'</option>';
+  		});
+  		$("#api_key").html(option_str);
+		$("#paramform").html('');
+  	},'json');
+  });
+  
+  $("#api_key").change(function(){
+	  var api_key = $(this).val();
+	  var api_category = $('#api_category').val();
+  	$.post("{:U('Api/Tool/get_form')}",
+  	{
+  		'api_category':api_category,
+   	 	'api_key':api_key,
+  	},
+  	function(data,status){
+  		$("#paramform").html(data);
+  	});
+  });
+  
+  
+	$('#apiform').ajaxForm(form_obj);
+	function checkForm(){
+		return true;
+		//可以在此添加其它判断
+	}
+	function complete(data){
+		//var json_value = JSON.stringify(data);
+		//alert(json_value);
+		//JsonUti.n = "<br />";
+		if(form_type=='json'){
+			data = JSON.parse(data);//字符串转成json对象
+			data=JSON.stringify(data, null, "\t")//json格式化输出，否则都挤成一行了
+		}
+		$('#resultbox').val(data);
+	}
+ 
+});
+});
+</script>
+</body>
+</html>

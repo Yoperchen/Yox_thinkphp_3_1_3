@@ -1,0 +1,69 @@
+<table width="500" border="0" cellpadding="2">
+	<!--<tr>
+    <td width="100" align="right">store_id：</td>
+    <td><input type="text" name="store_id" id="store_id" value="" /> *所属商家</td>
+  </tr>-->
+   <tr>
+    <td align="right">pay_money_user_id：</td>
+    <td><input type="text" name="pay_money_user_id" id="pay_money_user_id">付款的用户id</td>
+  </tr>
+  <tr>
+    <td align="right">get_money_user_id：</td>
+    <td><input type="text" name="get_money_user_id" id="get_money_user_id">*收款的用户id</td>
+  </tr>
+   <tr>
+    <td align="right">payment_method：</td>付款方式|0：余额支付，1:积分支付，2:优惠券(现金券/兑换券/折扣券/)支付,3:以物易物支付,4:支付宝，5：财付通支付，6：货到付款，7信用卡支付，
+    <td><select name="payment_method" id="payment_method">
+    	<option value="0">余额支付</option>
+		<option value="1">积分支付</option>
+		<option value="2">优惠券支付</option>
+		<option value="3">以物易物</option>
+		<option value="4">支付宝(暂不支持)</option>
+		<option value="5">财付通(暂不支持)</option>
+		<option value="6">货到付款(暂不支持)</option>
+		<option value="7">信用卡(暂不支持)</option>
+    </select>*支付方法</td>
+  </tr>
+   <tr>
+    <td align="right">goods_id：</td>
+    <td><input type="text" name="goods_id" id="goods_id">商品id</td>
+  </tr>
+     <tr>
+    <td align="right">buy_quantity：</td>
+    <td><input type="text" name="buy_quantity" id="buy_quantity" value="1">购买数量</td>
+  </tr>
+  <tr>
+    <td align="right">pay_money_user_id：</td>
+    <td><input type="text" name="pay_money_user_id" id="pay_money_user_id">支付者商家id</td>
+  </tr>
+     <tr>
+    <td align="right">name：</td>
+    <td><input type="text" name="name" id="name">订单名称</td>
+  </tr>
+    <!--<tr>
+    <td align="right">order_price：</td>
+    <td><input type="text" name="order_price" id="order_price">*订单价格</td>
+  </tr>  -->
+   <tr>
+    <td align="right">status：</td>
+    <td><select name="status" id="status">
+    	<option value="0">等待卖家付款</option>
+		<option value="1">支付成功</option>
+		<option value="2">支付失败</option>
+		<option value="3">取消</option>
+    </select>*订单状态</td>
+  </tr>
+
+  <tr>
+    <td align="right">mobile：</td>
+    <td><input type="text" name="mobile" id="mobile">*电话手机</td>
+  </tr>
+  <tr>
+    <td align="right">address：</td>
+    <td><input type="text" name="address" id="address">地址</td>
+  </tr>
+  <tr>
+    <td align="right">zip_code：</td>
+    <td><input type="text" name="zip_code" id="zip_code">邮编</td>
+  </tr>
+  </table>

@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;}
+body{color:#000;background:#FFF;font:12px/1.6 "微软雅黑", "黑体", Arial;text-align:center;}
+input,select{font-size:12px;vertical-align:middle;}
+body div{text-align:left;}
+textarea,input{word-wrap:break-word;word-break:break-all;padding:0px;}
+li{list-style-type:none;}
+img{border:0 none;}
+a:link, a:visited{color:#333;text-decoration: none;outline: none;}
+a:hover{color:#0E4470;text-decoration: underline;}
+h1{ font-size:24px;}
+h2{ font-size:20px;}
+h3{ font-size:18px;}
+h4{ font-size:16px;}
+h5{ font-size:14px;}
+h6{ font-size:12px;}
+.block {width:1000px; height:auto; clear:both;margin:0 auto;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix { display: inline-table; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.fl{ float:left}
+.fr{ float:right}
+.wrapper{ width:1000px; margin:0 auto}
+.title651{ background:url(../Public/image/651.jpg) no-repeat; height:30px; line-height:30px; padding-left:20px; font-size:15px; color:#FFF;}
+.title330{ background:url(../Public/image/330.jpg) no-repeat; height:30px; line-height:30px; color:#FFF; padding-left:20px; font-size:15px;}
+.title330 a.more,.title651 a.more{ float:right; color:#025a9b; display:block; line-height:30px; font-size:12px; margin-right:10px;}
+.mt10{ margin-top:10px;}
+.mt15{ margin-top:15px;}
+.ml10{ margin-left:10px;}
+.ml15{ margin-left:15px;}
+.pd10{ padding:10px;}
+
+
+.head{ height:102px; background:#f3f3f3}
+.head .logo{ height:102px; overflow:hidden; background:url(../Public/image/logo.jpg) no-repeat}
+.head .logo .fr a{ padding:0 30px; line-height:50px;}
+.head .menu{ clear:both; background:url(../Public/image/nav.jpg) repeat-x; height:40px;}
+.head .menu ul li{ float:left; background:url(../Public/image/nav-line.jpg) right center no-repeat;}
+.head .menu ul li.li6{ background:none;}
+.head .menu ul li a{ display:block; float:left; line-height:40px; width:115px; text-align:center; font-size:15px; color:#FFF; padding:0 25px;}
+.head .menu ul li a:hover{ text-decoration:none; color:#FF0}
+.head .menu ul li a.on{ background:url(../Public/image/nav-hover.png) no-repeat center center; color:#025a9b}
+
+/* banner */
+.banner{ clear:both; min-width:1000px;  position:relative;  height:410px; overflow:hidden;  }
+.banner .bd{ position:relative; z-index:0;  }
+.banner .bd ul{ width:100% !important; }
+.banner .bd li{ width:100% !important;  height:410px; }
+.banner .bd li .siteWidth{ width:1000px; position:relative;  margin:0 auto;  height:410px;  }
+.banner .bd li a{ height:410px; display:block;  }
+.banner .bd .txt{ position:absolute; width:415px; top:100px; left:22px;   font:normal 18px/30px "Microsoft YaHei";}
+.banner .hd{ width:100%;  position:absolute; z-index:1; bottom:0; left:0; height:30px; line-height:30px; text-align:center; }
+.banner .hd ul li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; width:12px; height:12px; margin:4px; background:url(../Public/image/dot1.png) no-repeat; overflow:hidden; 
+	line-height:9999px;}
+.banner .hd ul .on{ background:url(../Public/image/dot2.png) no-repeat;}
+
+.index-main{ padding:10px 0}
+.index-main .left{ width:330px;}
+.index-main .center{ width:651px;}
+/* 焦点图 */
+.index-main .focusBox { position: relative; height: 210px; overflow: hidden;text-align: left; }
+.index-main .focusBox .pic img { width: 330px; height: 210px; display: block; }
+.index-main .focusBox .txt-bg { position: absolute; bottom: 0; z-index: 1; height: 36px; width:100%;  background: #333; filter: alpha(opacity=40); opacity: 0.4; overflow: hidden; }
+.index-main .focusBox .txt { position: absolute; bottom: 0; z-index: 2; height: 36px; width:100%; overflow: hidden; }
+.index-main .focusBox .txt li{ height:36px; line-height:36px; position:absolute; bottom:-36px;}
+.index-main .focusBox .txt li a{ display: block; color: white; padding: 0 0 0 10px; font-size: 12px; font-weight: bold; text-decoration: none; }
+.index-main .focusBox .num { position: absolute; z-index: 3; bottom: 8px; right: 8px; }
+.index-main .focusBox .num li{ float: left; position: relative; width: 18px; height: 15px; line-height: 15px; overflow: hidden; text-align: center; margin-right: 1px; cursor: pointer; }
+.index-main .focusBox .num li a,.focusBox .num li span { position: absolute; z-index: 2; display: block; color: white; width: 100%; height: 100%; top: 0; left: 0; text-decoration: none; }
+.index-main .focusBox .num li span { z-index: 1; background: black; filter: alpha(opacity=50); opacity: 0.5; }
+.index-main .focusBox .num li.on a,.focusBox .num a:hover{ background:#f60;  }
+/* 首页新闻动态 */
+.index-main .news-dongtai ul{ padding:10px 0}
+.index-main .news-dongtai ul li{ background:url(../Public/image/li-ico.jpg) no-repeat 10px center; padding-left:20px; font-size:14px; line-height:30px;}
+.index-main .news-dongtai ul li span{ float:right}
+/* 首页联系我们 */
+.index-main .lxwm p{ line-height:25px; font-size:13px;}
+/* 首页关于我们 */
+.index-main .gywm{ height:360px;}
+.index-main .gywm img{ float:right; padding:1px; border:1px solid #CCC; margin:10px 10px 0 10px;}
+.index-main .gywm p{ padding:10px 0;font-size:14px; line-height:35px;}
+
+/* 首页工程案例滚动 */
+.index-main .gcal-gd{ width:620px; height:127px; padding:10px; overflow:hidden; clear:both;   }
+.index-main .gcal-gd ul{ overflow:hidden; zoom:1; }
+.index-main .gcal-gd ul li{ width:150px; float:left; margin-right:10px;*margin-right:5px;  display:inline;}
+.index-main .gcal-gd ul li a{ display:block; width:150px; height:95px; padding:1px; border:1px solid #CCC}
+.index-main .gcal-gd ul li img{ width:150px; height:95px;   }
+.index-main .gcal-gd ul li a:hover{ border:1px solid #06C}
+.index-main .gcal-gd ul li p{ text-align:center; font-size:14px; line-height:30px;}
+
+.index-main .friendLink{ clear:both; margin:10px 0;}
+.index-main .friendLink .title{ background:url(../Public/image/1000.jpg) no-repeat; height:30px; line-height:30px; padding-left:20px; font-size:15px; color:#FFF}
+.index-main .friendLink ul li{ float:left; line-height:30px; text-align:center; width:200px; font-size:13px;}
+
+/* 底部 */
+.foot{ background:#02579a; padding:20px 0;}
+.foot p{ text-align:center; color:#CCC; font-size:13px; line-height:25px;}
+.foot p a{color:#CCC;}
+
+/*  */
+.main{padding:10px 0}
+.main .sidebar{ width:260px;}
+.main .sidebar dt{ background:url(../Public/image/sidebar-dt.jpg) no-repeat; height:44px; line-height:44px; padding-left:40px; color:#FFF; font-size:15px;}
+.main .sidebar dd{ background:url(../Public/image/blue-dot.png) no-repeat 10px center; padding-left:30px; font-size:14px; height:40px; line-height:40px; border-bottom:1px dotted #666}
+.main .right{ width:725px;}
+.main .right .title{ background:url(../Public/image/youce.jpg) no-repeat; height:44px; line-height:44px; color:#FFF; font-size:15px; padding-left:40px;}
+.main .right .title a{ color:#FFF}
+
+/* 单页面 */
+.main .right .danye{ width:690px; margin:0 auto; padding:20px 0; font-size:14px; line-height:2;}
+
+/* 内容页 */
+.main .right .biaoti{ padding-left:20px; font-size:17px; color:#000; font-weight:bold; margin:30px 0 10px 0;}
+.main .right .date{ border-bottom:1px dashed #CCC; padding:5px 0 10px 0;}
+.main .right .date span{ margin-left:20px;}
+.main .right .pro{ margin-left:20px; line-height:30px; font-size:14px;}
+/* 文字列表页 */
+.main .right .text-list{ padding:20px 10px;}
+.main .right .text-list ul li{ background:url(../Public/image/blue-dot.png) no-repeat left center; padding-left:10px; font-size:14px; border-bottom:1px dotted #CCC; height:35px; line-height:35px;}
+.main .right .text-list ul li a.fenlei{ padding:0 10px; color:#666}
+
+/* 图片列表页 */
+.main .right .pic-list{ padding:0 10px;}
+.main .right .pic-list ul li{ float:left; width:176px; text-align:center; line-height:25px; margin-top:20px;}
+.main .right .pic-list ul li img{ width:160px; height:105px; border:1px solid #CCC; padding:1px;}
+.main .right .pic-list ul li a.red{ color:#F00}
+.main .right .pic-list ul li img:hover{ border:1px solid #F00}
+/* 页码 */
+.page{ padding:10px 0; text-align:center}
+.page a{ padding:2px 5px; background:#EFEFEF; border:1px solid #D9D9D9; margin:0 5px;}
+.page a:hover{ background:#CE0609; color:#FFF; text-decoration:none;}
+.page a.on{background:#CE0609; color:#FFF; text-decoration:none;}

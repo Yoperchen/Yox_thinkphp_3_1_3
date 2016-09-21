@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/ckeditor/ckeditor.js"></script>
+<title>修改商家信息</title>
+</head>
+<body>
+<h1>修改商家信息</h1>
+<form action="{:U('Admin/Store/update_store')}" method="post">
+<table>
+	<tr><td>商家ID</td><td><input type="text" readonly name="id" value="{$store_info_result.data.id}"></td></tr>
+	<tr><td>所属站点</td><td><input type="text" readonly name="site_id" value="{$store_info_result.data.site_id}"></td></tr>
+	<tr><td>商家名称</td><td><input type="text" name="store_name" value="{$store_info_result.data.store_name}"></td></tr>
+	<tr><td>经度</td><td><input type="text" name="lng" value="{$store_info_result.data.lng}"></td></tr>
+	<tr><td>纬度</td><td><input type="text" name="lat" value="{$store_info_result.data.lat}"></td></tr>
+	<tr><td>排序</td><td><input type="text" name="sort" value="{$store_info_result.data.sort}"></td></tr>
+	<tr><td>社区</td><td><input type="text" name="community_id" value="{$store_info_result.data.community_id}"></td></tr>
+	<tr><td>城市</td><td><input type="text" name="city_id" value="{$store_info_result.data.city_id}"></td></tr>
+	<tr><td>顶</td><td><input type="text" name="up" value="{$store_info_result.data.up}"></td></tr>
+	<tr><td>差</td><td><input type="text" name="down" value="{$store_info_result.data.down}"></td></tr>
+	<tr><td>喜欢</td><td><input type="text" name="like" value="{$store_info_result.data.like}"></td></tr>
+	<tr><td>最后登陆时间</td><td><input type="text" name="last_login_time" value="{$store_info_result.data.last_login_time}"></td></tr>
+	<tr><td>创建时间</td><td><input type="text" name="add_time" value="{$store_info_result.data.add_time}"></td></tr>
+	<tr><td colspan=2><input type="submit" name="submit" value="修改"></td></tr>
+</table>
+	</form>
+</body>
+</html>

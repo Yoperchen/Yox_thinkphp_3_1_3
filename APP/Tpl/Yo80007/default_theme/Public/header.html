@@ -1,0 +1,48 @@
+<!-- 通用头部--> 
+  <!-- 导航--> 
+  <div style='display:none'><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253005137'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/stat.php%3Fid%3D1253005137' type='text/javascript'%3E%3C/script%3E"));</script></div>
+  <div id="header" class="box-shadow"> 
+   <div class="fixed-nav" > 
+    <div style="float:left;position:relative; padding:0px; margin:0px;">
+     <div style="position:absolute;top:-7px; height:78px; font-size:10px; width:159px; line-height:159px; left:0px;">
+       <a href="/"  title="100头条，有深度的微信头条！精选网友分享的微信头条。好的头条，源自分享！"> <img src="../Public/image/100toutiao.jpg" style="width:159px;height:78px; " />
+   </a>
+   
+     </div>
+     <div style=" display:none;position:absolute;     
+     color:#FFF; top:0px; height:12px; font-size:10px; width:180px; line-height:12px; left:100px;
+      -webkit-animation:0.5s ease 1 forwards;
+    -webkit-animation-duration:2s;
+    -webkit-animation-name:demo;
+    -moz-animation:0.5s ease 1 forwards;
+    -moz-animation-name:demo;
+    -moz-animation-duration:2s;
+     ">有深度的微信头条！
+	 </div>
+    </div> 
+    <ul style="float:left;margin-left: 200px;"> 
+     <li><a href="{:U('Yo80007/Index/index')}"class="nav-active">首页</a></li> 
+     <li><a href="{:U('Yo80007/Index/index')}"  >科技</a></li>
+	 <li><a href="{:U('Yo80007/Index/index')}"  >商业</a></li>
+	 <li><a href="{:U('Yo80007/Index/index')}"  >人文</a></li>
+	 <li><a href="{:U('Yo80007/Index/index')}"  >案例</a></li>    
+     <li><div style="position:relative;"><div style="position:absolute; top:0px; height:20px; font-size:10px; width:30px; line-height:20px; right:0px;">
+	 <img title="网友分享的文章聚合沉淀池子，主编从中选择文章为100头条，欢迎网友分享文章！好的头条源自分享！我分享我快乐！" src="../Public/image/new.jpg" /></div></div>      <a    title="网友分享的文章聚合沉淀池子，主编从中选择文章为100头条，欢迎网友分享文章！好的头条源自分享！我分享我快乐！ " href="/index.php?m=Index&a=apool" >文池
+      </a>      
+      </li>
+     <!--  <li><a href="http://www.100toutiao.com/index.php?m=Index&a=index&cat=99">推荐</a></li> -->
+      <!-- <li><a href="http://www.100toutiao.com/index.php?m=Index&a=index&cat=99">推荐</a></li>-->
+    </ul> 
+    <ul style="float:right;" id="login"> 
+  <!--   <li><a id="login_a" href="/index.php?g=User&m=Login&a=index">登录</a></li>--> 
+     <li>
+	 <if condition="$Think.session.id != ''">
+	 <a id="login_a" href="{:U('Yo80007/User/index')}">{$Think.session.name|default="这家伙很懒，什么也没留下"}</a>
+	 <else />
+	 <a id="login_a" href="{:U('Yo80007/User/login')}">登录</a>
+	 </if>
+	 </li>
+     <div class="clearfix"></div> 
+    </ul> 
+   </div> 
+  </div> 

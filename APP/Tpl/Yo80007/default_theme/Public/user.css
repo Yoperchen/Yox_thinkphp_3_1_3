@@ -1,0 +1,169 @@
+/* CSS Document */
+html,body{ background-color:#f8f3f6; }
+/**********************header***************************************/
+#header{ z-index:999; position:fixed; _position:absolute; top:0; left:0; width:100%; height:80px; background-color:#50a055;box-shadow: 0 1px 3px #50a055; }
+#header a:hover{ text-decoration:none; }
+#header h2{ margin-top:8px; }
+#header h2 a{ display:inline-block; }
+#header ul{ margin-right:20px; }
+#header ul li{ float:left; height:80px; line-height:80px; }
+#header ul li.on{ }
+#header ul li a{ display:inline-block; padding:0 14px; font-size:18px; color:#f8f3f6; }
+#header ul li a:hover{ background-color:#61B766; }
+#header ul li.on a{ color:#333; }
+#header .head-member{ position:relative; width:135px; height:80px; background-color:#61b766; text-align:center; }
+#header .head-member .head-member-status{ display:inline-block; width:100%; height:80px; line-height:80px; font-size:18px; color:#f8f3f6; }
+#header .head-member .head-member-status img{ vertical-align: text-top; margin-right:5px; width:27px; height:27px;-moz-border-radius: 27px; -webkit-border-radius: 27px; border-radius: 27px; }
+#header .head-member dl{ display:none; background-color:#fff;box-shadow: 0 1px 3px #999; }
+#header .head-member dl a{ display:inline-block; width:100%; height:40px; line-height:40px; border-bottom:1px dashed #ddd; }
+#header .head-member dl a:hover{ background-color:#f0f0f0; }
+
+
+/**********************main***************************************/
+#main{ padding-top:100px; }
+.user-left{ width:180px; background-color:#fff; margin-bottom:20px; }
+.user-left dl{ margin-bottom:10px; }
+.user-left dt{ text-indent:10px; margin:0 20px; font-size:18px; border-bottom:1px solid #ddd; height:50px; line-height:50px; }
+.user-left dd{ height:40px; line-height:40px; text-indent:30px; font-size:14px;}
+.user-left dd a{ display:block; width:257px; color:#666; border-left:3px solid #fff; }
+.user-left dd a:hover{ color:#50a055; border-left:3px solid #50a055; text-decoration:none; }
+.user-left dd a.sel{ color:#50a055; border-left:3px solid #50a055; text-decoration:none;}
+.user-right{ width:780px; margin-bottom:20px; }
+.user-right .hd{ border-top:3px solid #236bb0; background-color:#fff; height:38px; line-height:38px; text-indent:20px; font-size:14px; }
+.user-info{ background-color:#fff; padding:20px;}
+.user-info img{ float:left; width:80px; height:80px; -moz-border-radius: 80px; -webkit-border-radius: 80px; border-radius: 80px; }
+.user-info h3{ font-size:24px; color:#999; }
+.user-info h3 b{ font-weight:normal; color:#333; margin-left:20px; margin-right:15px; }
+.user-info h3 a{ color:#c33; font-size:14px; margin-left:15px; }
+.user-info p{ text-indent:20px; font-size:14px; }
+.user-info p span{ margin-right:15px; color:#999; }
+.user-desc{ margin-bottom:20px; background-color:#fdfeff; border-top:1px solid #f8f3f6; }
+.user-desc li{ float:left; width:175px; height:80px; padding-top:20px; overflow:hidden; border-right:1px solid #f8f3f6; text-align:center; font-size:14px; color:#666; }
+.user-desc li h3{ font-size:14px; }
+.user-desc li a{ font-size:24px; text-decoration:underline; color:#50a055; }
+.user-desc li span{ font-size:24px; color:#50a055; }
+.user-notPay{ margin-bottom:20px; }
+.user-notPay table{ background-color:#fdfeff; border-top:1px solid #f8f3f6; border-left:1px solid #f8f3f6; }
+.user-notPay table td{ height:90px; vertical-align:middle; border-right:1px solid #f8f3f6; border-bottom:1px solid #f8f3f6; }
+.user-notPay table td.user-notPay-info{ padding-left:20px; width:398px; }
+.user-notPay table td.user-notPay-info img{ vertical-align:top; width:50px; height:50px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.user-notPay table td.user-notPay-info a{ float:left; margin-right:20px; font-size:14px; color:#666; }
+.user-notPay table td.user-notPay-info span{ display:block; }
+.user-notPay table td.user-notPay-method,.user-notPay table td.user-notPay-button{ text-align:center; font-size:14px; color:#666; }
+.user-notPay table td.user-notPay-method{ width:130px; }
+.user-notPay table td.user-notPay-button a{ display:inline-block; width:90px; height:30px; line-height:30px; text-align:center; color:#fff; background-color:#50a055; }
+.user-notPay table td.user-notPay-button a:hover{ text-decoration:none; }
+.user-yesPay{ margin-bottom:20px; }
+.user-yesPay table{ background-color:#fdfeff; border-top:1px solid #f8f3f6; border-left:1px solid #f8f3f6; }
+.user-yesPay table td{ height:90px; vertical-align:middle; border-right:1px solid #f8f3f6; border-bottom:1px solid #f8f3f6; }
+.user-yesPay table td.user-yesPay-info{ padding-left:20px; width:398px; }
+.user-yesPay table td.user-yesPay-info img{ vertical-align:top; width:50px; height:50px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.user-yesPay table td.user-yesPay-info a{ float:left; margin-right:20px; font-size:14px; color:#666; }
+.user-yesPay table td.user-yesPay-info span{ display:block; color:#c33; }
+.user-yesPay table td.user-yesPay-info i{ margin-right:10px; font-style:normal; color:#666; text-decoration:line-through; }
+.user-yesPay table td.user-yesPay-method,.user-yesPay table td.user-yesPay-time{ text-align:center; font-size:14px; color:#999; }
+.user-yesPay table td.user-yesPay-method{ width:130px; }
+.user-buy{ margin-bottom:20px; }
+.user-buy table{ background-color:#fdfeff; border-top:1px solid #f8f3f6; border-left:1px solid #f8f3f6; }
+.user-buy table td{ height:90px; vertical-align:middle; border-right:1px solid #f8f3f6; border-bottom:1px solid #f8f3f6; }
+.user-buy table td.user-buy-info{ padding-left:20px; width:598px; }
+.user-buy table td.user-buy-info img{ vertical-align:top; width:50px; height:50px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.user-buy table td.user-buy-info a{margin-right:20px; font-size:14px; color:#666; }
+.user-buy table td.user-buy-info span{ display:block; color:#999; }
+.user-buy table td.user-buy-status,.user-buy table td.user-buy-button{ text-align:center; font-size:14px; color:#666; }
+.user-buy table td.user-buy-status{ width:130px; color:#999; }
+.user-buy table td.user-buy-notSet{ color:#666; font-weight:bold; }
+.user-buy table td.user-buy-button a.user-buy-setup{ display:inline-block; width:50px; height:30px; line-height:30px; text-align:center; color:#fff; background-color:#50a055; }
+.user-buy table td.user-buy-button a.user-buy-setup:hover{ text-decoration:none; }
+.user-buy table td.user-buy-button a.user-buy-down{ display:block; color:#999; font-size:12px; }
+
+.user-msg{ border:1px dashed #f29b76; background:#fffdfa; }
+.user-msg h3{ font-size:14px; color:#666; margin-left:20px; height:50px; line-height:50px; }
+.user-msg p{ color:#666; font-size:14px; margin-left:20px; line-height:30px; margin-bottom:25px; }
+.user-msg a{ color:#50a055; text-decoration:underline; }
+.user-msg b{ font-weight:normal; color:#c33; }
+.user-connect{ margin-bottom:20px; }
+.user-connect .bd{ background-color:#fdfeff; border-top:1px solid #f8f3f6;}
+.user-connect label{ display:block; font-size:14px; color:#236bb0; margin-top:18px; margin-left:20px; }
+.user-connect input{ width:150px; height:28px; margin-top:8px; margin-left:20px; border:1px solid #ccc; font-size:14px; text-indent:10px; background-color:#fff; }
+.user-connect span b{ font-weight:normal; color:#c33; }
+.user-connect span a{ color:#50a055; text-decoration:underline; }
+.user-connect button{ margin-left:20px; margin-top:12px; margin-bottom:20px; width:80px; height:35px; line-height:35px; border:none; font-size:14px; text-align:center; background:#50a055; color:#fff; cursor:pointer; }
+.user-connect{ margin-bottom:20px; }
+.user-connect table{ background-color:#fdfeff;font-size:14px;  border-top:1px solid #f8f3f6; border-left:1px solid #f8f3f6; }
+.user-connect table td{ height:60px; vertical-align:middle; border-right:1px solid #f8f3f6; border-bottom:1px solid #f8f3f6; }
+.user-connect table td.user-connect-info{ padding-left:20px; width:508px; }
+.user-connect table td.user-connect-info img{ vertical-align:top; width:50px; height:50px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.user-connect table td.user-connect-info a{ float:left; margin-right:20px; font-size:14px; color:#666; }
+.user-connect table td.user-connect-info span{color:#999; }
+.user-connect table td.user-connect-status,.user-connect table td.user-connect-button{ text-align:center; font-size:14px; color:#666; }
+.user-connect table td.user-connect-status{ width:90px; color:#999; }
+.user-connect table td.user-connect-notSet{ color:#666; font-weight:bold; }
+.user-connect table td.user-connect-button a.user-connect-setup{ display:inline-block; width:50px; height:30px; line-height:30px; text-align:center; color:#fff; background-color:#50a055; }
+.user-connect table td.user-connect-button a.user-connect-setup:hover{ text-decoration:none; }
+.user-connect table td.user-connect-button a.user-connect-down{ display:block; color:#999; font-size:12px; }
+
+.user-status{ margin-bottom:20px; }
+.user-status .bd{ background-color:#fdfeff; border-top:1px solid #f8f3f6; color:#666; padding-top:10px; padding-bottom:12px; } 
+.user-status p{ margin-left:20px; line-height:30px; font-size:14px; }
+.user-status b{ font-weight:normal; color:#c33; }
+.user-log{ margin-bottom:20px; }
+.user-log .bd{ background-color:#fdfeff; border-top:1px solid #f8f3f6; padding:15px 0; } 
+.user-log table{ }
+.user-log td{ height:34px; line-height:34px; font-size:14px; }
+.user-log .user-log-time{ width:90px; text-indent:20px; color:#50a055; }
+.user-log .user-log-flag{ width:35px; text-indent:-999em; }
+.user-log .user-log-flag i{ display:block; width:20px; background-image:url(img/user-update_03.gif); background-repeat:no-repeat; }
+.user-log .user-log-flag i.user-log-success{ background-position:0 -35px; }
+.user-log .user-log-info{ width:555px; padding-right:20px;}
+.user-password{ }
+.user-password .bd{ height:519px; background-color:#fdfeff; border-top:1px solid #f8f3f6; padding-top:10px; padding-bottom:12px; }
+.user-password label{ display:block; font-size:14px; color:#236bb0; margin-top:18px; margin-left:20px; }
+.user-password input{ width:320px; height:28px; margin-top:8px; margin-left:20px; border:1px solid #ccc; font-size:14px; text-indent:10px; background-color:#fff; }
+.user-password button{ display:block; margin-left:20px; margin-top:32px; margin-bottom:20px; width:110px; height:40px; line-height:40px; border:none; font-size:14px; text-align:center; background:#50a055; color:#fff; cursor:pointer; }
+.user-profile{}
+.user-profile .bd{ min-height:319px; background-color:#fdfeff; border-top:1px solid #f8f3f6; padding-top:10px; padding-bottom:12px; }
+.user-profile label{ display:block; font-size:14px; color:#236bb0; margin-top:18px; margin-left:20px; }
+.user-profile input{ width:320px; height:28px; margin-top:8px; margin-left:20px; border:1px solid #ccc; font-size:14px; text-indent:10px; background-color:#fff; }
+.user-profile select{ width:320px; height:28px; margin-top:8px; margin-left:20px; border:1px solid #ccc; font-size:14px; text-indent:10px; background-color:#fff; }
+.user-profile .submit{ display:block; margin-left:20px; margin-top:32px; margin-bottom:20px; width:110px; height:40px; line-height:40px; border:none; font-size:14px; text-align:center; background:#50a055; color:#fff; cursor:pointer; }
+.user-profile .edit_submit{
+	display: block;width: 110px;
+	background: none repeat scroll 0% 0% #50A055;
+	cursor: pointer;
+	margin-left: 20px;border: medium none;
+	font-size: 14px;
+	text-align: center;margin-top: 10px;
+	margin-bottom: 8px;
+	color:#FFF;
+	height:40px;
+}
+.user-avatar{}
+.user-avatar .bd{ background-color:#fdfeff; border-top:1px solid #f8f3f6; padding:10px 20px 12px; }
+.user-avatar .bd span{ display:block; color:#50a055; font-size:14px; margin:20px 0; }
+.user-avatar .bd img{ margin-bottom:20px; width:100px; height:100px; padding:2px; border:1px solid #ccc; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;  }
+
+
+/**********************footer***************************************/
+#footer{ width:100%; height:196px; background-color:#dedede; color:#b0b0b0; }
+#footer .fl ul{ margin-top:50px; margin-bottom:16px; }
+#footer .fl ul li{ float:left; margin-right:15px; }
+#footer .fl ul li a{ width:29px; height:29px; margin-top:20px; display:inline-block; background-image:url(img/dl_footer.gif); background-repeat:no-repeat; text-indent:-999em; }
+#footer .fl ul li a.footer-logo{ width:280px; height:64px; margin-top:0; background-position:0 0; }
+#footer .fl ul li a.footer-weibo{ background-position:0 -66px; }
+#footer .fl ul li a.footer-qq{ background-position:-39px -66px; }
+#footer .fl ul li a.footer-weixin{ background-position:-78px -66px;}
+#footer .fl ul li a.footer-youxiang{ background-position:-115px -66px;}
+#footer .fr ul{ margin-top:60px; }
+#footer .fr ul li{ float:left; margin-left:75px; line-height:30px; }
+#footer .fr ul li a{ color:#666; }
+#footer .fr ul li dt{ font-size:18px; }
+
+.pages{ background-color:#fff; margin-bottom:20px; padding:30px 0; text-align:center; }
+.pages span{ border:1px solid #ddd; padding:5px 8px; margin-right:5px; }
+.pages span.all{ padding:0; border:none; margin:0px; }
+.pages span.pageindex{ border:none; margin:0px; }
+.pages span.current{ border:none; color:#fff; background-color:#ccc; }
+.pages a{ border:1px solid #ddd; padding:5px 8px; margin-right:5px; }
+.pages a:hover{ color:#fff; background-color:#387FC2; text-decoration:none; }
+

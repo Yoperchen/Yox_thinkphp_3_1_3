@@ -1,0 +1,48 @@
+<table width="500" border="0" cellpadding="2">
+	<tr>
+    <td width="100" align="right">mobile：</td>
+    <td><input type="text" name="mobile" id="mobile" value="" /> *手机</td>
+  </tr>
+  	<tr>
+    <td width="100" align="right">pay_money_user_id：</td>
+    <td><input type="text" name="pay_money_user_id" id="pay_money_user_id" value="" /> 支付者id</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">get_money_user_id：</td>
+    <td><input type="text" name="get_money_user_id" id="get_money_user_id" value="" /> 收款者id</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">store_id：</td>
+    <td><input type="text" name="store_id" id="store_id" value="" /> 商家id</td>
+  </tr>
+  <tr>
+    <td align="right">payment_method：</td>
+    <td><select name="payment_method" id="payment_method">
+	    <option value="0">选择支付方式</option>
+		<option value="0">余额支付</option>
+		<option value="1">支付宝支付</option>
+		<option value="2">财付通支付(暂无)</option>
+		<option value="3">货到付款(暂无)</option>
+		<option value="4">信用卡支付(暂无)</option>
+		</select>付款方式|0：余额支付，1:支付宝，2：财付通支付，3：货到付款，4信用卡支付</td>
+  </tr>
+  <tr>
+    <td align="right">status：</td>
+    <td><select name="status" id="status">
+	    <option value="">选择订单状态</option>
+		<option value="0">等待买家付款</option>
+		<option value="1">支付成功</option>
+		<option value="2">支付失败</option>
+		<option value="3">取消</option>
+		<option value="9">已完成</option>
+		</select>订单状态|0:等待买家付款，1支付成功，2支付失败，3取消,9已完成</td>
+  </tr>
+   <tr>
+    <td width="100" align="right">page_size：</td>
+    <td><input type="text" name="page_size" id="page_size" value="10" /> 每页几条</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">p：</td>
+    <td><input type="text" name="p" id="p" value="1" /> 第几页</td>
+  </tr>
+  </table>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="language" content="chinese" />
+<title>七爷租车-中国最大私家车共享平台 </title>
+<link rel="stylesheet" href="../Public/style.css" type="text/css" media="all"/>
+<script type="text/javascript" src="/qiyezuche/Tpl/Home/default_theme/Public/js/jquery-1.10.2.js"></script>
+<!--[if lte IE 6]>
+	<script src="/qiyezuche/Tpl/Home/default_theme/Public/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	  DD_belatedPNG.fix('div,li,a,h3,span,img,.png_bg,ul,input,dd,dt,a');
+	</script>
+<![endif]-->
+</head>
+<body>
+<include file="Public/header" />
+<div class="wrapper m100 mb50">
+    <div class="lg_banner"></div>
+    <div class="lg_login" >
+        <h2>登录</h2>
+        <form action="/index.php/login/Index.html" method="post" class="registerform">
+            <div>
+            <ul>
+                <li class="w100 m20">
+                    <input type="text" name="username" placeholder="请输入手机号码" class="lg_name"  datatype="s2-22"  errormsg="输入错误,请检查！">
+                    <div class="Validform_checktip">可输入手机号或者会员名</div>
+                </li>
+                <li class="w100 m20">
+                    <input type="password" name="password" placeholder="请输入密码" class="lg_password"  datatype="*6-16"  errormsg="密码范围在6~16位之间！">
+                    <div class="Validform_checktip">密码范围在6~16位之间</div>
+                </li>
+            </ul>
+            <div class="w100 m20">
+                <input name="submit" type="submit" value="登录" class="bt_login">
+            </div>
+        </form>
+        <div class="w100 m20"> <span class="float_left"><a href="" class="login_qq">QQ登录</a> <a href="" class="login_weibo">微博登录</a></span> <span class="float_right olink"><a href="signup.html">免费注册</a></span> </div>
+    </div>
+</div>
+<include file="Public/footer" />
+</body>
+</html> 

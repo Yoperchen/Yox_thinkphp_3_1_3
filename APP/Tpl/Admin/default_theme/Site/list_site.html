@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<title>站点管理</title>
+</head>
+<body>
+<h1>站点管理</h1>
+<form action="{:U('Admin/Site/list_site')}" method="POST">
+<table>
+	<tr>
+	<td>站点：</td><td><input type="text" name="partner_api_id" value="{$Think.request.partner_api_id}"></td>
+	<td>名称：</td><td><input type="text" name="site_name" value="{$Think.request.site_name}"></td>
+	<td>站点类型：</td><td><input type="text" name="site_type" value="{$Think.request.site_type}"></td>
+	<td></td><td><input type="submit" value="搜索"></td>
+	</tr>
+</table>
+</form>
+<table>
+	<tr>
+		<th>站点ID</th><th>第三方帐号</th><th>站点名称</th><th>站点类型</th><th>手机</th><th>email</th><th>备注</th><th>最后登录时间</th><th>添加时间</th><th> 操作</th>
+	</tr>
+	<foreach name="site_list_result.data.list" item="site">
+		<tr>
+		<td>{$site.id}</td>
+		<td>{$site.partner_api_id}</td>
+		<td>{$site.site_name}</td>
+		<td>{$site.site_type}</td>
+		<td>{$site.mobile}</td>
+		<td>{$site.email}</td>
+		<td>{$site.remark}</td>
+		<td>{$site.last_login_time}</td>
+		<td>{$site.add_time}</td>
+		<td> <a href="{:U('Admin/Site/update_site',array('id'=>$site['id']))}">编辑</a> <!--<a href="{:U('Admin/Site/del_site',array('id'=>$site['id']))}">删除</a>  --></td>
+		</tr>
+ </foreach>
+</table>
+</body>
+</html>

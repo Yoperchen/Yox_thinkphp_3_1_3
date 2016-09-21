@@ -1,0 +1,89 @@
+<!DOCTYPE html>   
+<html xmlns="http://www.w3.org/1999/xhtml">   
+<head>   
+	<title>零零糖-汇聚每日热门、搞笑、有趣资讯-花儿开到千年无尽的芬芳</title>      
+	<meta name="keywords" content="零零糖,花儿开到千年无尽的芬芳,糖友"/>  
+	<meta name="description" content="每日严肃的、热门的、搞笑的、有趣的资讯" />
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link rel="icon" href="/Public/favicon.ico" mce_href="/Public/favicon.ico" type="image/x-icon">
+	<STYLE type="text/css">
+*{margin:0;padding:0;}
+body, html {
+ margin: 0;
+ padding:0 !important;
+ padding:90px 0 32px 0;
+ width:100%;
+ height:100%;
+ overflow:hidden;
+}
+.header {
+	width: 100%;
+	height: 90px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+.content {
+ position:absolute!important;
+ position:relative;
+ top:90px!important;
+ top:0;
+ bottom:32px;
+ width:100%;
+ overflow:hidden;
+ height:auto!important;
+ left: -3px;
+}
+.main {
+ height:100%;
+ overflow-y:auto;
+ text-align:center;
+}
+.footer {
+	width: 100%;
+	color: #e1efff;
+	line-height: 32px;
+	letter-spacing: 1px;
+	text-align: center;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+</STYLE>
+	
+</head> 
+<body>
+<!-- 代码 开始 -->
+<div class="header">
+	<!-- 通用头部 开始-->
+	<include file="Public/header" />
+	<!-- 通用头部 结束-->
+</div>
+<div class="content">
+    <div class="main">
+        <!-- 分享内容 开始-->
+		{:W('AddShare',
+			array(
+			'template'=>'Yocms_add_2',
+			'data'=>array(
+				'title'=>$add_share_data['title'],
+				'url'=>$add_share_data['url'],
+				'img1'=>$add_share_data['img1'],
+				'share_say'=>$add_share_data['share_say'],
+				),
+			'action_url'=>U('Share/add_share@share')))}
+		<!-- 分享内容给 结束-->
+  </div>
+</div>
+<div class="footer">
+	<!-- 通用尾部 开始-->
+	{:W('Footer')}
+	<!-- 通用尾部 结束-->
+</div>
+<!-- 代码 结束 -->
+</body>
+</html>

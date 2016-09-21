@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="language" content="chinese" />
+<title>七爷租车-中国最大私家车共享平台 </title>
+<link rel="stylesheet" href="../Public/style.css" type="text/css" media="all"/>
+<!--[if lte IE 6]>
+	<script src="/qiyezuche/Tpl/Home/default_theme/Public/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	  DD_belatedPNG.fix('div,li,a,h3,span,img,.png_bg,ul,input,dd,dt,a');
+	</script>
+<![endif]-->
+</head>
+<body class="bg">
+<include file="Public/header" />
+<!--content-->
+<div class="wrapper h595">
+  <div class="home_left">
+    <div class="w100 m100">
+      <div class="bt_home"><a href="{:U('Car/car_list')}">我要租车</a></div>
+      <div class="bt_home"><a href="{:U('Car/mycar_info')}">爱车出租</a></div>
+    </div>
+    <div class="w100 m50">
+    <form action="/index.php/car/Car_list.html" method="get">
+      <input type="text" value="输入搜索车型" class="home_input" onFocus="if(value==defaultValue){value='';this.style.backgroundColor='#000000'}" onBlur="if(!value){value=defaultValue;this.style.backgroundColor='#FFFFFF'}" name="carname">
+      <input name="submit" type="submit" class="home_button">
+      </form>
+    </div>
+  </div>
+  <div class="home_right bg_iphone">
+  	<div class="ercode">
+    <img src="../Public/image/img_ercode.png" width="138" height="150">
+    </div>
+    <div class="home_os">
+    <a href=""><img src="../Public/image/bt_ios.png" width="170" height="45"></a>
+    <a href=""><img src="../Public/image/bt_android.png" width="170" height="45"></a>
+    </div>
+  </div>
+</div>
+<include file="Public/footer" />
+</body>
+</html>

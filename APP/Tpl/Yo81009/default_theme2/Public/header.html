@@ -1,0 +1,27 @@
+<header>
+	<div class="head">
+		<div class="logo wrapper">
+			<div class="fr"><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a> | 
+							<a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="wrapper">
+				<ul>
+				<li class="li1"><a href="{:U('Yo81009/Index/index')}"   class='on'>公司首页</a></li>
+			<foreach name="navigation_result.data.list" item="vo">
+            <li><a href="{$vo['url']}" class="L">{$vo['name']}</a></li>
+			 </foreach>
+			 <!--
+					<li class="li1"><a href="/"   class='on'>公司首页</a></li>
+					<li class="li2"><a href="/about/" >关于我们</a></li>
+					<li class="li3"><a href="/fanwei/" >服务范围</a></li>
+					<li class="li4"><a href="/news/" >新闻中心</a></li>
+					<li class="li5"><a href="/case/" >工程案例</a></li>
+					<li class="li6"><a href="/contact/" >联系我们</a></li>
+					-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

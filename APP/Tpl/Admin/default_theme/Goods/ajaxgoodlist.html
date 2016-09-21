@@ -1,0 +1,46 @@
+<table style="text-align:center">
+<tr><th>ID</th><th>图片</th><th>名称</th><th>所属商家</th><th>分类</th><th>排序</th><th>数量</th><th>价格</th></tr>
+	<volist name="list" id="vo">
+	<form action="" method="post">
+	<tr>
+		    <td>{$vo.goods_id}	</td>
+		    <td><img height="50" src="{$vo.img}">	</td>
+	     	<td>{$vo.goods_name}</td>
+	     	<td>{$vo.store_id}</td>
+	     	<td>{$vo.category}</td>
+	     	<td>{$vo.sort}</td>
+	     	<td>{$vo.quantity}</td>
+			<td>{$vo.price}元</td>
+		    <td><a style="margin-left:15px;" href="{:U('Admin/Goods/updateGoods',array('good_id'=>$vo['goods_id']))}">修改</a>&nbsp;&nbsp;
+			<a href="javascript:;" class="del_good" data="{$vo.goods_id}" href="">删除</a></td>
+	
+	</tr>
+	</form>
+	</volist>
+	<tr></tr>
+</table>
+<div class="result page" id="page">{$page}</div>
+
+
+
+<script>
+$(document).ready(function(){
+  $(".del_good").click(function(){
+	  if(!confirm("确认删除ID为"+$(this).attr("data")+"的文章")){
+		  return false
+	  }
+    $.get("{:U('Admin/Goods/delGood')}",
+    {
+    	good_id:$(this).attr("data"),
+    },
+    function(data,status){
+    	  if (data.status==1){
+    		  alert("删除成功");
+    		  window.location.href="{:U('Admin/Goods/listGoods')}";
+    	  }else{
+    		  alert("删除失败");
+    	  }
+    });
+  });
+});
+</script>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/plugins/jquery_ui/jquery-ui.min.js" type="text/javascript"></script>
+<link href="__PUBLIC__/plugins/jquery_ui/jquery-ui.min.css" rel="stylesheet">
+<script>
+$(document).ready(function() {
+  $("#end_time1,#end_time2").datepicker({
+	dateFormat: 'yy-mm-dd',
+	monthNames:['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一','十二'],//月份中文
+	dayNamesMin:['日', '一', '二', '三', '四', '五', '六'],//星期中文
+	duration: 'slow',//显示效果
+	numberOfMonths:2,//显示几个月
+	});
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>优惠券列表</title>
+</head>
+<body>
+<h1>优惠券管理</h1>
+<a href="javascript:;">优惠券列表</a>
+<a href="{:U('Admin/Coupon/add_multi_coupon')}">添加优惠券</a>
+<form action="{:U('Admin/Coupon/list_coupon')}" method="post">
+<table>
+<tr>
+<td>站点:</td>
+<td>{:W('ListSite',array('template'=>'admin_select_ListSite','select_id'=>I('param.site_id','','int')))}</td>
+<td>券码:</td><td><input type="text" name="serial_number" value="{$Think.request.serial_number}"></td>
+<td>过期时间:</td><td><input type="text" id="end_time1" name="end_time1" value="{$Think.request.end_time1}">-<input id="end_time2" type="text" name="end_time2" value="{$Think.request.end_time3}"></td>
+</tr>
+	<tr><td>券类型:</td>
+	<td>
+	<select  name="type_id">
+		<option <if condition="$Think.request.type_id eq ''">selected</if> value="">全部</option>
+		<option <if condition="$Think.request.type_id eq 1">selected</if> value="1">现金券</option>
+		<option <if condition="$Think.request.type_id eq 2">selected</if> value="2">兑换券</option>
+		<option <if condition="$Think.request.type_id eq 3">selected</if> value="3">折扣券</option>
+	</select>
+	</td>
+	<td>批次:</td><td>{:W('ListBatch',array('template'=>'admin_select_ListBatch','select_id'=>I('param.batch_id','','int')))}</td>
+	<td><input type="submit" name="submit" value="搜索"></td></tr>
+</table>
+</form>
+<table>
+	<tr>
+		<th>券ID</th>
+		<th>优惠码</th>
+		<th>券类型</th>
+		<th>批次</th>
+		<th>总价值</th>
+		<th>剩余价值</th>
+		<th>销售价</th>
+		<th>有效期开始</th>
+		<th>有效期结束</th>
+		<th>属于</th>
+		<th>手机号</th>
+		<th>订单ID</th>
+		<th>验证次数</th>
+		<th>验证时间</th>
+		<th>状态</th>
+		<th>发送通知</th>
+		<th>添加时间</th>
+		<th>修改时间</th>
+	</tr>
+	<foreach name="coupon_list_result.data.list" item="coupon">
+		<tr>
+		<td>{$coupon.coupon_id}</td>
+		<td>{$coupon.serial_number}</td>
+		<td>{$coupon.type_id|default="无"}</td>
+		<td>{$coupon.batch_id|default="无"}</td>
+		<td>{$coupon.total_value}{$coupon.unit}</td>
+		<td>{$coupon.remain_value}{$coupon.unit}</td>
+		<td>{$coupon.sale_price}</td>
+		<td>{$coupon.start_time|date="Y-m-d",###}</td>
+		<td>{$coupon.end_time|date="Y-m-d",###}</td>
+		<td>{$coupon.belong_user_id}</td>
+		<td>{$coupon.mobile}</td>
+		<td>{$coupon.order_id}</td>
+		<td>{$coupon.validation_count}</td>
+		<td>{$coupon.validation_time}</td>
+		<td>{$coupon.status}</td>
+		<td>{$coupon.is_sendmsg}</td>
+		<td>{$coupon.add_time|date="Y-m-d",###}</td>
+		<td>{$coupon.update_time|date="Y-m-d",###}</td>
+		<td><a href="{:U('Admin/Coupon/update_coupon',array('coupon_id'=>$coupon['coupon_id']))}">详细</a>
+		<a href="{:U('Admin/Coupon/delete_coupon',array('coupon_id'=>$coupon['coupon_id']))}">删除</a>
+		<!-- <a href="{:U('Admin/Coupon/update_coupon',array('is_export'=>1,'coupon_id'=>$coupon['coupon_id']))}">导出</a></td> -->
+		</tr>
+ </foreach>
+</table>
+</body>
+</html>

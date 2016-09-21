@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<title>会员管理</title>
+</head>
+<body>
+<h1>会员管理</h1>
+<form action="{:U('Admin/Setting/list_setting')}" method="POST">
+<table>
+	<tr>
+	<td>站点：</td><td>{:W('ListSite',array('template'=>'admin_select_ListSite','select_id'=>$Think.request.site_id))}</td>
+	<td>名称：</td><td><input type="text" name="name" value="{$Think.request.name}"></td>
+	</tr>
+	<tr><td></td><td></td>
+	<td></td><td></td>
+	<td></td><td><input type="submit" name="submit" value="搜索"></td></tr>
+</table>
+</form>
+<table>
+	<tr>
+		<th>ID</th><th>所属第三方</th><th>站点</th><th>邮箱</th><th>名称</th><th>性别</th><th>手机</th><th>站内余额</th><th>手机验证</th><th>邮箱验证</th><th>状态</th><th>注册时间</th><th>操作</th>
+	</tr>
+	<foreach name="user_list_result.data.list" item="user">
+		<tr>
+		<td>{$user.id}</td>
+		<td>{$user.api_partner_id}</td>
+		<td>{$user.site_id}</td>
+		<td>{$user.email}</td>
+		<td>{$user.name}</td>
+		<td>{$user.sex}</td>
+		<td>{$user.mobile}</td>
+		<td>{$user.funds}</td>
+		<td>{$user.is_mobile_verify}</td>
+		<td>{$user.is_email_verify}</td>
+		<td>{$user.status}</td>
+		<td>{$user.reg_time|date="Y-m-d",###}</td>
+		<td> <a href="{:U('Admin/User/update_user',array('id'=>$user['id']))}">修改</a></td>
+		</tr>
+ </foreach>
+</table>
+</body>
+</html>

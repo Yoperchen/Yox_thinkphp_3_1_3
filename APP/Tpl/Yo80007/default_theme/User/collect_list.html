@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>编辑部 - 100头条 - 每天精选100个有深度微信头条</title>
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="MobileOptimized" content="320"/>
+<link href="../Public/reset.css" rel="stylesheet" type="text/css" media="all">
+<link href="../Public/user.css" rel="stylesheet" type="text/css" media="all">
+<link href="../Public/default.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../Public/bootcss.css" /> 
+</head>
+<body class="yahei">
+<include file="Public/header" />
+ <section>
+  <div id="main" class="wrap clear">
+<include file="Public/user_left_nav" />
+   
+    <div class="user-right fr">
+    
+      <div class="user-buy">
+      <div class="user-msg">
+        <p>审核通过并显示到100头条的文章：<br>
+        	<a href="http://www.linglingtang.com/wode.php?uid=" target="_blank">我的零零糖头条</a><br>
+       		</p>
+        </div>        <br>
+        <div class="hd"> 已分享推荐的文章 </div>
+        <div class="bd">
+           <table cellpadding="0" cellspacing="0">
+           &nbsp;&nbsp;&nbsp;&nbsp;您还没有分享推荐文章！                       </table>
+            <div class="pages"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div id="footer">
+    <div class="wrap clear">
+      <div class="fl">
+        <ul class="clear">
+          <li><a href="/" title="" class="footer-logo"> Logo</a></li>
+          <li><a href="/" class="footer-weibo" target="_blank">腾讯微博</a></li>
+          <li><a href="/" class="footer-qq" target="_blank">QQ</a></li>
+          <li><a href="/" class="footer-weixin" onClick="jQuery('.footer-weinxin-show').show();" >微信</a></li>
+        </ul>
+        <p>Copyright © 2014 100Toutiao.com All Right Reserved.</p>
+      </div>
+      <div class="fr">
+        <ul>
+          <li>
+            <dl>
+              <dt><a href="#">开始</a></dt>
+              <dd><a href="#" target="_blank">注册帐号</a></dd>
+  
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><a href="#">使用</a></dt>
+              <dd><a href="#" target="_blank" title="">账号绑定</a></dd>
+              <dd><a href="#" target="_blank">文章推送</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><a href="#" target="_blank">关于</a></dt>
+              <dd><a href="#" target="_blank">联系我们</a></dd>
+           
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-weinxin-show">
+    <i onClick="jQuery('.footer-weinxin-show').hide();">╳</i>
+    <img src="/Public/User/images/login-reg-qrcode.jpg">
+  </div>
+
+</footer>
+<script src="/Public/js/layer/layer.min.js"></script>
+<script>
+$(function () {
+    $.ajax({
+        type: "GET",
+        url: '/User/Index/getUser.html',
+        dataType: "jsonp",
+        success: function (data) {
+            if (data.status){
+                $('a.head-member-status').attr('href', 'javascript:;;');
+                $('a.head-member-status').html('<img src="' + data.avatar + '" onerror="this.src=\'/Public/User/images/index-header-avatar.gif\'">' + data.nickname);
+                $('a.head-member-status').parent().append('<dl style="display: none;z-index: 9999; position: relative;">\
+							<dd><a href="/index.php?g=User&m=Info&a=profile">个人信息</a></dd>\
+							<dd><a href="/index.php?g=User&m=Info&a=avatar">修改头像</a></dd>\
+							<dd><a href="/index.php?g=User&m=Login&a=logout">退出登录</a></dd>\
+						</dl>');
+                if ($('.head-member').find('dl').length) {
+                    $('.head-member').hover(function () {
+                        $(this).find('dl').fadeIn(100);
+                    }, function () {
+                        $(this).find('dl').hide();
+                    });
+                }
+            } else {
+                $('a.head-member-status').attr('href', '/index.php?g=User&m=Article&a=login');
+            }
+        }
+    });
+ 
+});
+</script>
+
+<script>
+
+	  $('.J_ajax_del').on('click', function (e) {
+  	  var recordToDelete = $(this).attr("data_id");
+         	   if(confirm('确认删除吗？')){
+         		$.get("/index.php?g=User&m=Article&a=del", { "id": recordToDelete },
+                      function(data){
+         					if(data.status){
+         						layer.msg("删除成功！", 1, 1);
+         						$("#"+recordToDelete).remove();
+         					}else{
+         						layer.msg("删除失败！", 1, 13);
+
+         					}
+         					
+                      });
+         		
+         	   }
+             
+         });
+	 
+	    $('.edit').on('click', function(){
+    	var recordToEdit = $(this).attr("data_id");
+    
+    	//var url = "/User/Article/edit/id/"+recordToEdit
+		var url = "/index.php?g=User&m=Article&a=edit"+"&id="+recordToEdit;
+		 
+        $.layer({
+            type: 2,
+            title: '编辑',
+            maxmin: true,
+            shadeClose: true, //开启点击遮罩关闭层
+            area : ['800px' , '560px'],
+            offset : ['50px', ''],
+            iframe: {src: url}
+        });
+    });	 
+</script>
+  <include file="Public/footer" />
+</body>
+</html>

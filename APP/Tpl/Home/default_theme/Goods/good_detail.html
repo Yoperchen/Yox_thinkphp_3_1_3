@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <load href="__PUBLIC__/Js/Jquery/jquery.min.js" />
+    <load href="__PUBLIC__/Js/Jquery/jquery.form.js" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>商品详情页</title>
+</head>
+<body>
+{:W('Header')}
+<a href="{:U('User/Cart/index')}">我的购物车</a>
+<form id="add_to_cart_form" action="{:U('User/Cart/addToCart')}"  method="post">
+商品id:<input id="good_id" type="text" readonly name="good_id" value="{$data.goods_id}"><br/>
+商品种类：{$data.category}<br/>
+商品排序;{$data.sort}<br/>
+商家id:{$data.store_id}<br/>
+商品名称：{$data.goods_name}<br/>
+商品数量：{$data.quantity}<br/>
+商品价格：{$data.price}<br/>
+商品描述：{$data.desc}<br/>
+商品状态：{$data.status}<br/>
+商品名称：{$data.img}<br/>
+购买数量：<input name="num" min="1" max="{$data.quantity}" type="number" value="1">最多可以购买：{$data.quantity}<br/>
+商品图片：<img height="50" src="__PUBLIC__/store/{$data.store_id}/goods_img/{$data.goods_id}/{$data.img}">
+<input type="submit"  value="添加到购物车">
+</form>
+<br/>
+<form method="post" action="{:U('Home/Order/index')}">
+<input type="hidden" name="good_id" value="{$data.goods_id}">
+<input type="submit" value="购买">
+</form>
+<div id="result"></div>
+<script language="JavaScript">
+    $(function(){
+        $('#add_to_cart_form').ajaxForm({
+            beforeSubmit:  checkForm,  // pre-submit callback
+            success:       complete,  // post-submit callback
+            dataType: 'json'
+        });
+        function checkForm(){
+            if( '' == $.trim($('#good_id').val())){
+                $('#result').html('商品Id没填写').show();
+                return false;
+            }
+            //可以在此添加其它判断
+        }
+        function complete(data){
+            if (data.status==1){
+                $('#result').html(data.info).show();
+                // 更新列表
+                //data = data.data;
+               //var html =  '<div class="result" style=\'font-weight:normal;background:#A6FF4D\'><div style="border-bottom:1px dotted silver">标题：'+data.title+'  [ '+data.create_time+' ]</div><div class="content">内容：'+data.content+'</div></div>';
+              //  $('#list').prepend(html);
+            }//else{
+               // $('#result').html(data.info).show();
+           // }
+        }
+
+    });
+    </script>
+</body>
+</html>

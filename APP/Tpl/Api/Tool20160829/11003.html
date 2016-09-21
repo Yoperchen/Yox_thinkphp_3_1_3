@@ -1,0 +1,66 @@
+<table width="500" border="0" cellpadding="2">
+<tr>
+    <td width="100" align="right">rental_category_id：</td>
+    <td><input type="text" name="rental_category_id" id="rental_category_id" value="" /> *租车分类id</td>
+  </tr>
+	<tr>
+    <td width="100" align="right">user_id：</td>
+    <td><input type="text" name="user_id" id="user_id" value="" /> 租用者ID</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">name：</td>
+    <td><input type="text" name="name" id="name" value="" /> *汽车名称、租用标题|例如：本田xxx，圣诞节只需390元一天</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">owner_user_id：</td>
+    <td><input type="text" name="owner_user_id" id="owner_user_id" value="" /> *汽车所有者用户ID(如果是用户的话),没有请留空</td>
+  </tr>
+    <tr>
+    <td width="100" align="right">owner_store_id：</td>
+    <td><input type="text" name="owner_store_id" id="owner_store_id" value="" /> *汽车所有者商家ID(如果事商家的话),没有请留空</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">owner_name：</td>
+    <td><input type="text" name="owner_name" id="owner_name" value="李小姐" /> 使用者显示名称，没有请留空|例如：陈先生、李小姐</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">total_price：</td>
+    <td><input type="text" name="total_price" id="total_price" value="" /> 出租总价格|rental_begin_time到rental_end_time的总价格</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">rental_price：</td>
+    <td><input type="text" name="rental_price" id="rental_price" value="" /> 出租单价|以time_unit的单位价格，如果time_unit是月，rental_price是1800，就是每月1800元</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">time_unit：</td>
+    <td><input type="text" name="time_unit" id="time_unit" value="月" />出租的时间单位、月、天、年</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">rental_begin_time：</td>
+    <td><input type="text" name="rental_begin_time" id="rental_begin_time" value="" /> 出租开始时间</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">rental_end_time：</td>
+    <td><input type="text" name="rental_end_time" id="rental_end_time" value="" /> 出租借宿时间</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">disable_start_time：</td>
+    <td><input type="text" name="disable_start_time" id="disable_start_time" value="" /> 不能租开始时间|可能会有一些特殊情况或者突发情况某段时间不能出租</td>
+  </tr>
+   <tr>
+    <td width="100" align="right">disable_end_time：</td>
+    <td><input type="text" name="disable_end_time" id="disable_end_time" value="" /> 不能租借宿时间</td>
+  </tr>
+   <tr>
+    <td width="100" align="right">is_show：</td>
+    <td><input type="text" name="is_show" id="is_show" value="1" /> 是否显示|1:显示，0：不显示</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">production_time：</td>
+    <td><input type="text" name="production_time" id="production_time" /> 生产日期</td>
+  </tr>
+   <tr>
+    <td width="100" align="right">start_use_time：</td>
+    <td><input type="text" name="start_use_time" id="start_use_time" /> 开始使用时间|使用了多久</td>
+  </tr>
+</table>

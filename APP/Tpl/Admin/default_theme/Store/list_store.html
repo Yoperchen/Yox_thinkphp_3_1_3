@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<title>商家管理</title>
+</head>
+<body>
+<h1>商家管理</h1>
+<form action="{:U('Admin/Store/list_store')}" method="POST">
+<table>
+	<tr>
+	<td>商家名称：</td><td><input type="text" name="store_name" value="{$Think.request.store_name}"></td>
+	<td>所在城市：</td><td><input type="text" name="city_id" value="{$Think.request.city_id}"></td>
+	<td>所在社区：</td><td><input type="text" name="community_id" value="{$Think.request.community_id}"></td>
+	<td></td><td><input type="submit" value="搜索"></td>
+	</tr>
+</table>
+</form>
+<table>
+	<tr>
+		<th>商家ID</th><th>站点名称</th><th>商家名称</th><th>排序</th><th>社区</th><th>城市</th><th>最后登录时间</th><th>添加时间</th><th> 操作</th>
+	</tr>
+	<foreach name="store_list_result.data.list" item="store">
+		<tr>
+		<td>{$store.id}</td>
+		<td>{$store.site_id}</td>
+		<td>{$store.store_name}</td>
+		<td>{$store.sort}</td>
+		<td>{$store.community_id}</td>
+		<td>{$store.city_id}</td>
+		<td>{$store.last_login_time}</td>
+		<td>{$store.add_time}</td>
+		<td> <a href="{:U('Admin/Store/update_store',array('id'=>$store['id']))}">编辑</a> <!-- <a href="{:U('Admin/Store/del_store',array('id'=>$store['id']))}">删除</a> --></td>
+		</tr>
+ </foreach>
+</table>
+</body>
+</html>

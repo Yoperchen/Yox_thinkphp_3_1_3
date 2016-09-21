@@ -1,0 +1,39 @@
+<div class="head clearfix yh">
+
+	<!--logo-->
+    <div class="logo block clearfix">
+    	<a href="{:U('Yo81009/Index/index')}" class="fleft"><img src="../Public/image/logo.png"></a>
+        <div class="fright">
+        	<p class="tright"><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a> | <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></p>
+            <br>
+            <p class="f16 c_red">咨询电话：159891197247</p>
+        </div>
+    </div>
+    
+    <!--nav-->
+	<div class="nav clearfix">
+    	<ul class="block">
+        	<li><a href="">网站首页</a></li>
+			<foreach name="navigation_result.data.list" item="vo">
+            <li><a href="{$vo['url']}" class="L">{$vo['name']}</a></li>
+			 </foreach>
+        </ul>
+    </div>
+    
+    <div class="focusBox">
+			<ul class="pic">
+					<li><a href="#" target="_blank"><img src="../Public/image/banner.jpg"/></a></li>
+					<li><a href="#" target="_blank"><img src="../Public/image/banner.jpg"/></a></li>
+					<li><a href="#" target="_blank"><img src="../Public/image/banner.jpg"/></a></li>
+					<li><a href="#" target="_blank"><img src="../Public/image/banner.jpg"/></a></li>
+			</ul>
+			<ul class="hd">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+	</div>
+
+
+</div>

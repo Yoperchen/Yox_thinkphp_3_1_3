@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="content">
+<table cellpadding=3 cellspacing=5>
+	<volist name="list" id="vo">
+	<form action="" method="post">
+	<tr>
+		<td style="border-bottom:1px solid silver;">
+			<span style="color:gray">
+			{$vo.goods_id}-<a href="{:U('Home/Goods/good_detail?goods_id='.$vo['goods_id'])}">{$vo.goods_name}</a>-[ {$vo.last_update|date='Y-m-d H:i:s',###} ]-价格：{$vo.shop_price}
+			<input type="submit" name="提交">
+			</span>  
+		</td>
+	</tr>
+	</form>
+	</volist>
+	<tr></tr>
+</table>
+<div class="result page" id="page">{$page}</div>
+</div>
+</body>
+</html>

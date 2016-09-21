@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>编辑部 - 100头条 - 每天精选100个有深度微信头条</title>
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="MobileOptimized" content="320"/>
+<link href="../Public/reset.css" rel="stylesheet" type="text/css" media="all">
+<link href="../Public/user.css" rel="stylesheet" type="text/css" media="all">
+<link href="../Public/default.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../Public/bootcss.css" /> 
+</head>
+<body class="yahei">
+<include file="Public/header" />
+ <section>
+  <div id="main" class="wrap clear">
+<include file="Public/user_left_nav" />
+   
+    <div class="user-right fr">
+      <div class="user-profile">
+        <div class="hd"> 分享推荐文章 </div>
+        <div class="bd">
+          <form name="form" id="form" class="J_ajaxForm" method="post" enctype="multipart/form-data" action="">
+ 			<label>微信文章地址：（<strong>目前只支持微信文章地址</strong>）</label>
+            <input type="text" name="url" id="url" style="width:326px;" class="input">
+            
+        
+            
+            <label>文章分类：</label>
+            <select name="category" class="input">
+            	<option value="1">科技</option><option value="2">商业</option>
+            	<option value="3">人文</option><option value="4">案例</option>
+			</select>
+            <button type="submit" class="submit J_ajax_submit_btn">立即分享</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div id="footer">
+    <div class="wrap clear">
+      <div class="fl">
+        <ul class="clear">
+          <li><a href="/" title="" class="footer-logo"> Logo</a></li>
+          <li><a href="/" class="footer-weibo" target="_blank">腾讯微博</a></li>
+          <li><a href="/" class="footer-qq" target="_blank">QQ</a></li>
+          <li><a href="/" class="footer-weixin" onClick="jQuery('.footer-weinxin-show').show();" >微信</a></li>
+        </ul>
+        <p>Copyright © 2014 100Toutiao.com All Right Reserved.</p>
+      </div>
+      <div class="fr">
+        <ul>
+          <li>
+            <dl>
+              <dt><a href="#">开始</a></dt>
+              <dd><a href="#" target="_blank">注册帐号</a></dd>
+  
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><a href="#">使用</a></dt>
+              <dd><a href="#" target="_blank" title="">账号绑定</a></dd>
+              <dd><a href="#" target="_blank">文章推送</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><a href="#" target="_blank">关于</a></dt>
+              <dd><a href="#" target="_blank">联系我们</a></dd>
+           
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-weinxin-show">
+    <i onClick="jQuery('.footer-weinxin-show').hide();">╳</i>
+    <img src="/Public/User/images/login-reg-qrcode.jpg">
+  </div>
+
+</footer>
+  <include file="Public/footer" />
+</body>
+</html>

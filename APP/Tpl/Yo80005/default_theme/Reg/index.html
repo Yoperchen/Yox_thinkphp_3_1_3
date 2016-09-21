@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="language" content="chinese" />
+<title>七爷租车-中国最大私家车共享平台 </title>
+<link rel="stylesheet" href="../Public/style.css" type="text/css" media="all"/>
+<script type="text/javascript" src="__/Public__/js/jquery-1.10.2.js"></script>
+<!--[if lte IE 6]>
+	<script src="/qiyezuche/Tpl/Home/default_theme/Public/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	  DD_belatedPNG.fix('div,li,a,h3,span,img,.png_bg,ul,input,dd,dt,a');
+	</script>
+<![endif]-->
+</head>
+<body>
+	<include file="Public/header" />
+<!--content-->
+<script type="text/javascript" src="../Public/js/validform.js"></script>
+<!--content-->
+
+<div class="wrapper m100 mb50">
+    <div class="su_step">
+        <ul>
+            <li class="signup_setp_b"><b>1</b>设置账号</li>
+            <li class="signup_setp_a"><b>2</b>填写账户信息</li>
+            <li class="signup_setp_a"><b>3</b>注册成功</li>
+        </ul>
+    </div>
+    <div class="su_step_one">
+        <form action="/index.php/reg/Reg_info.html" method="post" class="registerform">
+            <ul>
+                <li class="m40">
+                    <label>手机号码</label>
+                    <input type="text" name="tel" placeholder="请输入您的手机号码" class="su_input w250" datatype="m"  errormsg="手机号码不正确！" ajaxurl="/index.php/reg/Check_tel.html">
+                    <div class="Validform_checktip"></div>
+                    <!--<input name="" type="button" value="发送验证码" class="bt_step_mcode bt_step">--></li>
+                <li class="m40">
+                    <label>密码</label>
+                    <input type="password" name="password" placeholder="请输入密码"  class="su_input w150"  datatype="*6-16" errormsg="密码范围在6~16位之间！">
+                    <div class="Validform_checktip"></div>
+                </li>
+                <li class="m40">
+                    <label>重复密码</label>
+                    <input type="password" name="password2" placeholder="请重复输入密码" class="su_input w150"  datatype="*6-16" errormsg="密码范围在6~16位之间！">
+                    <div class="Validform_checktip"></div>
+                </li>
+                 <li class="m40">
+                    <label>验证码</label>
+                    <input type="text" name="verify" value="" class="su_input w150" datatype="s" errormsg="验证码不允许为空">
+                     <img style="margin-top: 10px;" title="点击更换验证码" onclick="this.src=this.src+'?'" src="/index.php/adminqi/admin/verify_image.html"  />
+                    <div class="Validform_checktip"></div>
+                </li>
+                <li class="olink">
+                    <label></label>
+                    <input name="" type="checkbox" value="" class="va-2" checked="checked" >
+                    同意<a href="">《七爷租车服务协议》</a></li>
+                <li>
+                    <label> </label>
+                    <input name="step" value="step01" type="hidden">
+                    <input name="submit" type="submit" value="下一步" class="bt_step_sumbit bt_step">
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+<div class="h60"></div>
+<include file="Public/footer" />
+</body>
+</html> 
+<script>
+$(function(){
+		$(".registerform").Validform({
+		tiptype:function(msg,o,cssctl){
+
+			if(!o.obj.is("form")){
+				var objtip=o.obj.siblings(".Validform_checktip");
+				cssctl(objtip,o.type);
+				objtip.text(msg);
+			}
+		}
+	});
+})
+</script>

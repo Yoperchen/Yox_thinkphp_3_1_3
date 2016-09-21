@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="language" content="chinese" />
+<title>七爷租车-中国最大私家车共享平台 </title>
+<link rel="stylesheet" href="../Public/style.css" type="text/css" media="all"/>
+<script type="text/javascript" src="__Public__/js/jquery.min.js"></script>
+</head>
+<body>
+	<include file="Public/header" />
+<!--content-->
+<div class="w100">
+    <div class="carlist_so">
+        <div class="wrapper">
+            <form action="" method="get">
+                <!--<div class="carlistso_date color_gray">选择提车日期<span class="carlistso_date_down float_right"><a href=""><img src="/qiyezuche/Tpl/Home/default_theme/Public/images/icon_carlistso_date.png"></a></span></div>
+            <div class="carlistso_date">2014-01-01<span class="carlistso_date_down float_right"><a href=""><img src="/qiyezuche/Tpl/Home/default_theme/Public/images/icon_carlistso_date.png"></a></span></div>
+            <div class="carlistso_down_bg">价格
+            <span class="carlistso_down float_right"><a href=""><img src="/qiyezuche/Tpl/Home/default_theme/Public/images/img_carlistso_down.jpg"></a></span>
+            </div>-->
+                <div class="carlistso_date">
+                    <input type="text" placeholder="请输入车名" size="18"  style="color:#CCCCCC;padding:0px;width:100px;"  class="csinput" name="carname" value=''>
+                </div>
+                <div class="carlist_soadd">
+                    <label class="cslabel">地址</label>
+                    <input type="text" placeholder="请输入搜索地址" size="28"  style="color:#CCCCCC;" class="csinput" name="address" value=''>
+                </div>
+                <div class="carlist_sobt">
+                    <input name="submit" type="submit" value="搜索">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="carlist_filter">
+        <ul class="wrapper">
+            <li><a href="/index.php/car/car_list"  
+                class="current"                >全部</a></li>
+            <li class="icon_carlist_up"><a href="/index.php/car/car_list/flag/dayprice" 
+                                >价格</a></li>
+            <!--<li class="icon_carlist_up"><a href="">距离</a></li>-->
+        </ul>
+    </div>
+</div>
+<div class="wrapper mb50">
+    <div class="carlist">
+        <ul>
+
+			<foreach  name="result['data']['list']" item="vo">
+				<li>
+                    <div class="carlist_left">
+                        <div class="carlist_img"> <a href="{:U('Yo80005/Car/car_detail',array('id'=>$vo['id']))}"><img src="<eq name="$vo.img_200_200" value="">../Public/image/default_car.png<else/>{$vo.img_200_200}</eq>" width="218" height="149"/></a> </div>
+                        <div class="carlist_txt"> <span class="carlist_title"><a href="/index.php/car/Car_detail/id/20.html">{$vo.name}</a></span> <span class="carlist_ct">车型：跑车<br />
+                            变速箱：自动挡</span> <span class="carlist_add">天河123</span> <span class="carlist_bt"><a href="{:U('Yo80005/Car/car_detail',array('id'=>$vo['id']))}#iCenter" class="carlist_vmap">查看地图</a> <a href="javascript:void(0)" class="carlist_fav" data="20">收藏此车</a></span> </div>
+                    </div>
+                    <div class="carlist_right">
+                        <div class="cl_p_day"><b>{$vo.rental_price}元</b>/{$vo.time_unit}</div>
+                        <div class="cl_bt_show"><a href="{:U('Yo80005/Car/car_detail',array('id'=>$vo['id']))}">详情</a></div>
+                    </div>
+                </li>
+				</foreach >
+				 </ul>
+    </div>
+    
+    <!-- <div class="news_pages">
+     <ul class="pagelist">
+        <li><a href="">上一页</a></li>
+        <li class="thisclass">1</li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+        <li><span class="pageinfo"><b>...</b></span></li>
+        <li><a href="">9</a></li>
+        <li><a href="">下一页</a></li>
+	</ul>
+    </div>-->
+    <div class="news_pages">
+        <ul class="pagelist">
+              <li><a class='down' href="{:U('Yo80005/Car/car_list',array('p'=>$result['data']['page']['page']+1))}">下一页</a></li>   &nbsp;
+			  <li><span class='current'>{$result['data']['page']['page']}</span></li>&nbsp;
+<li><a href='{:U('Yo80005/Car/car_list',array('p'=>$result['data']['page']['page']+1))}'>&nbsp;{$result['data']['page']['page']+1}&nbsp;</a></li>&nbsp;
+			  <li><a href='{:U('Yo80005/Car/car_list',array('p'=>$result['data']['page']['page']+2))}'>&nbsp;{$result['data']['page']['page']+2}&nbsp;</a></li>&nbsp;
+			  <li><a href='{:U('Yo80005/Car/car_list',array('p'=>$result['data']['page']['page']+3))}'>&nbsp;{$result['data']['page']['page']+3}&nbsp;</a></li>
+			  </ul>
+    </div>
+</div>
+</div>
+<include file="Public/footer" />
+
+</body>
+</html> 

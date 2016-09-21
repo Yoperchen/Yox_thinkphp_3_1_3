@@ -1,0 +1,65 @@
+<table width="500" border="0" cellpadding="2">
+<tr>
+    <td width="100" align="right">id：</td>
+    <td><input type="text" name="id" id="id" value="" /> *约会、预约id</td>
+  </tr>
+	<tr>
+    <td width="100" align="right">belong_user_id：</td>
+    <td><input type="text" name="belong_user_id" id="belong_user_id" value="" /> 发布者user_id</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">appointment_type：</td>
+    <td><select name="appointment_type" id="appointment_type">
+    	<option value="1">约人看电影</option>
+    	<option value="2">约人吃饭</option>
+    	<option value="3">约人唱K</option>
+    	<option value="4" selected>约人锻炼</option>
+    	
+    	</select> *约会类型|1约人看电影、2约人吃饭、3约人唱K、4约人锻炼</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">title：</td>
+    <td><input type="text" name="title" id="title" value="" /> 约会、预约标题</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">desc：</td>
+    <td><input type="text" name="desc" id="desc" value="" /> 约会、预约描述</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">appointment_time：</td>
+    <td><input type="text" name="appointment_time" id="appointment_time" value="" /> 约会、预约时间|时间戳格式</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">appointment_address：</td>
+    <td><input type="text" name="appointment_address" id="appointment_address" value="" /> 约会地点，如私立华联操场</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">require_sex：</td>
+    <td><select name="require_sex" id="require_sex">
+    <option value="1">男</option>
+    <option value="2" selected>女</option>
+    <option value="3">不限</option>
+    </select> *约会、预约性别要求|1男，2女，3不限</td>
+  </tr>
+  <!--  
+  <tr>
+    <td width="100" align="right">apply_user_ids：</td>
+    <td><input type="text" name="apply_user_ids" id="apply_user_ids" value="" /> 申请者ids|多个用逗号“,”隔开</td>
+  </tr>-->
+  <tr>
+    <td width="100" align="right">appointment_pay_type：</td>
+    <td><select name="appointment_pay_type" id="appointment_pay_type">
+    <option value="1" selected>我埋单</option>
+    <option value="2">求请客</option>
+    <option value="3">AA</option>
+    </select> 1:我埋单、2:求请客、3:AA</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">city_id：</td>
+    <td><input type="text" name="city_id" id="city_id" value="" /> 城市id|对应api类目4002</td>
+  </tr>
+  <tr>
+    <td width="100" align="right">click：</td>
+    <td><input type="number" name="click" id="click" value="" />初始点击量</td>
+  </tr>
+  </table>

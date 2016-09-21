@@ -1,0 +1,16 @@
+<script>
+function callpay()//微信支付
+{
+	WeixinJSBridge.invoke('getBrandWCPayRequest',{$biz_package},function(res){
+	WeixinJSBridge.log(res.err_msg);
+	if(res.err_msg == "get_brand_wcpay_request:ok") {
+		window.location.href="http://www.xdsjsd.com/index.php/Wap/Wechatpay/return_url?out_trade_no={$order_id}&status=1"; 
+	}else{
+		window.location.href="http://www.xdsjsd.com/index.php/Wap/Wechatpay/return_url?out_trade_no={$order_id}&status=0"; 
+	}
+	
+	});
+}
+</script>
+<a style="height:60px;width:120px;color:#fff;font-size:19px;text-align:center;background:#ed6d00;margin-left:auto;margin-right:auto;margin-top: 50px;width: 100%;position: relative;width: 50%;display: block;line-height: 60px;" href="javascript:return false;" onclick="callpay()">
+确认支付</a>

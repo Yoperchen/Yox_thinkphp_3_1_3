@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/plugins/jquery_ui/jquery-ui.min.js" type="text/javascript"></script>
+<link href="__PUBLIC__/plugins/jquery_ui/jquery-ui.min.css" rel="stylesheet">
+<script>
+$(document).ready(function() {
+  $("#add_time1,#add_time2").datepicker({
+	dateFormat: 'yy-mm-dd',
+	monthNames:['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一','十二'],//月份中文
+	dayNamesMin:['日', '一', '二', '三', '四', '五', '六'],//星期中文
+	duration: 'slow',//显示效果
+	numberOfMonths:2,//显示几个月
+	});
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>商品列表</title>
+</head>
+<body>
+<h1>商品管理</h1>
+<form action="{:U('Admin/Goods/listGoods')}" method="post">
+<table>
+	<tr>
+		<td>商品名称：</td><td><input type="text" name="name" value="{$Think.request.name}"></td>
+		<td>日期搜索：</td><td><input id="add_time1" type="text" name="add_time1" value="{$Think.request.add_time1}"> - <input id="add_time2" type="text" name="add_time2" value="{$Think.request.add_time2}"></td>
+		<td>商品状态</td>
+		<td><select name="status">
+			<option value="">请选择..</option>
+			<option <if condition="$Think.request.status eq '1'"> selected </if> value="1">正常</option>
+			<option <if condition="$Think.request.status eq '2'"> selected </if> value="2">禁止</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td>站点ID:</td>
+		<td>{:W('ListSite',array('template'=>'admin_select_ListSite','select_id'=>I('param.site_id','','int')))}</td>
+		<td>商家ID:</td>
+		<td>{:W('ListShowStores',array('template'=>'admin_select_ListShowStores','select_id'=>I('param.store_id','','int')))}</td>
+		<td>用户ID:</td>
+		<td><input type="user_id" name="user_id" value="{$Think.request.user_id}"></td>
+		<td></td>
+		<td><input type="submit" value="搜索"></td>
+	</tr>
+</table>
+</form>
+<table>
+	<tr>
+		<th>商品ID</th><th>名称</th><th>库存(商品数量)</th><th>商品状态</th><th>价格</th><th>操作</th>
+	</tr>
+	<foreach name="good_list_result.data.list" item="goods">
+		<tr>
+		<td>{$goods.goods_id}</td>
+		<td>{$goods.name}</td>
+		<td>{$goods.quantity}</td>
+		<td>{$goods.status}</td>
+		<td>{$goods.price}</td>
+		<td><a href="{:U('Admin/Goods/detailGood',array('goods_id'=>$goods[goods_id]))}">详细</a>
+		<a href="{:U('Admin/Goods/detailGood',array('is_export'=>1,'goods_id'=>$goods['goods_id']))}">导出</a></td>
+		</tr>
+ </foreach>
+</table>
+</body>
+</html>

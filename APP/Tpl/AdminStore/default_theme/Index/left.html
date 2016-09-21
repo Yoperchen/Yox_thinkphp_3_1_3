@@ -1,0 +1,116 @@
+
+<div class="sidebar" id="sidebar"> 
+  <!--�����������ʱclass="sidebar"Ҫ����class="sidebar left-menu-on" -->
+  <div class="left-menu"> 
+    <!--�����������ʱclass="left-menu"Ҫ����style="display:none;" -->
+    <div class="sidebar-menu" style="height:100%;">
+     <div class="menu-block">
+        <div class="box-bg menu-block-top">
+          <div class="top-title">
+            <h1>订单管理</h1>
+            <span class="box-bg open close" title="չ��������"></span> </div>
+        </div>
+        <div class="menu-block-content">
+          <ul class="sidebar-menu-list">
+            <li> <a href="{:U('AdminStore/Order/list_order')}" target="admin_iframe" title="订单列表" class="menu-list-label">订单列表</a> <a href="#" title="订单列表" class="box-bg menu-list-add"></a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-block">
+        <div class="box-bg menu-block-top">
+          <div class="top-title">
+            <h1>商品管理</h1>
+            <span class="box-bg open close" title="չ��������"></span> </div>
+        </div>
+        <div class="menu-block-content">
+          <ul class="sidebar-menu-list">
+            <li> <a href="{:U('AdminStore/Goods/addGoods')}" target="admin_iframe" title="�����Ʒ" class="menu-list-label">添加商品</a> <a href="#" title="�������" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="{:U('AdminStore/Goods/listGoods')}"  target="admin_iframe"  title="商品列表" class="menu-list-label"> 商品列表</a> <a href="#" title="��Ʒ�б�" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="{:U('AdminStore/Goods/listGoodsCategory')}"  target="admin_iframe"  title="商品分类" class="menu-list-label"> 商品分类</a> <a href="#" title="��Ʒ�б�" class="box-bg menu-list-add"></a> </li>
+              <li> <a href="{:U('AdminStore/Goods/list_brands')}"  target="admin_iframe"  title=" 品牌管理" class="menu-list-label"> 品牌管理</a> <a href="#" title="��Ʒ�б�" class="box-bg menu-list-add"></a> </li>
+           
+          </ul>
+        </div>
+      </div>
+            <div class="menu-block">
+        <div class="box-bg menu-block-top">
+          <div class="top-title">
+            <h1>文章管理</h1>
+            <span class="box-bg open close" title="文章管理"></span> </div>
+        </div>
+        <div class="menu-block-content">
+          <ul class="sidebar-menu-list">
+            <li> <a href="{:U('AdminStore/Articles/add_article')}" target="admin_iframe" title="添加文章" class="menu-list-label">添加文章</a> <a href="#" title="������·���" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="{:U('AdminStore/Articles/list_article')}" title="文章列表"  target="admin_iframe"  class="menu-list-label">文章列表</a> <a href="#" title="文章列表" class="box-bg menu-list-add"></a> </li>
+             <li> <a href="{:U('AdminStore/Articles/list_article_category')}" title="文章分类"  target="admin_iframe"  class="menu-list-label">文章分类</a> <a href="#" title="文章分类" class="box-bg menu-list-add"></a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-block">
+        <div class="box-bg menu-block-top">
+          <div class="top-title">
+            <h1>商城管理</h1>
+            <span class="box-bg open close" title="չ��������"></span> </div>
+        </div>
+        <div class="menu-block-content">
+          <ul class="sidebar-menu-list">
+            <li> <a href="AddWechatMall.php" title="PC商城"  target="admin_iframe"  class="menu-list-label">PC商城</a> <a href="#" title="�����·����" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="wechatMallList.php" target="admin_iframe" title="PC商城主题" class="menu-list-label">PC商城主题</a> <a href="#" title="������·���" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="AddWechatMall.php" title="微商城"  target="admin_iframe"  class="menu-list-label">微商城</a> <a href="#" title="�����·����" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="wechatMallList.php" target="admin_iframe" title="微商城主题" class="menu-list-label">微商城主题</a> <a href="#" title="������·���" class="box-bg menu-list-add"></a> </li>
+      
+          </ul>
+        </div>
+      </div>
+      <div class="menu-block">
+        <div class="box-bg menu-block-top">
+          <div class="top-title">
+            <h1>APP管理</h1>
+            <span class="box-bg open close" title="չ��������"></span> </div>
+        </div>
+        <div class="menu-block-content">
+          <ul class="sidebar-menu-list">
+            <li> <a href="{:U('AdminStore/App/app_store')}"   target="admin_iframe"   title="APP商城" class="menu-list-label">APP商城</a> <a href="#" title="APP商城" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="{:U('AdminStore/App/app_news')}"   target="admin_iframe"   title="App新闻客户端" class="menu-list-label">App新闻客户端</a> <a href="#" title="App新闻客户端" class="box-bg menu-list-add"></a> </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="menu-block">
+        <div class="box-bg menu-block-top">
+          <div class="top-title">
+            <h1>系统设置</h1>
+            <span class="box-bg open close" title="展开"></span> </div>
+        </div>
+        <div class="menu-block-content">
+          <ul class="sidebar-menu-list">
+            <li> <a href="{:U('AdminStore/Navigation/list_navigation')}"  target="admin_iframe" title="导航条" class="menu-list-label">导航条</a> <a href="#" title="��Ӳ˵���" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="#" title="表单管理" class="menu-list-label">表单管理</a> <a href="#" title="��Ӳ˵���" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="#" title="支付设置" class="menu-list-label">支付设置</a>  <a href="#" title="��Ӳ˵���" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="#" title="站点设置" class="menu-list-label">站点设置</a>  <a href="#" title="��Ӳ˵���" class="box-bg menu-list-add"></a> </li>
+               <li> <a href="{:U('AdminStore/IncomingCallLog/list_incoming_call_log')}"  target="admin_iframe" title="来电记录" class="menu-list-label">来电记录</a>  <a href="#" title="来电记录" class="box-bg menu-list-add"></a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-block">
+        <div class="box-bg menu-block-top">
+          <div class="top-title">
+            <h1>会员管理</h1>
+            <span class="box-bg open" title="չ��������"></span> </div>
+        </div>
+        <div style="display: none;" class="menu-block-content">
+          <ul class="sidebar-menu-list">
+            <li> <a href="/admin/user/staff" title="Ա������" class="menu-list-label">Ա������</a> <a href="#" title="���Ա��" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="/admin/user/role" title="��ɫ����" class="menu-list-label">��ɫ����</a> <a href="#" title="��ӽ�ɫ" class="box-bg menu-list-add"></a> </li>
+            <li> <a href="#" title="Ȩ�޹���" class="menu-list-label">Ȩ�޹���</a> </li>
+            <li> <a href="#" title="��Ա�б�" class="menu-list-label">��Ա�б�</a> </li>
+            <li> <a href="#" title="�˺��޸�" class="menu-list-label">�˺��޸�</a> </li>
+            <li> <a href="#" title="ͬ�й���" class="menu-list-label">ͬ�й���</a> <a href="#" title="���ͬ��" class="box-bg menu-list-add"></a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--�����������ʱ����class="open-close open"--> 
+</div>

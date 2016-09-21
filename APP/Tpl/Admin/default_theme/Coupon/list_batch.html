@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/ckeditor/ckeditor.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>优惠批次管理</title>
+</head>
+<body>
+<h1>优惠批次管理</h1>
+<a href="javascript:;">批次列表</a>
+<a href="{:U('Admin/Coupon/add_batch')}">添加批次</a>
+<form action="{:U('Admin/Coupon/list_batch')}" method="get">
+<table>
+	<tr><td>站点：</td><td>{:W('ListSite',array('template'=>'admin_select_ListSite','select_id'=>I('param.site_id','','int')))}</td>
+	<td>批次：</td><td>{:W('ListBatch',array('template'=>'admin_select_ListBatch','select_id'=>I('param.batch_id','','int')))}</td>
+	<td>过期时间：</td><td><input type="text" name="add_time1" value="{$Think.request.end_time1}"> - <input type="text" name="end_time2" value="{$Think.request.add_time2}"></td>
+	<td><input type="submit" value="搜索"></td></tr>
+</table>
+</form>
+<table>
+	<tr>
+		<th>批次ID</th><th>名称</th><th>备注</th><th>是否销售</th><th>状态</th><th>添加时间</th><th>操作</th>
+	</tr>
+	<foreach name="batch_list_result.data.list" item="batch">
+		<tr>
+		<td>{$batch.batch_id}</td>
+		<td>{$batch.batch_name}</td>
+		<td>{$batch.batch_remark}</td>
+		<td>{$batch.is_sale}</td>
+		<td>{$batch.status}</td>
+		<td>{$batch.add_time}</td>
+		<td><a href="{:U('Admin/Coupon/update_batch',array('batch_id'=>$batch['batch_id']))}">详细</a>
+		<a onclick="return confirm('确定删除?')" href="{:U('Admin/Coupon/delete_category',array('category_id'=>$category['id']))}">删除</a>
+		<!-- <a href="{:U('Admin/Coupon/update_batch',array('is_export'=>1,'batch_id'=>$category['batch_id']))}">导出</a></td> -->
+		
+		</tr>
+ </foreach>
+</table>
+</body>
+</html>

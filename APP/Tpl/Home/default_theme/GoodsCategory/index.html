@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<br/>
+<select name="pid">
+                <option value="0" >作为一级分类</option>
+                <volist name="catelist" id="cat">
+                    <option value="{$cat.id}" >
+                   <php>if($cat['count']==''):</php>
+                   {$cat.name}
+                   <php>endif;</php>
+                   
+                   <php>if($cat['count']=='---'):</php>
+                   -{$cat.name}
+                   <php>endif;</php>
+                   <php>if($cat['count']=='------'):</php>
+                   --{$cat.name}
+                   <php>endif;</php>
+                   </option>
+                </volist>
+            </select>
+</body>
+</html>

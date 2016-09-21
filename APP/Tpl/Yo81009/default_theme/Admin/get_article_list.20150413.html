@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>[!--pagetitle--] - [!--class.name--] - <?=$public_r[sitename]?></title>
+<meta name="description" content="[!--pagedes--]" />
+<meta name="keywords" content="[!--pagekey--]" />
+</head>
+
+
+<body>
+<table>
+<tr><td>id</td><td>标题</td><td>作者</td><td>时间</td><td></td></tr>
+<foreach name="result.data.list" item="vo">
+<tr>
+<td>
+{$vo['id']}
+</td>
+<td>
+<a href="{:U('Yo81009/Article/content',array('id'=>$vo['id']))}">{$vo['title']}</a>
+</td>
+<td>
+{$vo['author']}
+</td>
+<td>
+{$vo['add_time']}
+</td>
+</tr>
+</foreach>
+<table>
+<a href="{:U('Yo81009/Admin/get_article_list',array('p'=>$result['list']['page']['page']))}">当前页</a>
+<a href="{:U('Yo81009/Admin/get_article_list',array('p'=>$result['list']['page']['page']-1))}">上一页</a>
+<a href="{:U('Yo81009/Admin/get_article_list',array('p'=>$result['list']['page']['page']+1))}">下一页</a>
+</body>
+</html>

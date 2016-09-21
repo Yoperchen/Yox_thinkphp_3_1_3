@@ -1,0 +1,22 @@
+<table width="500" border="0" cellpadding="2">
+<tr><td colspan=2>接口:{$api_info.title}</td></tr>
+<tr><td colspan=2>描述:{$api_info.description}</td></tr>
+<foreach name="api_info.parameters" item="parameter">
+    <tr>
+    <td align="right">{$parameter.name}：</td>
+    <td>
+		<if condition="$parameter['options']  neq ''">
+		<select>
+		<foreach name="parameter.options" item="option" key="key2">
+		<option value="{$key2}">{$option}</option>
+		</foreach>
+		</select>
+		<elseif condition="$parameter['file'] neq ''"/>
+		<input type="file" name="{$parameter.name}" id="{$parameter.name}">{$parameter.description}
+		<else />
+		<input type="text" name="{$parameter.name}" id="{$parameter.name}">{$parameter.description}
+		</if>
+    </td>
+  </tr>
+  </foreach>
+  </table>

@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>修改品牌</title>
+</head>
+<body>
+<h1>修改品牌</h1>
+<form action="{:U('AdminStore/Goods/update_brand?op=update')}" method="get" enctype="multipart/form-data">
+	<input type="hidden" name="brand_id" value="{$data['id']}">
+	品牌名称：<input type="text" name="name" value="{$data['name']}">
+	描述：<input type="text" name="desc" value="{$data['desc']}">
+	是否显示：<select name="is_show">
+	     <option <eq name="list.id" value="1">selected</eq> value="1">显示</option>
+	     <option <eq name="list.id" value="2">selected</eq> value="2">不显示</option>
+	</select>
+	排序：<input type="number" name="sort"  value="{$data['sort']}">
+	<input type="submit" value="修改">
+</form>
+</body>
+</html>

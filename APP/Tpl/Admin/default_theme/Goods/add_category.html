@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/ckeditor/ckeditor.js"></script>
+<title>商品管理</title>
+</head>
+<body>
+<form action="{:U('Admin/Goods/addGoods')}" method="post">
+	<table>
+	<tr>
+		<td>商家ID:</td><<td>{:W('ListShowStores',array('template'=>'admin_select_ListShowStores','select_id'=>$Think.request.store_id))}</td></td>
+	</tr>
+	<tr>
+		<td>上级分类:</td><td>
+		<select name="pid" id="pid">
+		<foreach name="category_list_result.data.list" item="category">
+		<option data-path="{$category.path}" value="{$category.id}">|-{$category.name}</option>
+			<if condition="$category.children neq '' ">
+			<foreach name="category.children" item="category2">
+			<option data-path="{$category2.path}" value="{$category2.id}">--{$category2.name}</option>
+				<if condition="$category2.children neq '' ">
+				<foreach name="category2.children" item="category3">
+					<option data-path="{$category3.path}" value="{$category3.id}">---{$category3.name}</option>
+				</foreach>
+				</if>
+			</foreach>
+			</if>
+		</foreach>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>名称:</td><td><input type="text" name="name" value=""></td>
+	</tr>
+	<tr>
+		<td>描述:</td><td><input type="text" name="description" value=""></td>
+	</tr>
+	<tr>
+		<td>关键字:</td><td><input type="text" name="keywords" value=""></td>
+	</tr>
+	<tr>
+		<td>排序:</td><td><input type="text" name="sort" value=""></td>
+	</tr>
+	<tr>
+		<td>是否显示:</td><td><input type="text" name=is_show value=""></td>
+	</tr>
+	<tr>
+		<td>描述:</td><td><input type="text" name="path" value=""></td>
+	</tr>
+	</table>
+		<input type="submit" value="添加">
+</form>
+</body>
+</html>

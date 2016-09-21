@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="{:U('AdminStore/Goods/add_category?op=add')}" method=get enctype="multipart/form-data">
+	   商品分类名称：<input type="text" name="category_name">
+		  父级：{:W('ListShowGoodsCategory',array('template'=>'admin_store_select_ListShowGoodsCategory','select_id'=>$data['store_id']))}
+	     商品描述： <input type="text" name="description">
+		  商品关键词：<input type="text" name="kewords">
+	    商品排序： <input type="number" name="sort" value="50">
+	      是否显示：<select name="is_show">
+	      							<option value="1">显示</option>
+	      							<option value="1">不显示</option>
+	      						</select>
+          <input type="submit" value="添加">
+</form>
+</body>
+</html>

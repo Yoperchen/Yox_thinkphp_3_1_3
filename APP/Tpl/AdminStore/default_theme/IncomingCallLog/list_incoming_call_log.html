@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 来电记录 -->
+<a href="#">添加来电记录</a>
+<form action="{:U('AdminStore/IncomingCallLog/getCallList')}" method="post">
+	标题：<input value="{$data['title']}" type="text" name="title">
+	电话：<input value="{$data['tel']}" type="text" name="tel">
+	用户ID：<input value="{$data['user_id']}" type="text" name="user_id">
+	开始时间：<input value="{$data['startTime']}" type="text" name="startTime">
+	结束时间：<input value="{$data['endTime']}" type="text" name="endTime">
+	<input type="submit" name="搜索">
+</form>
+<table>
+	<tr>
+		<td>ID</td>
+		<td>标题</td>
+		<td>电话</td>
+		<td>添加时间</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+{:W('ListIncomingCallLog',array('template'=>'ListIncomingCallLog','title'=>$data['title'],'tel'=>$data['tel'],'user_id'=>$data['user_id'],'store_id'=>1,'startTime'=>$data['startTime'],'endTime'=>$data['endTime']))}
+</table>
+</body>
+</html>

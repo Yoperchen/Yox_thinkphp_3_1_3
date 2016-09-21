@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/ckeditor/ckeditor.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>添加优惠券</title>
+</head>
+<body>
+<h1>添加优惠券</h1>
+<a href="{:U('Admin/Coupon/list_coupon')}">优惠券列表</a>
+<a  href="javascript:;">添加优惠券</a>
+	<form action="{:U('Admin/Coupon/add_multi_coupon')}" method="post">
+	<table>
+	<tr>
+		<td>站点：</td>
+		<td>{:W('ListSite',array('template'=>'admin_select_ListSite','select_id'=>I('param.site_id','','int')))}</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>批次：</td>
+		<td>{:W('ListBatch',array('template'=>'admin_select_ListBatch','select_id'=>I('param.batch_id','','int')))}</td>
+		<td>券类型：</td>
+		<td><select id="type_id" name="type_id">
+			<option value="1">现金券</option>
+			<option value="2">兑换券</option>
+			<option value="3">折扣券</option>
+		</select></td>
+		<td></td>
+		<td></td>
+		</tr>
+		<tr>
+		<td>总价值</td>
+		<td><input type="text" name="total_value" value="0"></td>
+		<td>销售价</td>
+		<td><input style="width:60px;" type="text" name="sale_price" value="0">为0表示赠送</td>
+		<td>价值单位</td>
+		<td><select id="unit" name="unit">
+			<option value="元">元(现金券)</option>
+			<option value="张">张(兑换券、折扣券)</option>
+		</select></td>
+		</tr>
+		<tr>
+		<td>有效期</td>
+		<td><input style="width:60px;" type="text" name="start_time" value="">-<input style="width:60px;" type="text" name="end_time" value=""></td>
+		<td>状态<select id="status" name="status">
+			<option value="1">正常</option>
+			<option value="2">禁止</option>
+			<!--<option value="3">黑名单</option>-->
+			<option value="4">删除</option>
+		</select></td>
+		<td>密码</td>
+		<td><input style="width:60px;" type="text" name="password" value="">可为空</td>
+		<td>生成数量<input style="width:60px;" type="text" name="num" value="50"></td>
+		</tr>
+		</table>
+		<input type="submit" name="submit" value="生成优惠券">
+	</form>
+</body>
+</html>

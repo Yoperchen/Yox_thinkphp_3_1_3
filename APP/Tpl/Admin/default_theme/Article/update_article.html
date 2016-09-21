@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/ckeditor/ckeditor.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>修改文章</title>
+</head>
+<body>
+<h1>修改文章</h1>
+	<form action="{:U('Admin/Article/update_article')}" method="post" enctype="multipart/form-data">
+	站点：{:W('ListSite',array('template'=>'admin_select_ListSite','select_id'=>$article_info_result['data']['site_id']))}
+		文章id:<input type="text" readonly name="id" value="{$article_info_result['data']['id']}">&nbsp;&nbsp;
+		标题：<input type="text" name="title" value="{$article_info_result.data.title}">
+		选择品牌：{:W('ListShowBrands',array('template'=>'admin_select_ListShowBrands','select_id'=>$data['brand']))}
+		商品分类：{:W('ListShowGoodsCategory',array('template'=>'admin_select_ListShowGoodsCategory','select_id'=>$data['category']))}
+		<br/>文章描述：<br/><textarea rows="5" cols="150" name="desc" placeholder="概要...">{$article_info_result.data.desc}</textarea>
+		<br/>
+		文章图片：
+		<table>
+				<tr>
+				<td>
+				<if condition="$article_info_result['data']['img1'] neq '' ">
+				<img title="文章图片1" style="height: 98px;" src="{$article_info_result['data']['img1']}">
+				 <else />无图片
+				 </if>
+				</td>
+				<td>
+				<if condition="$article_info_result['data']['img2'] neq '' ">
+				<img title="文章图片2" style="height: 98px;" src="{$article_info_result['data']['img2']}">
+				 <else />无图片
+				 </if>
+				</td>
+				<td>
+				<if condition="$article_info_result['data']['img3'] neq '' ">
+				<img title="文章图片3" style="height: 98px;" src="{$article_info_result['data']['img3']}">
+				 <else />无图片
+				 </if>
+				</td>
+				</tr>
+			<tr>
+				<td><input name="img1" type="file"></td>
+				<td><input name="img2" type="file"></td>
+				<td><input name="img3" type="file"></td>
+				</tr>
+			</table>
+		<br/>文章详细：<br/><textarea rows="30" cols="50" name="content" id="editor01">{$article_info_result.data.content}</textarea>
+				<script type="text/javascript">
+		var url="{:U('Files/upload_file',array('editor'=>'ckeditor','file_type'=>'image'))}";
+			CKEDITOR.replace('editor01',
+				{uiColor: '#E2E9EA',
+			filebrowserImageUploadUrl :url,
+			image_previewText:''});</script>
+		<br/>
+		<center><input style="width:255px;height:35px;" type="submit" name="submit" value="修改"></center>
+	</form>
+</body>
+</html>
